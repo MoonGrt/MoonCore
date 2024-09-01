@@ -1,0 +1,29 @@
+Reading netlist file: "F:\Project\Sipeed\Tang_Primer\Project\CPU_PPL\impl\gwsynthesis\top.vg"
+Parsing netlist file "F:\Project\Sipeed\Tang_Primer\Project\CPU_PPL\impl\gwsynthesis\top.vg" completed
+Processing netlist completed
+Reading constraint file: "F:\Project\Sipeed\Tang_Primer\Project\CPU_PPL\src\top.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "F:\Project\Sipeed\Tang_Primer\Project\CPU_PPL\impl\pnr\top.power.html" completed
+Generate file "F:\Project\Sipeed\Tang_Primer\Project\CPU_PPL\impl\pnr\top.pin.html" completed
+Generate file "F:\Project\Sipeed\Tang_Primer\Project\CPU_PPL\impl\pnr\top.rpt.html" completed
+Generate file "F:\Project\Sipeed\Tang_Primer\Project\CPU_PPL\impl\pnr\top.rpt.txt" completed
+Generate file "F:\Project\Sipeed\Tang_Primer\Project\CPU_PPL\impl\pnr\top.tr.html" completed
+Sun Sep  1 13:16:05 2024
+

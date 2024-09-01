@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" T_Register="105(0)" T_Alu="32(0)" T_Lut="1507(0)" T_Bsram="1(0)" T_Ssram="8(0)" T_ROM16="1024(0)">
+    <SubModule name="CPU" T_Register="20(0)" T_Alu="32(0)" T_Lut="357(0)" T_Ssram="8(0)">
+        <SubModule name="ctrl" Lut="3" T_Lut="3(3)"/>
+        <SubModule name="If" Register="10" Lut="56" T_Register="10(10)" T_Lut="56(56)"/>
+        <SubModule name="Id" T_Register="10(0)" T_Lut="39(0)" T_Ssram="8(0)">
+            <SubModule name="Reg" Register="10" Lut="39" Ssram="8" T_Register="10(10)" T_Lut="39(39)" T_Ssram="8(8)"/>
+        </SubModule>
+        <SubModule name="Ex" Lut="50" T_Alu="32(0)" T_Lut="168(50)">
+            <SubModule name="ALU" Alu="16" Lut="118" T_Alu="16(16)" T_Lut="118(118)"/>
+            <SubModule name="CMP" Alu="16" T_Alu="16(16)"/>
+        </SubModule>
+        <SubModule name="Wb" Lut="91" T_Lut="91(91)"/>
+    </SubModule>
+    <SubModule name="BUS" T_Register="85(0)" T_Lut="1150(0)" T_Bsram="1(0)" T_ROM16="1024(0)">
+        <SubModule name="inst_mem" Lut="1008" ROM16="1024" T_Lut="1008(1008)" T_ROM16="1024(1024)"/>
+        <SubModule name="RAM" Lut="2" T_Lut="2(2)" T_Bsram="1(0)">
+            <SubModule name="data_mem" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+        <SubModule name="LED" Lut="2" T_Register="4(0)" T_Lut="6(2)">
+            <SubModule name="input_buf" Register="4" T_Register="4(4)"/>
+            <SubModule name="InCtrl_LED" Lut="4" T_Lut="4(4)"/>
+        </SubModule>
+        <SubModule name="Buttom" T_Register="4(0)">
+            <SubModule name="output_buf" Register="4" T_Register="4(4)"/>
+        </SubModule>
+        <SubModule name="Switch" T_Register="4(0)">
+            <SubModule name="output_buf" Register="4" T_Register="4(4)"/>
+        </SubModule>
+        <SubModule name="UART" Lut="1" T_Register="73(0)" T_Lut="92(1)">
+            <SubModule name="input_buf" Register="8" T_Register="8(8)"/>
+            <SubModule name="u_uart_send" Register="24" Lut="42" T_Register="24(24)" T_Lut="42(42)"/>
+            <SubModule name="output_buf" Register="8" T_Register="8(8)"/>
+            <SubModule name="u_uart_recv" Register="33" Lut="49" T_Register="33(33)" T_Lut="49(49)"/>
+        </SubModule>
+        <SubModule name="Timer" Lut="42" T_Lut="42(42)"/>
+    </SubModule>
+</Module>

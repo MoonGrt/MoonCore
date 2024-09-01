@@ -1,0 +1,15 @@
+-d F:\Project\Sipeed\Tang_Primer\Project\CPU_PPL\impl\gwsynthesis\top.vg
+-p GW2A-18C-PBGA256-8
+-pn GW2A-LV18PG256C8/I7
+-cst F:\Project\Sipeed\Tang_Primer\Project\CPU_PPL\src\top.cst
+-cfg F:\Project\Sipeed\Tang_Primer\Project\CPU_PPL\impl\pnr\device.cfg
+-sdc F:\Project\Sipeed\Tang_Primer\Project\CPU_PPL\src\top.sdc
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000

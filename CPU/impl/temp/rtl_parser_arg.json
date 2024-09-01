@@ -1,0 +1,129 @@
+{
+ "Device" : "GW2A-18C",
+ "Files" : [
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/BUS.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Buffer.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Buttom.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Counter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Deviceclk.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/InCtrl_LED.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/InCtrl_Tube.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/LED.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/OutCtrl_Buttom.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/OutCtrl_Switch.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/RAM.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Switch.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Timer.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Tube.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/UART.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/uart_recv.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/uart_send.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/ALU.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CMP.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CPU.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/Crtl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/EX.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/ID.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/IF.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/REG.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/WB.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_rom16/inst_mem.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_sp/data_mem.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/top.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

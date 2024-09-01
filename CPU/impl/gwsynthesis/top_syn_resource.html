@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Hierarchy Module Resource</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 14px; }
+div#main_wrapper{ width: 100%; }
+h1 {text-align: center; }
+h1 {margin-top: 36px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { align = "center"; padding: 5px 2px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-color: #dee8f4; }
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="content">
+<h1>Hierarchy Module Resource</h1>
+<table>
+<tr>
+<th class="label">MODULE NAME</th>
+<th class="label">REG NUMBER</th>
+<th class="label">ALU NUMBER</th>
+<th class="label">LUT NUMBER</th>
+<th class="label">DSP NUMBER</th>
+<th class="label">BSRAM NUMBER</th>
+<th class="label">SSRAM NUMBER</th>
+<th class="label">ROM16 NUMBER</th>
+</tr>
+<tr>
+<td class="label">top (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/top.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--CPU
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/top.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ctrl
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CPU.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">3</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--If
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CPU.v)</td>
+<td align = "center">10</td>
+<td align = "center">-</td>
+<td align = "center">56</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--Id
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CPU.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--Reg
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/ID.v)</td>
+<td align = "center">10</td>
+<td align = "center">-</td>
+<td align = "center">39</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">8</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--Ex
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CPU.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">50</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ALU
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/EX.v)</td>
+<td align = "center">-</td>
+<td align = "center">16</td>
+<td align = "center">118</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--CMP
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/EX.v)</td>
+<td align = "center">-</td>
+<td align = "center">16</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--Wb
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CPU.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">91</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--BUS
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/top.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--inst_mem
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/BUS.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1008</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1024</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--RAM
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/BUS.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--data_mem
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/RAM.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--LED
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/BUS.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--input_buf
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/LED.v)</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--InCtrl_LED
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/LED.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--Buttom
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/BUS.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--output_buf
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Buttom.v)</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--Switch
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/BUS.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--output_buf
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Switch.v)</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--UART
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/BUS.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--input_buf
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/UART.v)</td>
+<td align = "center">8</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_uart_send
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/UART.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">42</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--output_buf
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/UART.v)</td>
+<td align = "center">8</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_uart_recv
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/UART.v)</td>
+<td align = "center">33</td>
+<td align = "center">-</td>
+<td align = "center">49</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--Timer
+ (F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/BUS.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">42</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+</table>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

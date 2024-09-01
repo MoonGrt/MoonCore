@@ -1,0 +1,3808 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Project/Sipeed/Tang_Primer/Minecraft/minecraft/src/gowin_workfile
+T_opt
+!s110 1725168889
+V1@;2`F66k?`ga=iUbO:C22
+Z1 04 6 4 work tb_top fast 0
+=1-60189527dbd9-66d3fcf9-2db-9618
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z3 OL;O;10.4;61
+R0
+T_opt1
+!s110 1725168051
+VlFo3;U<M=V>m<RQH828Cz0
+R1
+=1-60189527dbd9-66d3f9b2-30c-2734
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1725040527
+Vg1;HA;[k[jJ>[Z3GkU2j_1
+R1
+=1-60189527dbd9-66d2078f-1a8-7304
+R2
+n@_opt2
+R3
+R0
+vALU
+Z4 !s110 1725168879
+!i10b 1
+!s100 Mb_GbQ2eijBlWIJEHj@Lh3
+IU>TN>eiUMK_oT?fZEJb852
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 dF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_workfile
+w1725039055
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/ALU.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/ALU.v
+L0 3
+Z7 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1725168879.394000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/ALU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/ALU.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@a@l@u
+vALU54D
+Z9 !s110 1725168877
+!i10b 1
+!s100 RcX4M>>CYVNn=OLUKEo6E1
+InIYIiN;QbChDC@TUJ]_Gf3
+R5
+R6
+Z10 w1693818766
+Z11 8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_workfile/prim_sim.v
+Z12 FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_workfile/prim_sim.v
+L0 12363
+R7
+r1
+!s85 0
+31
+Z13 !s108 1725168877.360000
+Z14 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_workfile/prim_sim.v|
+Z15 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_workfile/prim_sim.v|
+!i113 0
+R8
+n@a@l@u54@d
+vBuffer
+!s110 1725168990
+!i10b 1
+!s100 IjS8]e^;:L7oCnl;YhSb@3
+I=i<=Qff<9B[8EQ7TMmfdg0
+R5
+R6
+w1725168949
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Buffer.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Buffer.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1725168990.299000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Buffer.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Buffer.v|
+!i113 0
+R8
+n@buffer
+vBUFG
+R9
+!i10b 1
+!s100 ;e^DYDOK0b6]FD;>>l>8n2
+IVn`8ZV^4YF@n=BN[@2aob3
+R5
+R6
+R10
+R11
+R12
+L0 12719
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@b@u@f@g
+vBUFS
+R9
+!i10b 1
+!s100 `9fNQmSS<57NJ1OEP;0lL1
+Ic[LX:kKeQCL4TbB83O:ff3
+R5
+R6
+R10
+R11
+R12
+L0 12729
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@b@u@f@s
+vBUS
+Z16 !s110 1725168878
+!i10b 1
+!s100 EhgA1R61JEdno@]`HA@bT2
+IY;QkZ;o@4DW@a3LR0<6fj2
+R5
+R6
+w1725038582
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/BUS.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/BUS.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168878.072000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/BUS.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/BUS.v|
+!i113 0
+R8
+n@b@u@s
+vButtom
+R16
+!i10b 1
+!s100 JCi@=FnPm_^@@`h_lYBQA0
+IC5ToT5fL3A:[MOX?JV9;72
+R5
+R6
+w1725038907
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Buttom.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Buttom.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168878.127000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Buttom.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Buttom.v|
+!i113 0
+R8
+n@buttom
+vCLKDIV
+R9
+!i10b 1
+!s100 @1n5K6aN2:DcA8Lfm7oEI2
+IYQlYQLR`V?YKcC5PDJ7gM0
+R5
+R6
+R10
+R11
+R12
+L0 13494
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@c@l@k@d@i@v
+vCLKDIV2
+R9
+!i10b 1
+!s100 55>65ZNCe`AmKEQU9a3NY1
+IzJHhn:_I60:B9^7ZXCPA92
+R5
+R6
+R10
+R11
+R12
+L0 14799
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@c@l@k@d@i@v2
+vCLKDIVG
+R9
+!i10b 1
+!s100 m0ecD2E:Fd234]3b;o8a81
+INOd<5SIT8`i3:`0=Q1n``2
+R5
+R6
+R10
+R11
+R12
+L0 15485
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@c@l@k@d@i@v@g
+vCMP
+R16
+!i10b 1
+!s100 ;z4NR6B?:_>K4S::7HL^K2
+I>b0L]?][mfaHlz@[mGa=m0
+R5
+R6
+w1725039061
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CMP.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CMP.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168878.951000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CMP.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CMP.v|
+!i113 0
+R8
+n@c@m@p
+vCounter
+R16
+!i10b 1
+!s100 C=nXNMgNOnYQX7lgV3z8_3
+I@7nmh9dYk4Z5WLnaMh`5Y1
+R5
+R6
+w1725038056
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Counter.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Counter.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1725168878.181000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Counter.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Counter.v|
+!i113 0
+R8
+n@counter
+vCPU
+R4
+!i10b 1
+!s100 4AdzKCgXSJo1O>5cVKW^P0
+If8I>M;5@A48]ERC07J5`z2
+R5
+R6
+w1725039171
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CPU.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CPU.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168879.007000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CPU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/CPU.v|
+!i113 0
+R8
+n@c@p@u
+vCrtl
+R4
+!i10b 1
+!s100 kU>[I1Y@Zn10=4[bz87z=2
+Id1Bd9emLe:=ci_X3PCESA2
+R5
+R6
+w1725039075
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/Crtl.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/Crtl.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168879.061000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/Crtl.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/Crtl.v|
+!i113 0
+R8
+n@crtl
+vdata_mem
+R4
+!i10b 1
+!s100 I:>hW=QO9_0=gDY4nCGTM0
+I[JlfCCfj2gah;A>1ZhmZo0
+R5
+R6
+w1724652459
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_sp/data_mem.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_sp/data_mem.v
+Z17 L0 10
+R7
+r1
+!s85 0
+31
+!s108 1725168879.553000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_sp/data_mem.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_sp/data_mem.v|
+!i113 0
+R8
+vDCS
+R9
+!i10b 1
+!s100 TDVQmA;Dka8T@cfDbS5;Z3
+I_LPb:M75PQT8KK1A:EiC52
+R5
+R6
+R10
+R11
+R12
+L0 14529
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@c@s
+vDeviceclk
+R16
+!i10b 1
+!s100 oGX6TImOFC>En1bERh0[^1
+IzLU@1<MfLzPa`MEAUo67;2
+R5
+R6
+w1725039436
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Deviceclk.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Deviceclk.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1725168878.234000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Deviceclk.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Deviceclk.v|
+!i113 0
+R8
+n@deviceclk
+vDFF
+R9
+!i10b 1
+!s100 e7G?_3_5A3Dd>ce]WERUj0
+IC998NXSIR7U42iBOCRWjI1
+R5
+R6
+R10
+R11
+R12
+L0 386
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f
+vDFFC
+R9
+!i10b 1
+!s100 j]:E[`:NG5_@<hYcabQKH1
+IWh:6HUXL4?I8X4=6PTz=W2
+R5
+R6
+R10
+R11
+R12
+L0 621
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@c
+vDFFCE
+R9
+!i10b 1
+!s100 ;E^6Le9]j[eA>gPKL;0ad2
+I:b>W[AELRY;7LiCmjUL^z1
+R5
+R6
+R10
+R11
+R12
+L0 650
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@c@e
+vDFFE
+R9
+!i10b 1
+!s100 7P@?aG5DHFzY;jBZczJ]f0
+ISJf7^lKGe5m?cM0IR[PAl0
+R5
+R6
+R10
+R11
+R12
+L0 413
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@e
+vDFFN
+R9
+!i10b 1
+!s100 >PMeQ_JHQPJBGl690Y[?Q1
+I<8DN^XO3zc60F<e0^d[0]1
+R5
+R6
+R10
+R11
+R12
+L0 680
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@n
+vDFFNC
+R9
+!i10b 1
+!s100 U;oK0HzbM_<@:mPZER:;_1
+IkQ]5LccbeQ4Bd9Q3Wn9P12
+R5
+R6
+R10
+R11
+R12
+L0 915
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@n@c
+vDFFNCE
+R9
+!i10b 1
+!s100 L3b=dfMi_W^KJk0Hm9KK<2
+IcNI=jo1d=5Uh2[IlNKzLh3
+R5
+R6
+R10
+R11
+R12
+L0 944
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@n@c@e
+vDFFNE
+R9
+!i10b 1
+!s100 XRUGf;RR`NTce_ZXdeI>11
+I>OXZWPja>H5Mo6<4i=0A`1
+R5
+R6
+R10
+R11
+R12
+L0 707
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@n@e
+vDFFNP
+R9
+!i10b 1
+!s100 Lmi7Sib2hh[e7EVAZ8AhC1
+IQz5g[K8=Y6KA=<4BjRE:j2
+R5
+R6
+R10
+R11
+R12
+L0 856
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@n@p
+vDFFNPE
+R9
+!i10b 1
+!s100 ldMUYm;fTV20fP7]S[IQF0
+I]b2ILJ`U;`:JIHKD4Ih2o1
+R5
+R6
+R10
+R11
+R12
+L0 885
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@n@p@e
+vDFFNR
+R9
+!i10b 1
+!s100 EhjQj[4HQ2YzGH3^eRDFD3
+IXNc]0eQ2dcHEWTm>lCScJ1
+R5
+R6
+R10
+R11
+R12
+L0 796
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@n@r
+vDFFNRE
+R9
+!i10b 1
+!s100 QkdTU]c;O<Q2?`eBz]QB90
+IohYeMkn=IO38Ef`SMm<bg2
+R5
+R6
+R10
+R11
+R12
+L0 826
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@n@r@e
+vDFFNS
+R9
+!i10b 1
+!s100 n;8JT3@<El0eBVIQRXkiG2
+IZZl=[G_od7_R3C8;_3:UR2
+R5
+R6
+R10
+R11
+R12
+L0 736
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@n@s
+vDFFNSE
+R9
+!i10b 1
+!s100 IXzkc1AbTK:<RHUkLl1?h1
+I0AfEz=RGh?^LZbj9iU_[;3
+R5
+R6
+R10
+R11
+R12
+L0 766
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@n@s@e
+vDFFP
+R9
+!i10b 1
+!s100 z:zNF]fJCg:9?ZGE@]5Vi3
+InCQoD4d]C`Fz?Y48IeD1l1
+R5
+R6
+R10
+R11
+R12
+L0 562
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@p
+vDFFPE
+R9
+!i10b 1
+!s100 MIB=i05G?_h]<CiEGd]5N0
+IkZP`n@fU836<:`nNb6LA_2
+R5
+R6
+R10
+R11
+R12
+L0 591
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@p@e
+vDFFR
+R9
+!i10b 1
+!s100 [oe2`L3TaCnQ=OLdEDjFQ1
+I?_<>=OnCg:FLUDnMaz6Y>3
+R5
+R6
+R10
+R11
+R12
+L0 502
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@r
+vDFFRE
+R9
+!i10b 1
+!s100 TQ6DE;IlEm[U4Jc1LA>[`1
+I>[<Z9:oH3MM7:bnbc_63<1
+R5
+R6
+R10
+R11
+R12
+L0 532
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@r@e
+vDFFS
+R9
+!i10b 1
+!s100 PEPbjSM3ezGV8>_WlYDDA1
+Ilgi<aH_gRS=Km3NV<bgE20
+R5
+R6
+R10
+R11
+R12
+L0 442
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@s
+vDFFSE
+R9
+!i10b 1
+!s100 mnLj:oYlX83PkYbCR3ABk2
+I5P3GjA7^bH>nS>Cb2K_9V1
+R5
+R6
+R10
+R11
+R12
+L0 472
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@f@f@s@e
+vDHCEN
+R9
+!i10b 1
+!s100 o6;bP8f?K75NDe`R_zeX>0
+Ij=INac`P5Gngj8IMOVSBo0
+R5
+R6
+R10
+R11
+R12
+L0 13655
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@h@c@e@n
+vDL
+R9
+!i10b 1
+!s100 ooT:Mk7EMD3_P`Zf=n5^g3
+IcG>d8YPg44]QMn9d`=d=D0
+R5
+R6
+R10
+R11
+R12
+L0 975
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l
+vDLC
+R9
+!i10b 1
+!s100 h7gHMGi?md]CL>dOz?fk01
+I7g=b^j7FQQ1Wii`5V?jH13
+R5
+R6
+R10
+R11
+R12
+L0 1021
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l@c
+vDLCE
+R9
+!i10b 1
+!s100 o=?W^b0bjVJg@GFUF9@7C3
+I5mZm9OSTN8D1g?aE>d^;10
+R5
+R6
+R10
+R11
+R12
+L0 1046
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l@c@e
+vDLE
+R9
+!i10b 1
+!s100 iUgzETgBdFLLiBXO>0ozO3
+IL=_[haR_28H9`d]Zke`l03
+R5
+R6
+R10
+R11
+R12
+L0 998
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l@e
+vDLL
+R9
+!i10b 1
+!s100 He8E8;2h^d0f4DUW[jgQe0
+I^LU>I49VzC==J>AD`EY4d0
+R5
+R6
+R10
+R11
+R12
+L0 13361
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l@l
+vDLLDLY
+R9
+!i10b 1
+!s100 IQ0I3RDK7nnOnD`=>Zc5T0
+IE;dE3Ie5HSVURMe12CA>g0
+R5
+R6
+R10
+R11
+R12
+L0 14420
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l@l@d@l@y
+vDLN
+R9
+!i10b 1
+!s100 m^0=_=LJkPoUUo4`SaHOG2
+IMNX8hG6h4zgTJjWj4fo1]2
+R5
+R6
+R10
+R11
+R12
+L0 1121
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l@n
+vDLNC
+R9
+!i10b 1
+!s100 j4N6<XEI=A]8A52b87bMe0
+I]Fa_RB:cBG7ZBR8UDjo9A1
+R5
+R6
+R10
+R11
+R12
+L0 1167
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l@n@c
+vDLNCE
+R9
+!i10b 1
+!s100 =hXXAeW@<n]c0Q`n[[NRB2
+ITN8ZSgQ>kiXNTZjB`HWQ_3
+R5
+R6
+R10
+R11
+R12
+L0 1192
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l@n@c@e
+vDLNE
+R9
+!i10b 1
+!s100 cS<3BB2BbCgJdElNR<B`F2
+I:?mg5GaS]BmD@PXCQ3Rk@0
+R5
+R6
+R10
+R11
+R12
+L0 1144
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l@n@e
+vDLNP
+R9
+!i10b 1
+!s100 @5M2Nk1C;m>`=iBHYHelP3
+I^5@>3jF3g0T8kB;i23B962
+R5
+R6
+R10
+R11
+R12
+L0 1217
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l@n@p
+vDLNPE
+R9
+!i10b 1
+!s100 Y478BA^H470M><dgWKJL:3
+IRY>:oGhc>mcf_^9=hDImF1
+R5
+R6
+R10
+R11
+R12
+L0 1242
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l@n@p@e
+vDLP
+R9
+!i10b 1
+!s100 M[:eQERVloQ1hj0S3fdh_0
+IOJVaRY^_DAf1WlV9COQ5G0
+R5
+R6
+R10
+R11
+R12
+L0 1071
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l@p
+vDLPE
+R9
+!i10b 1
+!s100 YnPcA>CC1081m0BR<Q4650
+I9JaMDLUi74HCl9aC=kjD_1
+R5
+R6
+R10
+R11
+R12
+L0 1096
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@l@p@e
+vDP
+R9
+!i10b 1
+!s100 ;PkH7@EF7F7FAHK6ialGN2
+IgOQ<egzi32Fk_kFPnZAbb3
+R5
+R6
+R10
+R11
+R12
+L0 5411
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@p
+vDPB
+R9
+!i10b 1
+!s100 JJ]jk7biSE`:MoA4_P4Ui0
+IL8nFfl_bEnkSS@9d_0d`j2
+R5
+R6
+R10
+R11
+R12
+L0 8288
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@p@b
+vDPX9
+R9
+!i10b 1
+!s100 iAf^2ac]nSh1B?aK:zFGo0
+Ib<ANcR4FS=eh;Wa4Dm<jh2
+R5
+R6
+R10
+R11
+R12
+L0 5801
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@p@x9
+vDPX9B
+R9
+!i10b 1
+!s100 @:lRWEkbEWKDdCGecOD>j1
+Ijm43hZ^;JAHhHNi<lm>Aj0
+R5
+R6
+R10
+R11
+R12
+L0 8686
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@p@x9@b
+vDQCE
+R9
+!i10b 1
+!s100 9@=jjTB=]CbGmnWO1z<B;3
+I``03oGf8iifTBlaRRnT563
+R5
+R6
+R10
+R11
+R12
+L0 14784
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@q@c@e
+vDQS
+R9
+!i10b 1
+!s100 7clI?EjST[c3e9S_njF<_2
+IT@iT2^Z=Jh`BWJWREHP^10
+R5
+R6
+R10
+R11
+R12
+L0 13674
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@d@q@s
+vELVDS_IBUF
+R9
+!i10b 1
+!s100 ?Zmh2k6RKQ^G0O0dK8e0C1
+I^h8=6XMV;`HcK=^]kZRT`0
+R5
+R6
+R10
+R11
+R12
+L0 13312
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@e@l@v@d@s_@i@b@u@f
+vELVDS_IBUF_MIPI
+R9
+!i10b 1
+!s100 WY_AIZAeO;]^Y8bORc6h10
+I>:o?D4[XlRAM`H]eX3nXi2
+R5
+R6
+R10
+R11
+R12
+L0 16684
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@e@l@v@d@s_@i@b@u@f_@m@i@p@i
+vELVDS_IBUF_R
+R9
+!i10b 1
+!s100 <dnZR@3I;]k@R?G6gYICm3
+I@WL55SH8<]3gVil3H6Y9f1
+R5
+R6
+R10
+R11
+R12
+L0 15409
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@e@l@v@d@s_@i@b@u@f_@r
+vELVDS_IOBUF
+R9
+!i10b 1
+!s100 1HU@[i?F23Z2W:;^c^ZcZ2
+I]l8e_GGGkXEb`;ahTdJn_3
+R5
+R6
+R10
+R11
+R12
+L0 13343
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@e@l@v@d@s_@i@o@b@u@f
+vELVDS_IOBUF_R
+R9
+!i10b 1
+!s100 _YN50GbXfO<XW_`]]:5?c0
+IM086D9n4NcG46jZ4Bmg[60
+R5
+R6
+R10
+R11
+R12
+L0 15426
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@e@l@v@d@s_@i@o@b@u@f_@r
+vELVDS_OBUF
+R9
+!i10b 1
+!s100 j]g=iA7[=@4iVF[CPTPen1
+I6eP9f8=?2Pdd3d_>MBdnG1
+R5
+R6
+R10
+R11
+R12
+L0 13327
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@e@l@v@d@s_@o@b@u@f
+vELVDS_TBUF
+R9
+!i10b 1
+!s100 ERR39jz2@HKV<5nzmj55<1
+I7=fZHPShP6<?G=nEP?G;h1
+R5
+R6
+R10
+R11
+R12
+L0 13336
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@e@l@v@d@s_@t@b@u@f
+vEX
+R4
+!i10b 1
+!s100 o<2;ba1b0cQh5@B<o`ZW]3
+IPU=]5>DJ]EfQWk]ddej`^1
+R5
+R6
+w1725039084
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/EX.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/EX.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168879.114000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/EX.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/EX.v|
+!i113 0
+R8
+n@e@x
+vGND
+R9
+!i10b 1
+!s100 O6E4R3h<51_G@X8@@hPnL0
+IzJKg]8i`0DbA7N8fVjOJz0
+R5
+R6
+R10
+R11
+R12
+L0 12740
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@g@n@d
+vGSR
+R9
+!i10b 1
+!s100 gHB8dZNF^95a:9@><Kd]40
+I82@_e4b`bAZ^M@ig9RocZ3
+R5
+R6
+R10
+R11
+R12
+L0 12762
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@g@s@r
+vI3C_IOBUF
+R9
+!i10b 1
+!s100 2SYTZmM@O1GXVeGGRFIz]1
+I`Al`Ea0YAKcU[jedU?d1n1
+R5
+R6
+R10
+R11
+R12
+L0 16744
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i3@c_@i@o@b@u@f
+vIBUF
+R9
+!i10b 1
+!s100 fGbo3>7FG3HB:O<0Ni3Mc3
+IehQLa1:<OK65>eUm`4J_Z3
+R5
+R6
+R10
+R11
+R12
+L0 1276
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@b@u@f
+vIBUF_R
+R9
+!i10b 1
+!s100 Kk6ELco4ECZ<GPcTcIYIO3
+IJ_=H8Pgk7cYA?o?;iaKo02
+R5
+R6
+R10
+R11
+R12
+L0 15385
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@b@u@f_@r
+vID
+R4
+!i10b 1
+!s100 _]n@<ikQ`zGQ=Tl:nZK>S1
+IM4Eo9N5IOFZ9aU^]aCSzC2
+R5
+R6
+w1725039093
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/ID.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/ID.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1725168879.170000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/ID.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/ID.v|
+!i113 0
+R8
+n@i@d
+vIDDR
+R9
+!i10b 1
+!s100 8R<5gm<=3V;NBO_FYo7e_3
+I;D3[eSfM;hi^7S8cl4:Mb3
+R5
+R6
+R10
+R11
+R12
+L0 1318
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@d@d@r
+vIDDR_MEM
+R9
+!i10b 1
+!s100 Ra^6ScI_NK7RKeE]gc5Eb0
+I3Q=FoYef6KCdHHaYY4eJf1
+R5
+R6
+R10
+R11
+R12
+L0 1429
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@d@d@r_@m@e@m
+vIDDRC
+R9
+!i10b 1
+!s100 UNVQC0m26XKO3DBF5]D^b2
+I1<?;::]FWbKazo07KE0Sg2
+R5
+R6
+R10
+R11
+R12
+L0 1370
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@d@d@r@c
+vIDES10
+R9
+!i10b 1
+!s100 @d:79bBGS[Q98XC2JO5OA3
+IZ<cgEzB41]R40=_Z?k=<93
+R5
+R6
+R10
+R11
+R12
+L0 2603
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@d@e@s10
+vIDES4
+R9
+!i10b 1
+!s100 jWFg6d[0klfo8ASJO`>EX1
+IfW7igER5HOSgOazL2WT`]1
+R5
+R6
+R10
+R11
+R12
+L0 1750
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@d@e@s4
+vIDES4_MEM
+R9
+!i10b 1
+!s100 HA;IWma[hU<G8D><N6`o[0
+I_cVm1c]BV_FNjKoG]2;3A0
+R5
+R6
+R10
+R11
+R12
+L0 1906
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@d@e@s4_@m@e@m
+vIDES8
+R9
+!i10b 1
+!s100 @Ldc26ca51z:_Lcid0AWE1
+IVW>WZZY]f4b7bzd>mJO^W1
+R5
+R6
+R10
+R11
+R12
+L0 2232
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@d@e@s8
+vIDES8_MEM
+R9
+!i10b 1
+!s100 ln4>@RPlH54cK93TE2e`=2
+IeS<LBBbbMZz:6RWF=4TYc1
+R5
+R6
+R10
+R11
+R12
+L0 2412
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@d@e@s8_@m@e@m
+vIEM
+R9
+!i10b 1
+!s100 2J@eGWRjcDOodKQKak78=0
+I[jmbhal2H>@T8685QXbD71
+R5
+R6
+R10
+R11
+R12
+L0 3978
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@e@m
+vIF
+R4
+!i10b 1
+!s100 o<X=?JDn3OzhYeBXUO^=00
+I1IiZ@;XTg59hJ=M[0Tn8a3
+R5
+R6
+w1725107702
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/IF.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/IF.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1725168879.225000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/IF.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/IF.v|
+!i113 0
+R8
+n@i@f
+vInCtrl_LED
+R16
+!i10b 1
+!s100 L]@a;mAJJ45TAMjlG6@2U1
+IcEo1DA7Zd]cZljkoO3YYX0
+R5
+R6
+w1725038087
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/InCtrl_LED.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/InCtrl_LED.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1725168878.292000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/InCtrl_LED.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/InCtrl_LED.v|
+!i113 0
+R8
+n@in@ctrl_@l@e@d
+vInCtrl_Tube
+R16
+!i10b 1
+!s100 lcc_R?3NC3zKYZ0bmI7W03
+I4G44@3Lf^lEW4FON@6CGe0
+R5
+R6
+w1725039512
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/InCtrl_Tube.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/InCtrl_Tube.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1725168878.348000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/InCtrl_Tube.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/InCtrl_Tube.v|
+!i113 0
+R8
+n@in@ctrl_@tube
+vinst_mem
+R4
+!i10b 1
+!s100 GIn=[7k=hY8P_m^KBRC:V2
+I`9?]DLI=DMamA68zHZ:=c2
+R5
+R6
+w1725039705
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_rom16/inst_mem.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_rom16/inst_mem.v
+R17
+R7
+r1
+!s85 0
+31
+!s108 1725168879.449000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_rom16/inst_mem.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_rom16/inst_mem.v|
+!i113 0
+R8
+vINV
+R9
+!i10b 1
+!s100 BVXc1jBTnOdQd6M`zzb>b3
+IojEZYinVjbMk0Dm=foGCf0
+R5
+R6
+R10
+R11
+R12
+L0 1267
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@n@v
+vIOBUF
+R9
+!i10b 1
+!s100 g3:JZ^K4NRUfdc0Z6]cYB0
+IbcVC1>M][eF`6iR:_1eD`3
+R5
+R6
+R10
+R11
+R12
+L0 1306
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@o@b@u@f
+vIOBUF_R
+R9
+!i10b 1
+!s100 2^S:0o`]IleA`h9<NHW0c2
+IaTRIC19_ZN`YVKL?ld8]32
+R5
+R6
+R10
+R11
+R12
+L0 15396
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@o@b@u@f_@r
+vIODELAY
+R9
+!i10b 1
+!s100 WoXg>YVd<]aSV3NNkfYOU2
+Io;4GJG1F@J5hl[K`]C[390
+R5
+R6
+R10
+R11
+R12
+L0 3923
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@o@d@e@l@a@y
+vIODELAYA
+R9
+!i10b 1
+!s100 2ZFK6X:]?n2b1mJF6CTTI2
+I:3bjY36mbgeKLaMCXg7oF3
+R5
+R6
+R10
+R11
+R12
+L0 14842
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@o@d@e@l@a@y@a
+vIVIDEO
+R9
+!i10b 1
+!s100 FQ[6@EANb^8GCmnA;PoZW2
+ID[_GDkNCQh=5LI;B>Cl270
+R5
+R6
+R10
+R11
+R12
+L0 2072
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@i@v@i@d@e@o
+vLED
+R16
+!i10b 1
+!s100 I9@ke>;U@XDE:[A>CjFUe3
+IUl`RmzP3mQQCD7Pm?:QlS0
+R5
+R6
+w1725038914
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/LED.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/LED.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168878.404000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/LED.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/LED.v|
+!i113 0
+R8
+n@l@e@d
+vLUT1
+R9
+!i10b 1
+!s100 KLEMKbk^02HM?TF>X9S[F0
+IAMLWZA4n7R[=nj94o?:[k1
+R5
+R6
+R10
+R11
+R12
+L0 185
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@l@u@t1
+vLUT2
+R9
+!i10b 1
+!s100 FlUX5Fe61F>ZnM4k;8J4]2
+IP1oN@UZ::IWcOKnc8`]4j0
+R5
+R6
+R10
+R11
+R12
+L0 197
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@l@u@t2
+vLUT3
+R9
+!i10b 1
+!s100 E1DS43;CGMXVJ>G_aYTVk1
+Ibon`JA3i9MP7PCR_gHoTm0
+R5
+R6
+R10
+R11
+R12
+L0 209
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@l@u@t3
+vLUT4
+R9
+!i10b 1
+!s100 UVCn=Y3iL7VSooUeX?O3_3
+I2]@nfkP79cKz;JZS:^@=z3
+R5
+R6
+R10
+R11
+R12
+L0 221
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@l@u@t4
+vLUT5
+R9
+!i10b 1
+!s100 nSi:BRJ1[gHjI7AM4gQ@:0
+I6WQ;]obhhf?ZE3o@8?Y_30
+R5
+R6
+R10
+R11
+R12
+L0 233
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@l@u@t5
+vLUT6
+R9
+!i10b 1
+!s100 ;]l5SmL>I^oC?94`cIlM;3
+I?^Q=KlU@I^Y49SPEBUA2a0
+R5
+R6
+R10
+R11
+R12
+L0 245
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@l@u@t6
+vLUT7
+R9
+!i10b 1
+!s100 Ic@eDj5gFK4GX0Sd>7j@81
+IiG9R5f;JiVIQYVE:i6iHX2
+R5
+R6
+R10
+R11
+R12
+L0 265
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@l@u@t7
+vLUT8
+R9
+!i10b 1
+!s100 Pf]_d9L;BDjEo>keA;EXh2
+I1jWRIX;BBo0zAVO8g1Y6<2
+R5
+R6
+R10
+R11
+R12
+L0 285
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@l@u@t8
+vMIPI_IBUF
+R9
+!i10b 1
+!s100 jNOQGSPE]o@7;3Xl?57^M2
+IY7AWPXdGoGzeRRTCBO2]o2
+R5
+R6
+R10
+R11
+R12
+L0 16711
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@i@p@i_@i@b@u@f
+vMULT18X18
+R9
+!i10b 1
+!s100 ;KK55P>i61a>kBmYLgVik0
+IdOn;0mUQ]acVL[L:QA^On0
+R5
+R6
+R10
+R11
+R12
+L0 9696
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@l@t18@x18
+vMULT36X36
+R9
+!i10b 1
+!s100 :GFhSJf[<M18K@kQ`HM`O2
+IK:nUFW42nj_L7GX@4W<CJ2
+R5
+R6
+R10
+R11
+R12
+L0 10057
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@l@t36@x36
+vMULT9X9
+R9
+!i10b 1
+!s100 7jfMYE7QB@cMLJM=LkZ8M3
+IA9Z8j@XE7aKOnzG^ZDJF51
+R5
+R6
+R10
+R11
+R12
+L0 9339
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@l@t9@x9
+vMULTADDALU18X18
+R9
+!i10b 1
+!s100 Iid:S6m:_h3aI10Ya8OZS3
+ICWCj:5WhaRf8W[eD@Q]Tj3
+R5
+R6
+R10
+R11
+R12
+L0 10915
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@l@t@a@d@d@a@l@u18@x18
+vMULTALU18X18
+R9
+!i10b 1
+!s100 ^>6oAMPViPQ7jleNQ>6m[2
+I[N_Gk<U>CdAPjDSmlA1BM2
+R5
+R6
+R10
+R11
+R12
+L0 11765
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@l@t@a@l@u18@x18
+vMULTALU36X18
+R9
+!i10b 1
+!s100 Q;VS6AS_OIeI9NB1D7IW02
+IR3;DlLe6O>iac8EWi4QSZ0
+R5
+R6
+R10
+R11
+R12
+L0 10435
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@l@t@a@l@u36@x18
+vMUX16
+R9
+!i10b 1
+!s100 kWkDgdB=:;9[[EI?Bj@EU0
+IfKRlm_m`:^k1BfniJlRYF2
+R5
+R6
+R10
+R11
+R12
+L0 150
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@x16
+vMUX2
+R9
+!i10b 1
+!s100 z2z2;`HNKk`1B]44K1o]U3
+I;kNP17?B@fY<D>3NkhTBj0
+R5
+R6
+R10
+R11
+R12
+L0 41
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@x2
+Umux2
+R9
+!i10b 1
+!s100 [f8k]@dXL6afITfFO?P8T3
+IEWA]JICd]8<EBzAM;AQSY0
+R5
+R6
+R10
+R11
+R12
+L0 20
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+vMUX2_LUT5
+R9
+!i10b 1
+!s100 6Gjfnz@le7];h3^WX9MY40
+I:6@Fl=8VNc]Ca8kLS9K;M3
+R5
+R6
+R10
+R11
+R12
+L0 51
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@x2_@l@u@t5
+vMUX2_LUT6
+R9
+!i10b 1
+!s100 C<Hc;kbZkGzHZQMgP=VbI2
+IRcMRG<S@TeHFC;4DQmeZo1
+R5
+R6
+R10
+R11
+R12
+L0 61
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@x2_@l@u@t6
+vMUX2_LUT7
+R9
+!i10b 1
+!s100 1;@Q[dVS[G=lO[:i@1YFo2
+I`jbNQdiOGT]AVkSRkzS3k3
+R5
+R6
+R10
+R11
+R12
+L0 71
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@x2_@l@u@t7
+vMUX2_LUT8
+R9
+!i10b 1
+!s100 GZnc<IWZ=i4YTBGV3_A^=0
+I2L@z5kD`EB6N]MH3Kl`1H3
+R5
+R6
+R10
+R11
+R12
+L0 81
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@x2_@l@u@t8
+vMUX2_MUX16
+R9
+!i10b 1
+!s100 b]R7d58P?W7Q5:IZNnRo[2
+IRY<Q7JkK@d[_^@0U?TF772
+R5
+R6
+R10
+R11
+R12
+L0 101
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@x2_@m@u@x16
+vMUX2_MUX32
+R9
+!i10b 1
+!s100 jOh<YkkElaf@2Z6zdEdeR1
+I8nTRc5;IA`>N5Yf^^d=lD0
+R5
+R6
+R10
+R11
+R12
+L0 111
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@x2_@m@u@x32
+vMUX2_MUX8
+R9
+!i10b 1
+!s100 3L6zjh6lZX6Ae6biDjKVl3
+I[_?TdzLT5g>@P^RG1PFcH1
+R5
+R6
+R10
+R11
+R12
+L0 91
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@x2_@m@u@x8
+vMUX32
+R9
+!i10b 1
+!s100 4LV9_HW7?F3T]2jZ?9e2A3
+Im^:6l<KBkIB6LP86;c3B42
+R5
+R6
+R10
+R11
+R12
+L0 166
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@x32
+vMUX4
+R9
+!i10b 1
+!s100 o`^8G0R2<flnf:8JaS`M52
+InBHjGE3Yof1Tb@9n2_?T^3
+R5
+R6
+R10
+R11
+R12
+L0 121
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@x4
+vMUX8
+R9
+!i10b 1
+!s100 dE=QOE^A3FQ:`=mO_@?L;2
+I`3YML3I1Ki5fH1K9lDcO01
+R5
+R6
+R10
+R11
+R12
+L0 135
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@m@u@x8
+vOBUF
+R9
+!i10b 1
+!s100 ^KSbg3AL]O208g1z`EPH=0
+I[dM6O=afI:ldIcWGJ;]3b0
+R5
+R6
+R10
+R11
+R12
+L0 1286
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@o@b@u@f
+vODDR
+R9
+!i10b 1
+!s100 N@R4l0KX@af>G5bhYN`1f1
+I@9M[7^;Wh=C6Mk]9M2PXB2
+R5
+R6
+R10
+R11
+R12
+L0 1488
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@o@d@d@r
+vODDR_MEM
+R9
+!i10b 1
+!s100 Xm?@I[4If>I<4U=1l5ZBD3
+IPJjb91zLIdE?L@HR5]XM00
+R5
+R6
+R10
+R11
+R12
+L0 1660
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@o@d@d@r_@m@e@m
+vODDRC
+R9
+!i10b 1
+!s100 ]c?1C`6:A09dQzI1bzBPG3
+I3V=nFH4;IbH`FTFQL3N6V3
+R5
+R6
+R10
+R11
+R12
+L0 1569
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@o@d@d@r@c
+vOSC
+R9
+!i10b 1
+!s100 O?9mPCMGklIZC7V:QWMH^1
+I]EY9Hh^L7Wjc;[fPo0AE32
+R5
+R6
+R10
+R11
+R12
+L0 12773
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@o@s@c
+vOSCW
+R9
+!i10b 1
+!s100 <CU6`jhG<2k::`2JCk5^R1
+I_L?3mNJo5czeOeVNDSNS_2
+R5
+R6
+R10
+R11
+R12
+L0 15446
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@o@s@c@w
+vOSER10
+R9
+!i10b 1
+!s100 =:W0CLU5HKBdNG`i@f?7c3
+IY;7>?>SRQKH3SkOh1LP@j3
+R5
+R6
+R10
+R11
+R12
+L0 3775
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@o@s@e@r10
+vOSER4
+R9
+!i10b 1
+!s100 W@:2:D36J;?2G`h6H4f`O0
+INc<ZM^bIB8V[j@fdEDjD]1
+R5
+R6
+R10
+R11
+R12
+L0 2803
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@o@s@e@r4
+vOSER4_MEM
+R9
+!i10b 1
+!s100 6E?I4N=<<a=S?ZneaE>e=2
+IGZB0=ZbnV7[Uf`ik78`HO0
+R5
+R6
+R10
+R11
+R12
+L0 2976
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@o@s@e@r4_@m@e@m
+vOSER8
+R9
+!i10b 1
+!s100 Zd5@6zV75hWIl:IOEK`3I3
+I^WnI2<V=m`AAio>DV7VK>0
+R5
+R6
+R10
+R11
+R12
+L0 3380
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@o@s@e@r8
+vOSER8_MEM
+R9
+!i10b 1
+!s100 OOVM9I]gOd@igJoRh_Z`K0
+I]n5:4MFgXcJM3RUXo>2Cl2
+R5
+R6
+R10
+R11
+R12
+L0 3562
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@o@s@e@r8_@m@e@m
+vOTP
+R9
+!i10b 1
+!s100 9TgX3]Po?4>DOi_lRTla90
+I1n:6TJ5Ug[@cc8C01nV:n1
+R5
+R6
+R10
+R11
+R12
+L0 15471
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@o@t@p
+vOutCtrl_Buttom
+R16
+!i10b 1
+!s100 hf`6XPaMJYoSo86liliNc0
+I;H`FB1G84_eUbWGDXhT:]1
+R5
+R6
+w1725039524
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/OutCtrl_Buttom.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/OutCtrl_Buttom.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1725168878.458000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/OutCtrl_Buttom.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/OutCtrl_Buttom.v|
+!i113 0
+R8
+n@out@ctrl_@buttom
+vOutCtrl_Switch
+R16
+!i10b 1
+!s100 2FOW_l2j^3oT<HS5XE3Qb1
+Ie;[YzdNQ3Y<e_;P^Xj]VP1
+R5
+R6
+w1725038209
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/OutCtrl_Switch.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/OutCtrl_Switch.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1725168878.512000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/OutCtrl_Switch.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/OutCtrl_Switch.v|
+!i113 0
+R8
+n@out@ctrl_@switch
+vOVIDEO
+R9
+!i10b 1
+!s100 VWi<G2`fDQ0koS_omXZUn0
+Ikc<LDZBVbizG3:92nPS<U1
+R5
+R6
+R10
+R11
+R12
+L0 3183
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@o@v@i@d@e@o
+vPADD18
+R9
+!i10b 1
+!s100 @ijOAHZ4MF2HQHV;gi`5Y3
+ITL`5o_kW_TI77cKkYIHm=0
+R5
+R6
+R10
+R11
+R12
+L0 9043
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@p@a@d@d18
+vPADD9
+R9
+!i10b 1
+!s100 KMnCWSg07:E:0Tbdc;f[F1
+Ih41]kb2bEc18kG=mDWc@B3
+R5
+R6
+R10
+R11
+R12
+L0 9191
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@p@a@d@d9
+vPLL
+R9
+!i10b 1
+!s100 agXk[9Jf@2VcSQ02nHil13
+I^gmAlHbaR]T3a?GNH`]GW2
+R5
+R6
+R10
+R11
+R12
+L0 12799
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@p@l@l
+vPLLO
+R9
+!i10b 1
+!s100 F]:U2`eoBaBAlAWkUV]Ch3
+Igm@?EF;LLez^ciJV::MVS1
+R5
+R6
+R10
+R11
+R12
+L0 15646
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@p@l@l@o
+vpROM
+R9
+!i10b 1
+!s100 3L]08;fd0mJ;FXZQAXf9^2
+I1PL8PiFSzfM[AdUka[oa23
+R5
+R6
+R10
+R11
+R12
+L0 7417
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+np@r@o@m
+vpROMX9
+R9
+!i10b 1
+!s100 N2nQSCin^_2hG^RXL1fUH3
+IgYB:>iPD<;lPNFUB7G:EV0
+R5
+R6
+R10
+R11
+R12
+L0 7607
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+np@r@o@m@x9
+vRAM
+R16
+!i10b 1
+!s100 gmZiiP6mE7UmF5;];BG1O3
+IS2@B3fmc[_[A1hdO<Efk23
+R5
+R6
+w1725038240
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/RAM.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/RAM.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168878.567000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/RAM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/RAM.v|
+!i113 0
+R8
+n@r@a@m
+vRAM16S1
+R9
+!i10b 1
+!s100 JZmae04?5A3UBO8G<o=IR3
+IR<ToHW?W=>=``m44`_[Mb1
+R5
+R6
+R10
+R11
+R12
+L0 4108
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@r@a@m16@s1
+vRAM16S2
+R9
+!i10b 1
+!s100 oQ`H<LDXdRd1:e]W`AN[b0
+I[`dhJMI7ei:8><7?n_JzM1
+R5
+R6
+R10
+R11
+R12
+L0 4132
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@r@a@m16@s2
+vRAM16S4
+R9
+!i10b 1
+!s100 <_am]mlmS]WeU>6^S>oeZ1
+I7SECDeIcNZiYjcF4jY?e90
+R5
+R6
+R10
+R11
+R12
+L0 4165
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@r@a@m16@s4
+vRAM16SDP1
+R9
+!i10b 1
+!s100 D07[2^H@i154i?`ZjU`LT0
+Ia^^<EgGNlgN9m>IgVbDd:2
+R5
+R6
+R10
+R11
+R12
+L0 4208
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@r@a@m16@s@d@p1
+vRAM16SDP2
+R9
+!i10b 1
+!s100 ;T^3gZck:C7DnGfo7@KQh2
+IZXdaKGn9dA><kEDKRJ0aE1
+R5
+R6
+R10
+R11
+R12
+L0 4233
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@r@a@m16@s@d@p2
+vRAM16SDP4
+R9
+!i10b 1
+!s100 ZcM:f_j34@4M0U7Qf0hea1
+ISknZAhhfT<fJX6TW`<5972
+R5
+R6
+R10
+R11
+R12
+L0 4266
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@r@a@m16@s@d@p4
+vREG
+R4
+!i10b 1
+!s100 jUJ<ln78:<7oB24Fa4^fO1
+I@8RigU[XK6AQ7DBS2O4YM0
+R5
+R6
+w1725039110
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/REG.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/REG.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168879.279000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/REG.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/REG.v|
+!i113 0
+R8
+n@r@e@g
+vROM
+R9
+!i10b 1
+!s100 @?<>Fk_KVXJFN^nG_L6^z3
+InNXc>LHm:Bjj>@_918z;73
+R5
+R6
+R10
+R11
+R12
+L0 6149
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@r@o@m
+vROM16
+R9
+!i10b 1
+!s100 kF7`RMAfz4K?UPdCVA4Ln1
+IV5H5i>l4C:SQ2LU9Oi;Pj2
+R5
+R6
+R10
+R11
+R12
+L0 4310
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@r@o@m16
+vROMX9
+R9
+!i10b 1
+!s100 2J0JgSfH3Dbod2b<W@?5<1
+Iec;<I[FY:iC>R`X8A<=j>0
+R5
+R6
+R10
+R11
+R12
+L0 6352
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@r@o@m@x9
+vrPLL
+R9
+!i10b 1
+!s100 7T=bCj_0L5GQ8P4PVefB43
+In5O08DTcnT>P:`c^_]l0J3
+R5
+R6
+R10
+R11
+R12
+L0 14915
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+nr@p@l@l
+vrROM
+R9
+!i10b 1
+!s100 i]0WXP2G>@R?;;3JMAMHD0
+IF>;Ra]SH3RXj6eW6EQ`UM0
+R5
+R6
+R10
+R11
+R12
+L0 7033
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+nr@r@o@m
+vrROMX9
+R9
+!i10b 1
+!s100 SF6]_nLn0:O^ad_DNSi;61
+IZT6M5[Zh_ATHJ7:6gDR=z2
+R5
+R6
+R10
+R11
+R12
+L0 7236
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+nr@r@o@m@x9
+vrSDP
+R9
+!i10b 1
+!s100 2V`T_LE=C>IHU_MTC>=R52
+IOY<QCNcHXZ4>fJO4B3I5f0
+R5
+R6
+R10
+R11
+R12
+L0 6534
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+nr@s@d@p
+vrSDPX9
+R9
+!i10b 1
+!s100 e;HgR9SzTJVX;WzE7<Ag_3
+IJO=:6an`HA`0PgWWbTEzm0
+R5
+R6
+R10
+R11
+R12
+L0 6803
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+nr@s@d@p@x9
+vSAMB
+R9
+!i10b 1
+!s100 [mjM6::JR65;Iib1m9N>I2
+ITTaQH79NfHj:zG2WihMzk3
+R5
+R6
+R10
+R11
+R12
+L0 15478
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@s@a@m@b
+vSDP
+R9
+!i10b 1
+!s100 =4hoIUh?J6nMFHRj][KIO2
+IzL`?Gmno:WaD:P52BQ2U71
+R5
+R6
+R10
+R11
+R12
+L0 4908
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@s@d@p
+vSDPB
+R9
+!i10b 1
+!s100 [bLOdL[NCYeZ7I1U:LGhi3
+IN6fdZWSPYkeW8T]4SY`6l3
+R5
+R6
+R10
+R11
+R12
+L0 7775
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@s@d@p@b
+vSDPX9
+R9
+!i10b 1
+!s100 [7M^CPP`>FcAoPSf9a9fb2
+Iik=ooOKWn_C<QE[g^KfQX0
+R5
+R6
+R10
+R11
+R12
+L0 5179
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@s@d@p@x9
+vSDPX9B
+R9
+!i10b 1
+!s100 9FCVih5F5l;U`H7mT:=Tg2
+I]PfTkEoQDE;<RCjYFM`dS1
+R5
+R6
+R10
+R11
+R12
+L0 8052
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@s@d@p@x9@b
+vsim
+!i10b 1
+R5
+r1
+!s85 0
+31
+!s100 TI_Y<UALBDeM:Za1g:Vg33
+Ib5^6j8;Yb3Xbo3X2nPzMS2
+dF:/Project/Sipeed/Tang_Primer/CPU/src/gowin_workfile
+w1724654669
+8F:/Project/Sipeed/Tang_Primer/CPU/src/gowin_workfile/tb_top.v
+FF:/Project/Sipeed/Tang_Primer/CPU/src/gowin_workfile/tb_top.v
+L0 3
+R7
+!s108 1724654844.844000
+!s107 F:/Project/Sipeed/Tang_Primer/CPU/src/gowin_workfile/tb_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/Tang_Primer/CPU/src/gowin_workfile/tb_top.v|
+!i113 0
+R8
+vSP
+R9
+!i10b 1
+!s100 YTJTEd]>A@ZA]@P93<>0L3
+Idn=f8lN3D82j>J5[U<]Ea0
+R5
+R6
+R10
+R11
+R12
+L0 4330
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@s@p
+vSPX9
+R9
+!i10b 1
+!s100 9@6[4XTJSa?3DgP@KO>913
+IORShLBiFHb=ggn?3WQhPC3
+R5
+R6
+R10
+R11
+R12
+L0 4628
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@s@p@x9
+vSwitch
+R16
+!i10b 1
+!s100 RJK;FX^IHI]F08j9ANe;e2
+Ic9]j9]DUI;:NZPkT>0hAY2
+R5
+R6
+w1725038920
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Switch.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Switch.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168878.621000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Switch.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Switch.v|
+!i113 0
+R8
+n@switch
+vtb_top
+R9
+!i10b 1
+!s100 W4i6`CWi>ag8Eafg[SjNW2
+Ib9N_1iig0F=R6l;<>Q8h83
+R5
+R6
+w1724953057
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_workfile/tb_top.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_workfile/tb_top.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168877.300000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_workfile/tb_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/gowin_workfile/tb_top.v|
+!i113 0
+R8
+vTBUF
+R9
+!i10b 1
+!s100 ?Id]TK_MLe>DPYQnY9oEF0
+I@AWjm67HJJ@R;B3cK;AU21
+R5
+R6
+R10
+R11
+R12
+L0 1296
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@t@b@u@f
+vTimer
+R16
+!i10b 1
+!s100 KR@zSFLMbOcbYfJMA]RYf3
+IiA@<e^^9[53i1=ECiQ@ZV1
+R5
+R6
+w1725038923
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Timer.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Timer.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168878.674000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Timer.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Timer.v|
+!i113 0
+R8
+n@timer
+vTLVDS_IBUF
+R9
+!i10b 1
+!s100 INJ3OT<z=Y=_3cQ8_3E`00
+IzlgYL6AJbL?Z1XTIk[k=c2
+R5
+R6
+R10
+R11
+R12
+L0 13263
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@t@l@v@d@s_@i@b@u@f
+vTLVDS_IOBUF
+R9
+!i10b 1
+!s100 K6]HcWj>@Yz`0CXch?IUT0
+IA[V:jQN?=hLH>BCk[67Tl3
+R5
+R6
+R10
+R11
+R12
+L0 13294
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@t@l@v@d@s_@i@o@b@u@f
+vTLVDS_OBUF
+R9
+!i10b 1
+!s100 FNF_AcYjRECOkXY=ELmFI0
+IAY;3^aCiXg>7OBk_T]XT=3
+R5
+R6
+R10
+R11
+R12
+L0 13278
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@t@l@v@d@s_@o@b@u@f
+vTLVDS_TBUF
+R9
+!i10b 1
+!s100 [d=R;E9U]R;meb^O_5Mh=2
+IemXC7[BzWkIm<B=`fDeX03
+R5
+R6
+R10
+R11
+R12
+L0 13287
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@t@l@v@d@s_@t@b@u@f
+vtop
+R9
+!i10b 1
+!s100 o>5=g_Pbg@4Lo9d]Kdczb0
+IezS2i5S44V^C;8]9Gi4?J0
+R5
+R6
+w1725039294
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/top.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/top.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168877.897000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/top.v|
+!i113 0
+R8
+vTube
+R16
+!i10b 1
+!s100 kEXTRjk0:Pnac0<ZcKcFc3
+IPa>`oJ]G@?6I1S93C1Mo_2
+R5
+R6
+w1725038329
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Tube.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Tube.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168878.731000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Tube.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/Tube.v|
+!i113 0
+R8
+n@tube
+vUART
+R16
+!i10b 1
+!s100 BPCijOiXg]2Gz8R:N;Db>2
+I`@k7UO:e:mjl:=@nQF?Uf0
+R5
+R6
+w1725039573
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/UART.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/UART.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168878.783000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/UART.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/UART.v|
+!i113 0
+R8
+n@u@a@r@t
+vuart_recv
+R16
+!i10b 1
+!s100 ^Ve:QlL<FCb?8n48D<kM[0
+I3;?:Y9WehL`a[b?[gXHYW1
+R5
+R6
+w1725038746
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/uart_recv.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/uart_recv.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1725168878.841000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/uart_recv.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/uart_recv.v|
+!i113 0
+R8
+vuart_send
+R16
+!i10b 1
+!s100 O24=`BICDFB0XlF>n0j=81
+IA@O;Sf<6D^Ze=flNf[OO62
+R5
+R6
+w1725038780
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/uart_send.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/uart_send.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1725168878.896000
+!s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/uart_send.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/bus/uart_send.v|
+!i113 0
+R8
+vVCC
+R9
+!i10b 1
+!s100 =[KzQ1AZM6YnXZf7I8>6V1
+IboJi5lEm;7>HjF9^Z5oUd1
+R5
+R6
+R10
+R11
+R12
+L0 12751
+R7
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+n@v@c@c
+vWB
+R4
+!i10b 1
+!s100 K3WhK45JYmakIKJ<UV45[1
+IJN2>oZX]L3SOdmOFklZc^1
+R5
+R6
+w1725039123
+8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/WB.v
+FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/WB.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1725168879.339000
+!s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/WB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU/src/cpu/WB.v|
+!i113 0
+R8
+n@w@b
