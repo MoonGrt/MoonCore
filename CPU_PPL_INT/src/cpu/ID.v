@@ -1,14 +1,12 @@
 `include "../para.v"
 
-module ID #(
-    parameter CPU_WIDTH = 16
-) (
+module ID (
     input wire                 rst_n,
-    input wire [CPU_WIDTH-1:0] inst,
+    input wire [`DATABUS] inst,
 
     output wire [2:0] rd,
     output wire [2:0] rs,
-    output wire [CPU_WIDTH-1:0] IMM,
+    output wire [`DATABUS] IMM,
 
     output reg       IMMop,
     output reg [2:0] ALUop,
@@ -25,9 +23,7 @@ module ID #(
     //*****************************************************
     assign rd = inst[7:5];
     assign rs = inst[10:8];
-
-    //assign IMM = IMMSel ? {{8{1'b0}}, inst[CPU_WIDTH-1: 8]}:{{11{inst[CPU_WIDTH-1]}}, inst[CPU_WIDTH-1: 11]};
-    assign IMM = IMMSel ? {{8{1'b0}}, inst[CPU_WIDTH-1: 8]}:{{11{1'b0}}, inst[CPU_WIDTH-1: 11]};   // 立即数设定为无符号数，扩展不考虑负数情况
+    assign IMM = IMMSel ? {{8{1'b0}}, inst[`CPU_WIDTH-1: 8]}:{{11{1'b0}}, inst[`CPU_WIDTH-1: 11]};   // 立即数设定为无符号数，扩展不考虑负数情况
 
     //*****************************************************
     //**              Instruction Decode
@@ -120,7 +116,7 @@ module ID #(
                     ALUop = `ADD_op;
                     IMMop = 1'b1;
                     ABSel = 1'b1;
-                    mem_ctrl = 1'b1;  // 1是写数据
+                    mem_ctrl = 1'b1;
                 end
                 `LW: begin
                     ALUop = `ADD_op;

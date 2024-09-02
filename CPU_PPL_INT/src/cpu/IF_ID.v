@@ -1,14 +1,12 @@
 `include "../para.v"
 
-module IF_ID #(
-    parameter CPU_WIDTH = 16
-) (
-    input wire clk,
-    input wire rst_n,
-    input wire hold_flag,
+module IF_ID (
+    input wire            clk,
+    input wire            rst_n,
+    input wire [`HOLDBUS] hold_flag,
 
-    input wire [CPU_WIDTH-1:0] IF_inst_data,
-    output reg [CPU_WIDTH-1:0] ID_inst_data
+    input  wire [`DATABUS] IF_inst_data,
+    output reg  [`DATABUS] ID_inst_data
 );
 
     //*****************************************************
@@ -16,11 +14,11 @@ module IF_ID #(
     //*****************************************************
     always @(posedge clk or negedge rst_n) begin
         if (~rst_n) begin
-            ID_inst_data[CPU_WIDTH-1:0] <= 'b0;
-        end else if (hold_flag) begin
-            ID_inst_data[CPU_WIDTH-1:0] <= ID_inst_data[CPU_WIDTH-1:0];
+            ID_inst_data[`DATABUS] <= 'b0;
+        end else if ((hold_flag == `Hold_PPL) | (hold_flag == `Hold_ID)) begin
+            ID_inst_data[`DATABUS] <= ID_inst_data[`DATABUS];
         end else begin
-            ID_inst_data[CPU_WIDTH-1:0] <= IF_inst_data[CPU_WIDTH-1:0];
+            ID_inst_data[`DATABUS] <= IF_inst_data[`DATABUS];
         end
     end
 

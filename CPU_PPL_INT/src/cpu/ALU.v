@@ -1,29 +1,27 @@
 `include "../para.v"
 
-module ALU #(
-    parameter CPU_WIDTH = 16
-) (
-    input  wire [CPU_WIDTH-1:0] A,
-    input  wire [CPU_WIDTH-1:0] B,
-    input  wire [          2:0] ALUop,
-    output wire [CPU_WIDTH-1:0] ALUout,
-    output wire                 overflow
+module ALU (
+    input  wire [`DATABUS] A,
+    input  wire [`DATABUS] B,
+    input  wire [     2:0] ALUop,
+    output wire [`DATABUS] ALUout,
+    output wire            overflow
 );
 
-    wire [CPU_WIDTH-1:0] Ain;
-    wire [CPU_WIDTH-1:0] Bin;
-    wire                 suben;
+    wire [`DATABUS] Ain;
+    wire [`DATABUS] Bin;
+    wire            suben;
 
-    wire [CPU_WIDTH-1:0] addOut;
-    wire [CPU_WIDTH-1:0] subOut;
-    wire [CPU_WIDTH-1:0] andOut;
-    wire [CPU_WIDTH-1:0] orOut;
-    wire [CPU_WIDTH-1:0] xorOut;
-    wire [CPU_WIDTH-1:0] sllOut;
-    wire [CPU_WIDTH-1:0] srlOut;
-    wire [CPU_WIDTH-1:0] sraOut;
+    wire [`DATABUS] addOut;
+    wire [`DATABUS] subOut;
+    wire [`DATABUS] andOut;
+    wire [`DATABUS] orOut;
+    wire [`DATABUS] xorOut;
+    wire [`DATABUS] sllOut;
+    wire [`DATABUS] srlOut;
+    wire [`DATABUS] sraOut;
 
-    reg  [CPU_WIDTH-1:0] out_reg;
+    reg  [`DATABUS] out_reg;
 
     //*****************************************************
     //**                    wire
@@ -32,7 +30,7 @@ module ALU #(
     assign Ain = A;
     assign Bin = (suben) ? (~B + 1'b1) : B;
 
-    assign overflow = ((ALUop == `ADD_op) | (ALUop == `SUB_op)) && (Ain[CPU_WIDTH-1] == Bin[CPU_WIDTH-1]) && (Ain[CPU_WIDTH-1] != addOut[CPU_WIDTH-1]);
+    assign overflow = ((ALUop == `ADD_op) | (ALUop == `SUB_op)) && (Ain[`CPU_WIDTH-1] == Bin[`CPU_WIDTH-1]) && (Ain[`CPU_WIDTH-1] != addOut[`CPU_WIDTH-1]);
     assign addOut = Ain + Bin;
     assign andOut = A & B;
     assign orOut = A | B;

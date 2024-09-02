@@ -1,11 +1,9 @@
 `include "../para.v"
 
-module CMP #(
-    parameter CPU_WIDTH = 16
-) (
-    input  wire [CPU_WIDTH-1:0] A,
-    input  wire [CPU_WIDTH-1:0] B,
-    output wire [          1:0] CMPout
+module CMP (
+    input  wire [`DATABUS] A,
+    input  wire [`DATABUS] B,
+    output wire [     1:0] CMPout
 );
 
     wire       equal;

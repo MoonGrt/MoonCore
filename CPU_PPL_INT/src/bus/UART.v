@@ -1,41 +1,40 @@
 `include "../para.v"
 
 module UART #(
-    parameter CLK_FREQ  = 27000000,  //系统时钟频率
-    parameter UART_BPS  = 115200,    //串口波特率
-    parameter CPU_WIDTH = 16
+    parameter CLK_FREQ = 27000000,  //系统时钟频率
+    parameter UART_BPS = 115200  //串口波特率
 ) (
-    input wire                 clk,
-    input wire                 dev_clk,
-    input wire                 rst_n,
-    input wire                 EN,       // 总线同意信号
-    input wire [CPU_WIDTH-1:0] addr,
-    inout wire [CPU_WIDTH-1:0] data,
-    input wire                 ctrl,
+    input wire            clk,
+    input wire            dev_clk,
+    input wire            rst_n,
+    input wire            EN,       // 总线同意信号
+    input wire [`ADDRBUS] addr,
+    inout wire [`DATABUS] data,
+    input wire            ctrl,
 
     input  uart_rxd,  //UART接收端口
     output uart_txd,  //UART发送端口
-    output irq_uart   //UART接收完成
+    output int_uart   //UART接收完成
 );
 
     //wire define   
-    wire [          7:0] uart_recv_data;  //UART接收数据
-    wire [          7:0] uart_send_data;  //UART发送数据
-    wire                 uart_tx_busy;  //UART发送忙状态标志
+    wire [     7:0 ] uart_recv_data;  //UART接收数据
+    wire [     7:0 ] uart_send_data;  //UART发送数据
+    wire             uart_tx_busy;  //UART发送忙状态标志
 
     // 输入线
-    wire [CPU_WIDTH-1:0] data_input;  // 数据 -> 缓冲
-    wire [CPU_WIDTH-1:0] input_data;  // 缓冲 -> 数据
+    wire [`DATABUS]  data_input;  // 数据 -> 缓冲
+    wire [`DATABUS]  input_data;  // 缓冲 -> 数据
     // 输出线
-    wire [CPU_WIDTH-1:0] data_output;  // 数据 -> 缓冲
-    wire [CPU_WIDTH-1:0] output_data;  // 缓冲 -> 数据
+    wire [`DATABUS]  data_output;  // 数据 -> 缓冲
+    wire [`DATABUS]  output_data;  // 缓冲 -> 数据
 
     //*****************************************************
     //**                    控制逻辑
     //*****************************************************
     // 输入输出控制
-    wire                 input_call;  // 输入
-    wire                 output_call;  // 输出
+    wire             input_call;  // 输入
+    wire             output_call;  // 输出
 
     // 读写控制
     assign input_call = ((EN == 1'b1) && (ctrl == `IO_CTRL_WRITE)) ? 1'b1 : 1'b0;
@@ -59,7 +58,7 @@ module UART #(
 
     // 输入缓冲
     Buffer #(
-        .WIDTH(CPU_WIDTH)
+        .WIDTH(`CPU_WIDTH)
     ) input_buf (
         .clk  (clk_input),
         .rst_n(rst_n),
@@ -91,7 +90,7 @@ module UART #(
     assign output_data = {24'b0, uart_recv_data};
 
     Buffer #(
-        .WIDTH(CPU_WIDTH)
+        .WIDTH(`CPU_WIDTH)
     ) output_buf (
         .clk  (clk_output),
         .rst_n(rst_n),
@@ -111,7 +110,7 @@ module UART #(
 
         .uart_rxd (uart_rxd),
         .uart_done(),
-        .done_flag(irq_uart),
+        .done_flag(int_uart),
         .uart_data(uart_recv_data)
     );
 

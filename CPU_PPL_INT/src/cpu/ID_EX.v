@@ -1,16 +1,14 @@
 `include "../para.v"
 
-module ID_EX #(
-    parameter CPU_WIDTH = 16
-) (
-    input wire clk,
-    input wire rst_n,
-    input wire hold_flag,
+module ID_EX (
+    input wire            clk,
+    input wire            rst_n,
+    input wire [`HOLDBUS] hold_flag,
 
-    input wire [          2:0] ID_rd,
-    input wire [CPU_WIDTH-1:0] ID_RD,
-    input wire [CPU_WIDTH-1:0] ID_RS,
-    input wire [CPU_WIDTH-1:0] ID_IMM,
+    input wire [     2:0] ID_rd,
+    input wire [`DATABUS] ID_RD,
+    input wire [`DATABUS] ID_RS,
+    input wire [`DATABUS] ID_IMM,
 
     input wire       ID_IMMop,
     input wire [2:0] ID_ALUop,
@@ -21,10 +19,10 @@ module ID_EX #(
     input wire       ID_IMMSel,
     input wire       ID_mem_ctrl,
 
-    output reg [          2:0] EX_rd,
-    output reg [CPU_WIDTH-1:0] EX_RD,
-    output reg [CPU_WIDTH-1:0] EX_RS,
-    output reg [CPU_WIDTH-1:0] EX_IMM,
+    output reg [     2:0] EX_rd,
+    output reg [`DATABUS] EX_RD,
+    output reg [`DATABUS] EX_RS,
+    output reg [`DATABUS] EX_IMM,
 
     output reg       EX_IMMop,
     output reg [2:0] EX_ALUop,
@@ -53,7 +51,7 @@ module ID_EX #(
             EX_ABSel <= 'b0;
             EX_IMMSel <= 'b0;
             EX_mem_ctrl <= 'b0;
-        end else if (hold_flag) begin
+        end else if ((hold_flag == `Hold_PPL) | (hold_flag == `Hold_EX)) begin
             EX_rd <= EX_rd;
             EX_RD <= EX_RD;
             EX_RS <= EX_RS;

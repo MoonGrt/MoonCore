@@ -1,42 +1,30 @@
-module IF #(
-    parameter CPU_WIDTH = 16
-) (
+`include "../para.v"
+
+module IF (
     input wire clk,
     input wire rst_n,
 
-    input wire [          7:0] irq,
-    input wire                 jump_flag,
-    input wire [CPU_WIDTH-1:0] branch_pc,
+    input wire [`HOLDBUS] hold_flag,
+    input wire            jump_flag,
+    input wire [`ADDRBUS] branch_pc,
 
-    input  wire [CPU_WIDTH-1:0] inst_data,
-    output wire [CPU_WIDTH-1:0] inst_addr
+    input  wire [`DATABUS] inst_data,
+    output wire [`ADDRBUS] inst_addr
 );
 
-    reg [CPU_WIDTH-1:0] pc, npc;
-    wire [CPU_WIDTH-1:0] pc4;
+    wire hold_en = (hold_flag == `Hold_PPL) | (hold_flag == `Hold_PC);
 
-    assign pc4 = pc + 1;
+    reg  [`ADDRBUS] pc;
+    wire [`ADDRBUS] pc4 = pc + 1;
+    wire [`ADDRBUS] npc = (jump_flag) ? branch_pc : (inst_data ? pc4 : pc);
     assign inst_addr = pc;
 
     //*****************************************************
     //**                    main
     //*****************************************************
     always @(posedge clk or negedge rst_n) begin
-        // if (~rst_n) pc <= -1;
         if (~rst_n) pc <= 0;
         else pc <= npc;
-    end
-
-    always @(*) begin
-        case (irq)
-            8'b0000_0001:  // timer
-            npc = 8'd0;
-            8'b0000_0010:  // uart
-            npc = 8'd5;
-            8'b0000_0100:  // bt
-            npc = 8'd5;
-            default: npc = (jump_flag) ? branch_pc : (inst_data ? pc4 : pc);
-        endcase
     end
 
     //inst_mem inst_mem(

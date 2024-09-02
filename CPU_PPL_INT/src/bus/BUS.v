@@ -1,45 +1,41 @@
 `include "../para.v"
 
 module BUS #(
-    parameter CPU_WIDTH = 16,
     parameter CLK_FREQ = 2700_0000,
-    parameter BUTTOM_NUM = 4,
-    parameter SWITCH_NUM = 4,
-    parameter TUBE_NUM = 4,
-    parameter LED_NUM = 4
+    parameter UART_BPS = 115200
 ) (
     input wire clk,
     input wire rst_n,
 
     // data
-    input wire [CPU_WIDTH-1:0] addr,
-    inout wire [CPU_WIDTH-1:0] data,
-    input wire                 ctrl,
+    input wire [`ADDRBUS] addr,
+    inout wire [`DATABUS] data,
+    input wire            ctrl,
 
     // instruction
-    input  wire [CPU_WIDTH-1:0] inst_addr,
-    output wire [CPU_WIDTH-1:0] inst_data,
+    input  wire [`ADDRBUS] inst_addr,
+    output wire [`DATABUS] inst_data,
 
     // device
-    input wire [BUTTOM_NUM-1:0] buttom,
-    input wire [SWITCH_NUM-1:0] switch,
+    input wire [`BUTTOMBUS] buttom,
+    input wire [`SWITCHBUS] switch,
 
 `ifdef TUBE
-    output wire [TUBE_NUM-1:0] tube_en,
-    output wire [         7:0] seg_led,
+    output wire [`TUBEBUS] tube_en,
+    output wire [     7:0] seg_led,
 `endif
 
 `ifdef UART
     input  wire uart_rx,  // UART rece prot
     output wire uart_tx,  // UART send port
-    output wire irq_uart, // UART rece interrupt
+    output wire int_uart, // UART rece interrupt
 `endif
 
 `ifdef TIMER
-    output wire irq_timer,
+    output wire int_timer,
 `endif
 
-    output wire [LED_NUM-1:0] led
+    output wire [`LEDBUS] led
 );
 
     //*****************************************************
@@ -80,9 +76,7 @@ module BUS #(
         end else BS = 8'b0000_0001;  // Main MEM
     end
 
-    RAM #(
-        .CPU_WIDTH(CPU_WIDTH)
-    ) RAM (
+    RAM RAM (
         .clk    (clk),
         .dev_clk(dev_clk),
         .rst_n  (rst_n),
@@ -139,7 +133,7 @@ module BUS #(
 
     UART #(
         .CLK_FREQ(CLK_FREQ),  // Set system clock frequency
-        .UART_BPS(115200)  // Set serial port baud rate
+        .UART_BPS(UART_BPS)   // Set serial port baud rate
     ) UART (
         .clk     (clk),
         .dev_clk (dev_clk),
@@ -150,7 +144,7 @@ module BUS #(
         .data    (data),
         .uart_rxd(uart_rx),  // UART rece prot
         .uart_txd(uart_tx),  // UART send port
-        .irq_uart(irq_uart)  // UART rece interrupt
+        .int_uart(int_uart)  // UART rece interrupt
     );
 
     Timer Timer (
@@ -161,7 +155,7 @@ module BUS #(
         .addr     (addr),
         .data     (data),
         .ctrl     (ctrl),
-        .irq_timer(irq_timer)
+        .int_timer(int_timer)
     );
 
 endmodule

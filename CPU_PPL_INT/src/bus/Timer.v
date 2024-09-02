@@ -1,34 +1,32 @@
 `include "../para.v"
 
-module Timer #(
-    parameter CPU_WIDTH = 16
-) (
-    input wire                 clk,
-    input wire                 dev_clk,
-    input wire                 rst_n,
-    input wire                 EN,       // 总线同意信号
-    input wire [CPU_WIDTH-1:0] addr,
-    inout wire [CPU_WIDTH-1:0] data,
-    input wire                 ctrl,
+module Timer (
+    input wire            clk,
+    input wire            dev_clk,
+    input wire            rst_n,
+    input wire            EN,       // 总线同意信号
+    input wire [`ADDRBUS] addr,
+    inout wire [`DATABUS] data,
+    input wire            ctrl,
 
-    output wire irq_timer
+    output wire int_timer
 );
 
-    reg                  en = 0;
+    reg             en = 0;
 
     // 输入线
-    wire [CPU_WIDTH-1:0] data_input;  // 数据 -> 缓冲
-    wire [CPU_WIDTH-1:0] input_data;  // 缓冲 -> 数据
+    wire [`DATABUS] data_input;  // 数据 -> 缓冲
+    wire [`DATABUS] input_data;  // 缓冲 -> 数据
     // 输出线
-    wire [CPU_WIDTH-1:0] data_output;  // 数据 -> 缓冲
-    wire [CPU_WIDTH-1:0] output_data;  // 缓冲 -> 数据
+    wire [`DATABUS] data_output;  // 数据 -> 缓冲
+    wire [`DATABUS] output_data;  // 缓冲 -> 数据
 
     //*****************************************************
     //**                    控制逻辑
     //*****************************************************
     // 输入输出控制
-    wire                 input_call;  // 输入
-    wire                 output_call;  // 输出
+    wire            input_call;  // 输入
+    wire            output_call;  // 输出
 
     // 读写控制
     assign input_call = ((EN == 1'b1) && (ctrl == `IO_CTRL_WRITE)) ? 1'b1 : 1'b0;
@@ -52,7 +50,7 @@ module Timer #(
 
     // 输入缓冲
     Buffer #(
-        .WIDTH(CPU_WIDTH)
+        .WIDTH(`CPU_WIDTH)
     ) input_buf (
         .clk  (clk_input),
         .rst_n(rst_n),
@@ -65,7 +63,7 @@ module Timer #(
         .en (en),
         .clk(clk),
         .cnt(input_data),
-        .irq(irq_timer)
+        .int(int_timer)
     );
 
     //*****************************************************
