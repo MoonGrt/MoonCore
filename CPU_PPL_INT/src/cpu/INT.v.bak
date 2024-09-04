@@ -21,7 +21,7 @@ module INT (
     input wire            global_int_en, // 全局中断使能标志
 
     // to ctrl
-    output wire           hold_flag_int,  // 流水线暂停标志
+    output wire            hold_flag_int,  // 流水线暂停标志
     // to csr
     output reg            csr_we,         // 写CSR寄存器标志
     output reg [`ADDRBUS] csr_waddr,      // 写CSR寄存器地址
@@ -45,10 +45,10 @@ module INT (
     localparam S_CSR_MSTATUS_MRET = 5'b01000;
     localparam S_CSR_MCAUSE = 5'b10000;
 
-    reg [     3:0] int_state;
-    reg [     4:0] csr_state;
-    reg [`ADDRBUS] inst_addr_reg;
-    reg [`DATABUS] cause;
+    reg [     3:0 ] int_state;
+    reg [     4:0 ] csr_state;
+    reg [`ADDRBUS]  inst_addr_reg;
+    reg [`DATABUS]  cause;
 
     assign hold_flag_int = ((int_state != S_INT_IDLE) | (csr_state != S_CSR_IDLE)) ? 1'b1 : 1'b0;
 
@@ -109,7 +109,7 @@ module INT (
                                 inst_addr_reg <= inst_addr;
                             end
                         end
-                    // 中断返回
+                        // 中断返回
                     end else if (int_state == S_INT_MRET) begin
                         csr_state <= S_CSR_MSTATUS_MRET;
                     end

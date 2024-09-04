@@ -26,7 +26,7 @@ module CSR (
     output reg  [`DATABUS] EX_wdata        // ex模块读寄存器数据
 );
 
-    reg [    31:0]  cycle;
+    reg [    31:0 ] cycle;
     reg [`DATABUS]  mtvec;
     reg [`DATABUS]  mcause;
     reg [`DATABUS]  mepc;
