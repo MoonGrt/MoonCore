@@ -157,7 +157,7 @@ module INT (
                 S_CSR_MSTATUS: begin
                     csr_we <= 1'b1;
                     csr_waddr <= {4'b0, `CSR_MSTATUS};
-                    csr_wdata <= {csr_mstatus[15:4], 1'b0, csr_mstatus[2:0]};
+                    csr_wdata <= {csr_mstatus[15:4], 1'b0, csr_mstatus[2:0]};  // 第四位
                 end
                 // 中断返回
                 S_CSR_MSTATUS_MRET: begin

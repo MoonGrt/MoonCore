@@ -4,7 +4,7 @@ module CPU (
     input wire clk,
     input wire rst_n,
 
-    input wire [INT_BUS] int,
+    input wire [`INT_BUS] int,
 
     output wire [`ADDRBUS] inst_addr,
     input  wire [`DATABUS] inst_data,
@@ -63,7 +63,7 @@ module CPU (
     wire [`ADDRBUS] csr_raddr;
     wire [`ADDRBUS] csr_waddr;
     wire [`DATABUS] csr_wdata;
-    reg  [`DATABUS] csr_rdata;
+    wire [`DATABUS] csr_rdata;
     wire [`DATABUS] csr_mtvec;
     wire [`DATABUS] csr_mepc;
     wire [`DATABUS] csr_mstatus;
@@ -120,9 +120,9 @@ module CPU (
         .csr_wdata(csr_wdata),
 
         .csr_rdata      (csr_rdata),
-        .csr_csr_mtvec  (csr_mtvec),
-        .csr_csr_mepc   (csr_mepc),
-        .csr_csr_mstatus(csr_mstatus),
+        .csr_mtvec      (csr_mtvec),
+        .csr_mepc       (csr_mepc),
+        .csr_mstatus    (csr_mstatus),
         .global_int_en  (global_int_en),
         .EX_wdata       ()
     );

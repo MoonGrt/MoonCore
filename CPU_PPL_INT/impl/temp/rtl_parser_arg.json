@@ -124,6 +124,14 @@
   {
    "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/top.v",
    "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CSR.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/INT.v",
+   "Type" : "verilog"
   }
  ],
  "IncludePath" : [

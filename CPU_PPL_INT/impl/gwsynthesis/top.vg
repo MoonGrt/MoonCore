@@ -1,7 +1,7 @@
 //
 //Written by GowinSynthesis
 //Tool Version "V1.9.10.02"
-//Sun Sep  1 20:54:39 2024
+//Tue Sep 10 19:58:31 2024
 
 //Source file index table:
 //file0 "\F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/BUS.v"
@@ -35,6 +35,8 @@
 //file28 "\F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_rom16/inst_mem.v"
 //file29 "\F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_sp/data_mem.v"
 //file30 "\F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/top.v"
+//file31 "\F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CSR.v"
+//file32 "\F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/INT.v"
 `timescale 100 ps/100 ps
 module IF (
   clk_d,
@@ -2095,8 +2097,7 @@ module ALU_check (
   EX_IMM_Z_3,
   EX_IMM_Z_4,
   EX_IMM_Z_6,
-  n25_12,
-  n26_9,
+  n26_12,
   n14_5,
   n29_9,
   n17_7,
@@ -2105,10 +2106,11 @@ module ALU_check (
   n19_7,
   n27_11,
   n20_7,
-  n21_7,
+  n21_5,
   n22_9,
   n23_9,
   n24_11,
+  n25_11,
   Bin_15_5,
   mem_addr_9_5,
   mem_addr_8_5,
@@ -2166,8 +2168,7 @@ input EX_IMM_Z_1;
 input EX_IMM_Z_3;
 input EX_IMM_Z_4;
 input EX_IMM_Z_6;
-output n25_12;
-output n26_9;
+output n26_12;
 output n14_5;
 output n29_9;
 output n17_7;
@@ -2176,10 +2177,11 @@ output n18_7;
 output n19_7;
 output n27_11;
 output n20_7;
-output n21_7;
+output n21_5;
 output n22_9;
 output n23_9;
 output n24_11;
+output n25_11;
 output Bin_15_5;
 output mem_addr_9_5;
 output mem_addr_8_5;
@@ -2196,7 +2198,6 @@ output mem_addr_3_7;
 output mem_addr_9_14;
 output [15:10] addOut;
 output [9:0] mem_addr;
-wire n21_5;
 wire n20_5;
 wire n27_9;
 wire n19_5;
@@ -2208,20 +2209,19 @@ wire n15_7;
 wire n28_11;
 wire n14_7;
 wire n26_11;
-wire n25_11;
+wire n25_9;
 wire n24_9;
 wire n23_11;
 wire n22_11;
-wire n25_13;
-wire n25_14;
-wire n21_8;
-wire n21_9;
-wire n26_12;
+wire n21_7;
 wire n26_13;
+wire n26_14;
 wire n20_8;
 wire n20_9;
 wire n27_12;
+wire n27_13;
 wire n19_8;
+wire n19_9;
 wire n18_8;
 wire n17_8;
 wire n17_9;
@@ -2230,14 +2230,16 @@ wire n29_12;
 wire n18_9;
 wire n18_10;
 wire n28_12;
-wire n19_9;
-wire n27_13;
+wire n19_10;
+wire n27_14;
 wire n20_10;
-wire n26_14;
-wire n21_10;
-wire n25_15;
+wire n26_15;
+wire n21_8;
+wire n25_12;
 wire n22_12;
 wire n24_12;
+wire n23_12;
+wire n23_13;
 wire Bin_15_4;
 wire Bin_15_6;
 wire Bin_14_4;
@@ -2335,24 +2337,10 @@ wire [15:1] Bin;
 wire [9:0] addOut_0;
 wire VCC;
 wire GND;
-  LUT3 n25_s3 (
-    .F(n25_12),
-    .I0(n25_13),
-    .I1(n25_14),
-    .I2(ALU_Bin_1) 
-);
-defparam n25_s3.INIT=8'h35;
-  LUT3 n21_s1 (
-    .F(n21_5),
-    .I0(n21_8),
-    .I1(n21_9),
-    .I2(ALU_Bin_1) 
-);
-defparam n21_s1.INIT=8'h35;
   LUT3 n26_s3 (
-    .F(n26_9),
-    .I0(n26_12),
-    .I1(n26_13),
+    .F(n26_12),
+    .I0(n26_13),
+    .I1(n26_14),
     .I2(ALU_Bin_1) 
 );
 defparam n26_s3.INIT=8'h35;
@@ -2365,21 +2353,21 @@ defparam n26_s3.INIT=8'h35;
 defparam n20_s1.INIT=8'h35;
   LUT3 n27_s3 (
     .F(n27_9),
-    .I0(n25_14),
-    .I1(n27_12),
+    .I0(n27_12),
+    .I1(n27_13),
     .I2(ALU_Bin_1) 
 );
 defparam n27_s3.INIT=8'h35;
   LUT3 n19_s1 (
     .F(n19_5),
-    .I0(n21_8),
-    .I1(n19_8),
+    .I0(n19_8),
+    .I1(n19_9),
     .I2(ALU_Bin_1) 
 );
-defparam n19_s1.INIT=8'h53;
+defparam n19_s1.INIT=8'h35;
   LUT3 n28_s3 (
     .F(n28_9),
-    .I0(n26_13),
+    .I0(n26_14),
     .I1(n14_5),
     .I2(ALU_Bin_1) 
 );
@@ -2400,7 +2388,7 @@ defparam n14_s1.INIT=8'hE4;
 defparam n18_s1.INIT=8'h53;
   LUT3 n29_s3 (
     .F(n29_9),
-    .I0(n27_12),
+    .I0(n27_13),
     .I1(n15_5),
     .I2(ALU_Bin_1) 
 );
@@ -2464,14 +2452,14 @@ defparam n14_s2.INIT=8'hD8;
   LUT3 n19_s2 (
     .F(n19_7),
     .I0(n17_10),
-    .I1(n19_9),
+    .I1(n19_10),
     .I2(ALU_Bin_1) 
 );
 defparam n19_s2.INIT=8'h35;
   LUT3 n27_s4 (
     .F(n27_11),
     .I0(n29_12),
-    .I1(n27_13),
+    .I1(n27_14),
     .I2(ALU_Bin_1) 
 );
 defparam n27_s4.INIT=8'h53;
@@ -2485,24 +2473,24 @@ defparam n20_s2.INIT=8'h35;
   LUT3 n26_s4 (
     .F(n26_11),
     .I0(n28_12),
-    .I1(n26_14),
+    .I1(n26_15),
     .I2(ALU_Bin_1) 
 );
 defparam n26_s4.INIT=8'h53;
-  LUT3 n21_s2 (
-    .F(n21_7),
-    .I0(n19_9),
-    .I1(n21_10),
+  LUT3 n21_s1 (
+    .F(n21_5),
+    .I0(n19_10),
+    .I1(n21_8),
     .I2(ALU_Bin_1) 
 );
-defparam n21_s2.INIT=8'h35;
-  LUT3 n25_s4 (
-    .F(n25_11),
-    .I0(n27_13),
-    .I1(n25_15),
+defparam n21_s1.INIT=8'h35;
+  LUT3 n25_s3 (
+    .F(n25_9),
+    .I0(n27_14),
+    .I1(n25_12),
     .I2(ALU_Bin_1) 
 );
-defparam n25_s4.INIT=8'h53;
+defparam n25_s3.INIT=8'h53;
   LUT3 n22_s3 (
     .F(n22_9),
     .I0(n20_10),
@@ -2512,28 +2500,28 @@ defparam n25_s4.INIT=8'h53;
 defparam n22_s3.INIT=8'h35;
   LUT3 n24_s3 (
     .F(n24_9),
-    .I0(n26_14),
+    .I0(n26_15),
     .I1(n24_12),
     .I2(ALU_Bin_1) 
 );
 defparam n24_s3.INIT=8'h53;
   LUT3 n23_s3 (
     .F(n23_9),
-    .I0(n25_13),
-    .I1(n21_10),
+    .I0(n21_8),
+    .I1(n23_12),
     .I2(ALU_Bin_1) 
 );
-defparam n23_s3.INIT=8'h53;
+defparam n23_s3.INIT=8'h35;
   LUT3 n23_s4 (
     .F(n23_11),
-    .I0(n21_9),
-    .I1(n25_15),
+    .I0(n25_12),
+    .I1(n23_13),
     .I2(ALU_Bin_1) 
 );
-defparam n23_s4.INIT=8'h35;
+defparam n23_s4.INIT=8'h53;
   LUT3 n24_s4 (
     .F(n24_11),
-    .I0(n26_12),
+    .I0(n26_13),
     .I1(n22_12),
     .I2(ALU_Bin_1) 
 );
@@ -2545,43 +2533,29 @@ defparam n24_s4.INIT=8'h53;
     .I2(ALU_Bin_1) 
 );
 defparam n22_s4.INIT=8'h35;
-  LUT3 n25_s5 (
-    .F(n25_13),
-    .I0(ALU_Ain[7]),
-    .I1(ALU_Ain[6]),
-    .I2(ALU_Bin_0) 
+  LUT3 n25_s4 (
+    .F(n25_11),
+    .I0(n27_12),
+    .I1(n23_12),
+    .I2(ALU_Bin_1) 
 );
-defparam n25_s5.INIT=8'h35;
-  LUT3 n25_s6 (
-    .F(n25_14),
-    .I0(ALU_Bin_0),
-    .I1(ALU_Ain[5]),
-    .I2(ALU_Ain[4]) 
+defparam n25_s4.INIT=8'h53;
+  LUT3 n21_s2 (
+    .F(n21_7),
+    .I0(n19_9),
+    .I1(n23_13),
+    .I2(ALU_Bin_1) 
 );
-defparam n25_s6.INIT=8'h1B;
-  LUT3 n21_s3 (
-    .F(n21_8),
-    .I0(ALU_Bin_0),
-    .I1(ALU_Ain[5]),
-    .I2(ALU_Ain[4]) 
-);
-defparam n21_s3.INIT=8'h27;
-  LUT3 n21_s4 (
-    .F(n21_9),
-    .I0(ALU_Ain[7]),
-    .I1(ALU_Ain[6]),
-    .I2(ALU_Bin_0) 
-);
-defparam n21_s4.INIT=8'h53;
+defparam n21_s2.INIT=8'h35;
   LUT3 n26_s5 (
-    .F(n26_12),
-    .I0(ALU_Ain[6]),
-    .I1(ALU_Bin_0),
-    .I2(ALU_Ain[5]) 
-);
-defparam n26_s5.INIT=8'h1D;
-  LUT3 n26_s6 (
     .F(n26_13),
+    .I0(ALU_Ain[6]),
+    .I1(ALU_Ain[5]),
+    .I2(ALU_Bin_0) 
+);
+defparam n26_s5.INIT=8'h35;
+  LUT3 n26_s6 (
+    .F(n26_14),
     .I0(ALU_Bin_0),
     .I1(ALU_Ain[4]),
     .I2(ALU_Ain[3]) 
@@ -2597,17 +2571,24 @@ defparam n20_s3.INIT=8'h27;
   LUT3 n20_s4 (
     .F(n20_9),
     .I0(ALU_Ain[6]),
-    .I1(ALU_Bin_0),
-    .I2(ALU_Ain[5]) 
+    .I1(ALU_Ain[5]),
+    .I2(ALU_Bin_0) 
 );
-defparam n20_s4.INIT=8'h47;
+defparam n20_s4.INIT=8'h53;
   LUT3 n27_s5 (
     .F(n27_12),
+    .I0(ALU_Ain[5]),
+    .I1(ALU_Bin_0),
+    .I2(ALU_Ain[4]) 
+);
+defparam n27_s5.INIT=8'h1D;
+  LUT3 n27_s6 (
+    .F(n27_13),
     .I0(ALU_Bin_0),
     .I1(ALU_Ain[3]),
     .I2(ALU_Ain[2]) 
 );
-defparam n27_s5.INIT=8'h1B;
+defparam n27_s6.INIT=8'h1B;
   LUT3 n19_s3 (
     .F(n19_8),
     .I0(ALU_Bin_0),
@@ -2615,6 +2596,13 @@ defparam n27_s5.INIT=8'h1B;
     .I2(ALU_Ain[2]) 
 );
 defparam n19_s3.INIT=8'h27;
+  LUT3 n19_s4 (
+    .F(n19_9),
+    .I0(ALU_Ain[5]),
+    .I1(ALU_Bin_0),
+    .I2(ALU_Ain[4]) 
+);
+defparam n19_s4.INIT=8'h47;
   LUT3 n18_s3 (
     .F(n18_8),
     .I0(ALU_Bin_0),
@@ -2671,20 +2659,20 @@ defparam n18_s5.INIT=8'h1B;
     .I2(ALU_Ain[11]) 
 );
 defparam n28_s5.INIT=8'h27;
-  LUT3 n19_s4 (
-    .F(n19_9),
+  LUT3 n19_s5 (
+    .F(n19_10),
     .I0(ALU_Bin_0),
     .I1(ALU_Ain[11]),
     .I2(ALU_Ain[10]) 
 );
-defparam n19_s4.INIT=8'h1B;
-  LUT3 n27_s6 (
-    .F(n27_13),
+defparam n19_s5.INIT=8'h1B;
+  LUT3 n27_s7 (
+    .F(n27_14),
     .I0(ALU_Bin_0),
     .I1(ALU_Ain[11]),
     .I2(ALU_Ain[10]) 
 );
-defparam n27_s6.INIT=8'h27;
+defparam n27_s7.INIT=8'h27;
   LUT3 n20_s5 (
     .F(n20_10),
     .I0(ALU_Bin_0),
@@ -2693,40 +2681,54 @@ defparam n27_s6.INIT=8'h27;
 );
 defparam n20_s5.INIT=8'h1B;
   LUT3 n26_s7 (
-    .F(n26_14),
+    .F(n26_15),
     .I0(ALU_Bin_0),
     .I1(ALU_Ain[10]),
     .I2(ALU_Ain[9]) 
 );
 defparam n26_s7.INIT=8'h27;
-  LUT3 n21_s5 (
-    .F(n21_10),
+  LUT3 n21_s3 (
+    .F(n21_8),
     .I0(ALU_Bin_0),
     .I1(ALU_Ain[9]),
     .I2(ALU_Ain[8]) 
 );
-defparam n21_s5.INIT=8'h1B;
-  LUT3 n25_s7 (
-    .F(n25_15),
+defparam n21_s3.INIT=8'h1B;
+  LUT3 n25_s5 (
+    .F(n25_12),
     .I0(ALU_Bin_0),
     .I1(ALU_Ain[9]),
     .I2(ALU_Ain[8]) 
 );
-defparam n25_s7.INIT=8'h27;
+defparam n25_s5.INIT=8'h27;
   LUT3 n22_s5 (
     .F(n22_12),
-    .I0(ALU_Ain[7]),
-    .I1(ALU_Bin_0),
-    .I2(ALU_Ain[8]) 
+    .I0(ALU_Bin_0),
+    .I1(ALU_Ain[8]),
+    .I2(ALU_Ain[7]) 
 );
-defparam n22_s5.INIT=8'h47;
+defparam n22_s5.INIT=8'h1B;
   LUT3 n24_s5 (
     .F(n24_12),
-    .I0(ALU_Ain[7]),
-    .I1(ALU_Bin_0),
-    .I2(ALU_Ain[8]) 
+    .I0(ALU_Bin_0),
+    .I1(ALU_Ain[8]),
+    .I2(ALU_Ain[7]) 
 );
-defparam n24_s5.INIT=8'h1D;
+defparam n24_s5.INIT=8'h27;
+  LUT3 n23_s5 (
+    .F(n23_12),
+    .I0(ALU_Ain[6]),
+    .I1(ALU_Bin_0),
+    .I2(ALU_Ain[7]) 
+);
+defparam n23_s5.INIT=8'h47;
+  LUT3 n23_s6 (
+    .F(n23_13),
+    .I0(ALU_Ain[6]),
+    .I1(ALU_Bin_0),
+    .I2(ALU_Ain[7]) 
+);
+defparam n23_s6.INIT=8'h1D;
   LUT4 Bin_15_s0 (
     .F(Bin[15]),
     .I0(Bin_15_4),
@@ -3231,7 +3233,7 @@ defparam mem_addr_8_s6.INIT=16'hAC00;
   LUT4 mem_addr_8_s7 (
     .F(mem_addr_8_11),
     .I0(n29_11),
-    .I1(n25_11),
+    .I1(n25_9),
     .I2(ALU_Bin_2),
     .I3(EX_ALUop_Z[0]) 
 );
@@ -3261,7 +3263,7 @@ defparam mem_addr_7_s5.INIT=16'hAC00;
   LUT4 mem_addr_7_s6 (
     .F(mem_addr_7_10),
     .I0(n29_9),
-    .I1(n25_12),
+    .I1(n25_11),
     .I2(EX_ALUop_Z[0]),
     .I3(ALU_Bin_2) 
 );
@@ -3276,7 +3278,7 @@ defparam mem_addr_7_s8.INIT=8'h7C;
   LUT3 mem_addr_6_s3 (
     .F(mem_addr_6_7),
     .I0(EX_WB_data_14_8),
-    .I1(n26_9),
+    .I1(n26_12),
     .I2(ALU_Bin_2) 
 );
 defparam mem_addr_6_s3.INIT=8'hA3;
@@ -3342,8 +3344,8 @@ defparam mem_addr_5_s8.INIT=16'h873F;
 defparam mem_addr_4_s3.INIT=16'h770F;
   LUT4 mem_addr_4_s4 (
     .F(mem_addr_4_8),
-    .I0(n25_11),
-    .I1(n21_5),
+    .I0(n25_9),
+    .I1(n21_7),
     .I2(ALU_Bin_3),
     .I3(ALU_Bin_2) 
 );
@@ -3458,7 +3460,7 @@ defparam mem_addr_3_s6.INIT=16'hAFC0;
 defparam mem_addr_1_s5.INIT=8'h53;
   LUT3 mem_addr_0_s5 (
     .F(mem_addr_0_9),
-    .I0(n21_5),
+    .I0(n21_7),
     .I1(n17_5),
     .I2(ALU_Bin_2) 
 );
@@ -3971,8 +3973,7 @@ module EX (
   mem_wd,
   EX_IMM_Z,
   EX_ALUop_Z,
-  n25_12,
-  n26_9,
+  n26_12,
   n14_5,
   n29_9,
   n17_7,
@@ -3981,10 +3982,11 @@ module EX (
   n19_7,
   n27_11,
   n20_7,
-  n21_7,
+  n21_5,
   n22_9,
   n23_9,
   n24_11,
+  n25_11,
   Bin_15_5,
   mem_addr_9_5,
   mem_addr_8_5,
@@ -4023,8 +4025,7 @@ input [15:0] EX_RS_Z;
 input [15:0] mem_wd;
 input [7:0] EX_IMM_Z;
 input [2:0] EX_ALUop_Z;
-output n25_12;
-output n26_9;
+output n26_12;
 output n14_5;
 output n29_9;
 output n17_7;
@@ -4033,10 +4034,11 @@ output n18_7;
 output n19_7;
 output n27_11;
 output n20_7;
-output n21_7;
+output n21_5;
 output n22_9;
 output n23_9;
 output n24_11;
+output n25_11;
 output Bin_15_5;
 output mem_addr_9_5;
 output mem_addr_8_5;
@@ -4321,8 +4323,7 @@ defparam ALU_Bin_8_s2.INIT=4'h4;
     .EX_IMM_Z_3(EX_IMM_Z[3]),
     .EX_IMM_Z_4(EX_IMM_Z[4]),
     .EX_IMM_Z_6(EX_IMM_Z[6]),
-    .n25_12(n25_12),
-    .n26_9(n26_9),
+    .n26_12(n26_12),
     .n14_5(n14_5),
     .n29_9(n29_9),
     .n17_7(n17_7),
@@ -4331,10 +4332,11 @@ defparam ALU_Bin_8_s2.INIT=4'h4;
     .n19_7(n19_7),
     .n27_11(n27_11),
     .n20_7(n20_7),
-    .n21_7(n21_7),
+    .n21_5(n21_5),
     .n22_9(n22_9),
     .n23_9(n23_9),
     .n24_11(n24_11),
+    .n25_11(n25_11),
     .Bin_15_5(Bin_15_5),
     .mem_addr_9_5(mem_addr_9_5),
     .mem_addr_8_5(mem_addr_8_5),
@@ -4372,7 +4374,7 @@ module WB (
   mem_ctrl,
   mem_addr_7_10,
   mem_addr_7_8,
-  n26_9,
+  n26_12,
   mem_addr_8_9,
   n23_9,
   n19_7,
@@ -4385,14 +4387,14 @@ module WB (
   Bin_15_5,
   mem_addr_8_13,
   n27_11,
-  n21_7,
+  n21_5,
   n17_7,
   n14_5,
   EX_IMMop_Z,
   n18_7,
   n22_9,
   n29_11,
-  n25_12,
+  n25_11,
   mem_addr_9_14,
   n20_7,
   n24_11,
@@ -4455,7 +4457,7 @@ input input_call_5;
 input mem_ctrl;
 input mem_addr_7_10;
 input mem_addr_7_8;
-input n26_9;
+input n26_12;
 input mem_addr_8_9;
 input n23_9;
 input n19_7;
@@ -4468,14 +4470,14 @@ input Bin_9_5;
 input Bin_15_5;
 input mem_addr_8_13;
 input n27_11;
-input n21_7;
+input n21_5;
 input n17_7;
 input n14_5;
 input EX_IMMop_Z;
 input n18_7;
 input n22_9;
 input n29_11;
-input n25_12;
+input n25_11;
 input mem_addr_9_14;
 input n20_7;
 input n24_11;
@@ -4790,7 +4792,7 @@ defparam EX_WB_data_15_s3.INIT=16'hF345;
   LUT4 EX_WB_data_14_s2 (
     .F(EX_WB_data_14_5),
     .I0(EX_WB_data_14_8),
-    .I1(n26_9),
+    .I1(n26_12),
     .I2(ALU_Bin_2),
     .I3(mem_addr_8_9) 
 );
@@ -4919,7 +4921,7 @@ defparam EX_WB_data_10_s4.INIT=16'h004F;
 defparam EX_WB_data_3_s3.INIT=4'h1;
   LUT4 EX_WB_data_15_s4 (
     .F(EX_WB_data_15_7),
-    .I0(n21_7),
+    .I0(n21_5),
     .I1(n17_7),
     .I2(EX_ALUop_Z[0]),
     .I3(ALU_Bin_2) 
@@ -5005,8 +5007,8 @@ defparam EX_WB_data_13_s7.INIT=16'h873F;
 defparam EX_WB_data_12_s5.INIT=16'h770F;
   LUT4 EX_WB_data_11_s6 (
     .F(EX_WB_data_11_9),
-    .I0(n25_12),
-    .I1(n21_7),
+    .I0(n25_11),
+    .I1(n21_5),
     .I2(ALU_Bin_2),
     .I3(EX_WB_data_14_10) 
 );
@@ -5063,7 +5065,7 @@ defparam EX_WB_data_10_s9.INIT=16'h3500;
     .I0(EX_RS_Z_2),
     .I1(EX_IMM_Z[2]),
     .I2(EX_IMMop_Z),
-    .I3(n26_9) 
+    .I3(n26_12) 
 );
 defparam EX_WB_data_10_s10.INIT=16'hCA00;
   LUT3 EX_WB_data_10_s11 (
@@ -5238,8 +5240,7 @@ wire EX_IMMop_Z;
 wire EX_RegWe_Z;
 wire EX_RWSel_Z;
 wire EX_ABSel_Z;
-wire n25_12;
-wire n26_9;
+wire n26_12;
 wire n14_5;
 wire n29_9;
 wire n17_7;
@@ -5248,10 +5249,11 @@ wire n18_7;
 wire n19_7;
 wire n27_11;
 wire n20_7;
-wire n21_7;
+wire n21_5;
 wire n22_9;
 wire n23_9;
 wire n24_11;
+wire n25_11;
 wire Bin_15_5;
 wire mem_addr_9_5;
 wire mem_addr_8_5;
@@ -5390,8 +5392,7 @@ wire GND;
     .mem_wd({mem_wd[15:4],mem_wd_0[3:0]}),
     .EX_IMM_Z(EX_IMM_Z[7:0]),
     .EX_ALUop_Z(EX_ALUop_Z[2:0]),
-    .n25_12(n25_12),
-    .n26_9(n26_9),
+    .n26_12(n26_12),
     .n14_5(n14_5),
     .n29_9(n29_9),
     .n17_7(n17_7),
@@ -5400,10 +5401,11 @@ wire GND;
     .n19_7(n19_7),
     .n27_11(n27_11),
     .n20_7(n20_7),
-    .n21_7(n21_7),
+    .n21_5(n21_5),
     .n22_9(n22_9),
     .n23_9(n23_9),
     .n24_11(n24_11),
+    .n25_11(n25_11),
     .Bin_15_5(Bin_15_5),
     .mem_addr_9_5(mem_addr_9_5),
     .mem_addr_8_5(mem_addr_8_5),
@@ -5438,7 +5440,7 @@ wire GND;
     .mem_ctrl(mem_ctrl),
     .mem_addr_7_10(mem_addr_7_10),
     .mem_addr_7_8(mem_addr_7_8),
-    .n26_9(n26_9),
+    .n26_12(n26_12),
     .mem_addr_8_9(mem_addr_8_9),
     .n23_9(n23_9),
     .n19_7(n19_7),
@@ -5451,14 +5453,14 @@ wire GND;
     .Bin_15_5(Bin_15_5),
     .mem_addr_8_13(mem_addr_8_13),
     .n27_11(n27_11),
-    .n21_7(n21_7),
+    .n21_5(n21_5),
     .n17_7(n17_7),
     .n14_5(n14_5),
     .EX_IMMop_Z(EX_IMMop_Z),
     .n18_7(n18_7),
     .n22_9(n22_9),
     .n29_11(n29_11),
-    .n25_12(n25_12),
+    .n25_11(n25_11),
     .mem_addr_9_14(mem_addr_9_14),
     .n20_7(n20_7),
     .n24_11(n24_11),
@@ -21020,6 +21022,7 @@ endmodule /* BUS */
 module top (
   clk,
   rst_n,
+  int_timer,
   buttom,
   switch,
   uart_rx,
@@ -21029,6 +21032,7 @@ module top (
 ;
 input clk;
 input rst_n;
+input int_timer;
 input [3:0] buttom;
 input [3:0] switch;
 input uart_rx;

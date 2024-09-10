@@ -25,12 +25,14 @@
         <File path="src/cpu/ALU.v" type="file.verilog" enable="1"/>
         <File path="src/cpu/CMP.v" type="file.verilog" enable="1"/>
         <File path="src/cpu/CPU.v" type="file.verilog" enable="1"/>
+        <File path="src/cpu/CSR.v" type="file.verilog" enable="1"/>
         <File path="src/cpu/Crtl.v" type="file.verilog" enable="1"/>
         <File path="src/cpu/EX.v" type="file.verilog" enable="1"/>
         <File path="src/cpu/ID.v" type="file.verilog" enable="1"/>
         <File path="src/cpu/ID_EX.v" type="file.verilog" enable="1"/>
         <File path="src/cpu/IF.v" type="file.verilog" enable="1"/>
         <File path="src/cpu/IF_ID.v" type="file.verilog" enable="1"/>
+        <File path="src/cpu/INT.v" type="file.verilog" enable="1"/>
         <File path="src/cpu/REG.v" type="file.verilog" enable="1"/>
         <File path="src/cpu/WB.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_rom16/inst_mem.v" type="file.verilog" enable="1"/>

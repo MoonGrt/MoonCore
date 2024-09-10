@@ -34,7 +34,7 @@ module CSR (
     reg [`DATABUS]  mstatus;
     reg [`DATABUS]  mscratch;
 
-    assign global_int_en = (mstatus[3] == 1'b1) ? 1'b1 : 1'b0;
+    assign global_int_en = mstatus[3] ? 1'b1 : 1'b0;
     assign csr_mtvec = mtvec;
     assign csr_mepc = mepc;
     assign csr_mstatus = mstatus;
@@ -85,7 +85,7 @@ module CSR (
 
                     end
                 endcase
-                // int模块写操作
+            // int模块写操作
             end else if (csr_we) begin
                 case (csr_waddr[11:0])
                     `CSR_MTVEC: begin
@@ -122,10 +122,10 @@ module CSR (
         end else begin
             case (EX_raddr[11:0])
                 `CSR_CYCLE: begin
-                    EX_wdata = cycle[31:0];
+                    EX_wdata = cycle[15:0];
                 end
                 `CSR_CYCLEH: begin
-                    EX_wdata = cycle[63:32];
+                    EX_wdata = cycle[31:16];
                 end
                 `CSR_MTVEC: begin
                     EX_wdata = mtvec;
@@ -160,10 +160,10 @@ module CSR (
         end else begin
             case (csr_raddr[11:0])
                 `CSR_CYCLE: begin
-                    csr_rdata = cycle[31:0];
+                    csr_rdata = cycle[15:0];
                 end
                 `CSR_CYCLEH: begin
-                    csr_rdata = cycle[63:32];
+                    csr_rdata = cycle[31:16];
                 end
                 `CSR_MTVEC: begin
                     csr_rdata = mtvec;

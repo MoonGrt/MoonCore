@@ -56,15 +56,14 @@ module top (
     wire [`DATABUS] mem_data, inst_data;
 
     // interrupt
-    wire [7:0] int;
+    wire [7:0] interrupt;
     wire       int_uart;
     wire       int_bt;
     // wire       int_timer;
 
-    assign mem_rd   = mem_data;
-    assign mem_data = (mem_ctrl) ? mem_wd : 16'hzzzz;  // Access inputs only when writing
-    assign int      = {{{1'b0}}, int_timer};
-    // assign int      = {{5{1'b0}}, int_bt, int_uart, int_timer};
+    assign mem_rd    = mem_data;
+    assign mem_data  = (mem_ctrl) ? mem_wd : 16'hzzzz;  // Access inputs only when writing
+    assign interrupt = {{7{1'b0}}, int_timer};  // 5'b0, int_bt, int_uart, int_timer
 
     //*****************************************************
     //**                     CPU
@@ -72,7 +71,7 @@ module top (
     CPU CPU (
         .clk  (clk),
         .rst_n(rst_n),
-        .int  (int),
+        .int  (interrupt),
 
         .inst_data(inst_data),
         .inst_addr(inst_addr),
@@ -115,7 +114,7 @@ module top (
 `endif
 
 `ifdef TIMER
-        .int_timer(int_timer),
+        // .int_timer(int_timer),
 `endif
 
         .led(led)
