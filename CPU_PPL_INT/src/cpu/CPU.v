@@ -134,6 +134,7 @@ module CPU (
         .clk  (clk),
         .rst_n(rst_n),
 
+        .hold_flag(0),
         .jump_flag(EX_jump_flag),
         .branch_pc(EX_IMM),
 

@@ -6,26 +6,34 @@
 //*****************************************************
 `define ADD 5'b00000
 `define SUB 5'b00001
-`define AND 5'b00010
-`define OR 5'b00011
-`define XOR 5'b00100
-`define SLL 5'b00101
-`define SRL 5'b00110
+`define MUL 5'b00010
+`define AND 5'b00011
+`define OR  5'b00100
+`define XOR 5'b00101
+`define SLL 5'b00110
+`define SRL 5'b00111
 
-`define BEQ 5'b10111
-`define BLE 5'b11000
+`define BEQ 5'b01000
+`define BLE 5'b01001
 
 `define ADDI 5'b10000
 `define SUBI 5'b10001
-`define ANDI 5'b10010
-`define ORI 5'b10011
-`define XORI 5'b10100
-`define SLLI 5'b10101
-`define SRLI 5'b10110
+`define MULI 5'b10010
+`define ANDI 5'b10011 
+`define ORI  5'b10100
+`define XORI 5'b10101
+`define SLLI 5'b10110
+`define SRLI 5'b10111
 
-`define LI 5'b11001
-`define LW 5'b11010
-`define SW 5'b11011
+`define LW 5'b11000
+`define SW 5'b11001
+`define CSRR 5'b11010
+`define CSRW 5'b11011
+
+`define JAL 5'b11100
+`define JR 5'b11101
+`define LI 5'b11110
+`define RC 5'b11111
 
 
 //*****************************************************
@@ -89,8 +97,9 @@
 //*****************************************************
 //**                  ALU Parameter
 //*****************************************************
-`define ADD_op 3'b001
-`define SUB_op 3'b010
+`define ADD_op 3'b000
+`define SUB_op 3'b001
+`define MUL_op 3'b010
 `define AND_op 3'b011
 `define OR_op 3'b100
 `define XOR_op 3'b101

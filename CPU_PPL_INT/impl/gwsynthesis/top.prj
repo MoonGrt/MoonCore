@@ -36,7 +36,7 @@
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\gowin_sp\data_mem.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CSR.v" type="verilog"/>
-        <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\INT.v" type="verilog"/>
+        <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CLINT.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>

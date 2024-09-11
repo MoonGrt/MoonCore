@@ -16,8 +16,9 @@ V98EoYM6zz1CS;anNCkP5C0
 o-quiet -auto_acc_if_foreign -work work +acc
 n@_opt
 OL;O;10.4;61
+R0
 vALU
-Z1 !s110 1725169504
+Z1 !s110 1726061994
 !i10b 1
 !s100 U4cX7?<z`ddJe0^2cDhNH0
 IHI0ijVPS^e`<L[<O2IN1f3
@@ -31,14 +32,14 @@ Z3 OL;L;10.4;61
 r1
 !s85 0
 31
-!s108 1725169504.309000
+!s108 1726061994.842000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/ALU.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/ALU.v|
 !i113 0
 Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 n@a@l@u
 vALU54D
-Z5 !s110 1725169502
+Z5 !s110 1726061993
 !i10b 1
 !s100 RcX4M>>CYVNn=OLUKEo6E1
 Ifb5F<AX]_G`TDY9Lm6h;22
@@ -52,7 +53,7 @@ R3
 r1
 !s85 0
 31
-Z9 !s108 1725169502.026000
+Z9 !s108 1726061992.609000
 Z10 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/gowin_workfile/prim_sim.v|
 Z11 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/gowin_workfile/prim_sim.v|
 !i113 0
@@ -73,7 +74,7 @@ R3
 r1
 !s85 0
 31
-!s108 1725169502.717000
+!s108 1726061993.429000
 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Buffer.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Buffer.v|
 !i113 0
@@ -136,7 +137,7 @@ R3
 r1
 !s85 0
 31
-!s108 1725169502.775000
+!s108 1726061993.481000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/BUS.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/BUS.v|
 !i113 0
@@ -157,7 +158,7 @@ R3
 r1
 !s85 0
 31
-!s108 1725169502.830000
+!s108 1726061993.533000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Buttom.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Buttom.v|
 !i113 0
@@ -227,7 +228,7 @@ R11
 R4
 n@c@l@k@d@i@v@g
 vCMP
-Z12 !s110 1725169503
+R1
 !i10b 1
 !s100 ;z4NR6B?:_>K4S::7HL^K2
 Id]LWUAW6Jk:ZAmPD;9`H=3
@@ -241,7 +242,7 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.674000
+!s108 1726061994.332000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/CMP.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/CMP.v|
 !i113 0
@@ -262,14 +263,14 @@ R3
 r1
 !s85 0
 31
-!s108 1725169502.885000
+!s108 1726061993.586000
 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Counter.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Counter.v|
 !i113 0
 R4
 n@counter
 vCPU
-R12
+R1
 !i10b 1
 !s100 JNXcnXmb4^oYA3Mz7Tk<k0
 IbGj6ja=nI:PdnCDzm3V@m1
@@ -283,7 +284,7 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.732000
+!s108 1726061994.383000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/CPU.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/CPU.v|
 !i113 0
@@ -299,12 +300,12 @@ R0
 w1724652459
 8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/gowin_sp/data_mem.v
 FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/gowin_sp/data_mem.v
-Z13 L0 10
+Z12 L0 10
 R3
 r1
 !s85 0
 31
-!s108 1725169502.561000
+!s108 1726061993.274000
 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/gowin_sp/data_mem.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/gowin_sp/data_mem.v|
 !i113 0
@@ -345,14 +346,14 @@ R3
 r1
 !s85 0
 31
-!s108 1725169502.940000
+!s108 1726061993.638000
 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Deviceclk.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Deviceclk.v|
 !i113 0
 R4
 n@deviceclk
 vDFF
-R5
+Z13 !s110 1726061992
 !i10b 1
 !s100 e7G?_3_5A3Dd>ce]WERUj0
 I8Q;azBUV2b8bLfYJXEVVc3
@@ -373,7 +374,7 @@ R11
 R4
 n@d@f@f
 vDFFC
-R5
+R13
 !i10b 1
 !s100 j]:E[`:NG5_@<hYcabQKH1
 IckAiQzoOGn^=eMd?hIzdA3
@@ -394,7 +395,7 @@ R11
 R4
 n@d@f@f@c
 vDFFCE
-R5
+R13
 !i10b 1
 !s100 ;E^6Le9]j[eA>gPKL;0ad2
 IQOVOXb0OAE5dSTBcQc^Fo1
@@ -415,7 +416,7 @@ R11
 R4
 n@d@f@f@c@e
 vDFFE
-R5
+R13
 !i10b 1
 !s100 7P@?aG5DHFzY;jBZczJ]f0
 IL8N[5=@fBmiBJJmU2CTH52
@@ -436,7 +437,7 @@ R11
 R4
 n@d@f@f@e
 vDFFN
-R5
+R13
 !i10b 1
 !s100 >PMeQ_JHQPJBGl690Y[?Q1
 IdN[caFe:iNKWeVjkh74Ok0
@@ -457,7 +458,7 @@ R11
 R4
 n@d@f@f@n
 vDFFNC
-R5
+R13
 !i10b 1
 !s100 U;oK0HzbM_<@:mPZER:;_1
 I8C7H9CM;C2di61MDJNm3:1
@@ -478,7 +479,7 @@ R11
 R4
 n@d@f@f@n@c
 vDFFNCE
-R5
+R13
 !i10b 1
 !s100 L3b=dfMi_W^KJk0Hm9KK<2
 IDlSmXkN=`55h]h47BZ1n43
@@ -499,7 +500,7 @@ R11
 R4
 n@d@f@f@n@c@e
 vDFFNE
-R5
+R13
 !i10b 1
 !s100 XRUGf;RR`NTce_ZXdeI>11
 I0_IF<>OT=41V[LcF[fY?_1
@@ -520,7 +521,7 @@ R11
 R4
 n@d@f@f@n@e
 vDFFNP
-R5
+R13
 !i10b 1
 !s100 Lmi7Sib2hh[e7EVAZ8AhC1
 I<g:n=6G=?IUQfz5=RZ]UG1
@@ -541,7 +542,7 @@ R11
 R4
 n@d@f@f@n@p
 vDFFNPE
-R5
+R13
 !i10b 1
 !s100 ldMUYm;fTV20fP7]S[IQF0
 INM^CHdge7Qo`kc>m;TcPd2
@@ -562,7 +563,7 @@ R11
 R4
 n@d@f@f@n@p@e
 vDFFNR
-R5
+R13
 !i10b 1
 !s100 EhjQj[4HQ2YzGH3^eRDFD3
 I^_X3O82`MXHKhAV`W:Jz53
@@ -583,7 +584,7 @@ R11
 R4
 n@d@f@f@n@r
 vDFFNRE
-R5
+R13
 !i10b 1
 !s100 QkdTU]c;O<Q2?`eBz]QB90
 ILhaJ7odOkCMl=0IDb@J[A0
@@ -604,7 +605,7 @@ R11
 R4
 n@d@f@f@n@r@e
 vDFFNS
-R5
+R13
 !i10b 1
 !s100 n;8JT3@<El0eBVIQRXkiG2
 IMIokI9HS@]VWe7oJo9WO:2
@@ -625,7 +626,7 @@ R11
 R4
 n@d@f@f@n@s
 vDFFNSE
-R5
+R13
 !i10b 1
 !s100 IXzkc1AbTK:<RHUkLl1?h1
 I[JlEiPVB<_:a5OQ66`UgT1
@@ -646,7 +647,7 @@ R11
 R4
 n@d@f@f@n@s@e
 vDFFP
-R5
+R13
 !i10b 1
 !s100 z:zNF]fJCg:9?ZGE@]5Vi3
 IOC=iZ`A20Ika7M7MLUKVz0
@@ -667,7 +668,7 @@ R11
 R4
 n@d@f@f@p
 vDFFPE
-R5
+R13
 !i10b 1
 !s100 MIB=i05G?_h]<CiEGd]5N0
 IFXijKziQ0UH_Vfij:ii0M3
@@ -688,7 +689,7 @@ R11
 R4
 n@d@f@f@p@e
 vDFFR
-R5
+R13
 !i10b 1
 !s100 [oe2`L3TaCnQ=OLdEDjFQ1
 Io7b[Uj9Ha>YUSJ3=5C4Im0
@@ -709,7 +710,7 @@ R11
 R4
 n@d@f@f@r
 vDFFRE
-R5
+R13
 !i10b 1
 !s100 TQ6DE;IlEm[U4Jc1LA>[`1
 I^Db3c`FA8GmbNnUM2gMgO3
@@ -730,7 +731,7 @@ R11
 R4
 n@d@f@f@r@e
 vDFFS
-R5
+R13
 !i10b 1
 !s100 PEPbjSM3ezGV8>_WlYDDA1
 IGHTcX]?`=GGHnEAbX_=Q]3
@@ -751,7 +752,7 @@ R11
 R4
 n@d@f@f@s
 vDFFSE
-R5
+R13
 !i10b 1
 !s100 mnLj:oYlX83PkYbCR3ABk2
 I@PK0l;LfiJ1AeWV;X]CRl2
@@ -793,7 +794,7 @@ R11
 R4
 n@d@h@c@e@n
 vDL
-R5
+R13
 !i10b 1
 !s100 ooT:Mk7EMD3_P`Zf=n5^g3
 I?6nSAW4mmO[AoR06UL[H;3
@@ -814,7 +815,7 @@ R11
 R4
 n@d@l
 vDLC
-R5
+R13
 !i10b 1
 !s100 h7gHMGi?md]CL>dOz?fk01
 IJcR^ni@S=HSF3N3zG6mkD0
@@ -835,7 +836,7 @@ R11
 R4
 n@d@l@c
 vDLCE
-R5
+R13
 !i10b 1
 !s100 o=?W^b0bjVJg@GFUF9@7C3
 IMZM@`@k3L;lQ]jA]hL^QM1
@@ -856,7 +857,7 @@ R11
 R4
 n@d@l@c@e
 vDLE
-R5
+R13
 !i10b 1
 !s100 iUgzETgBdFLLiBXO>0ozO3
 IG:mj4bcKVA=eB4LH=[TdV1
@@ -919,7 +920,7 @@ R11
 R4
 n@d@l@l@d@l@y
 vDLN
-R5
+R13
 !i10b 1
 !s100 m^0=_=LJkPoUUo4`SaHOG2
 I9_z0:5SLOPn>TkQb>HQlh3
@@ -940,7 +941,7 @@ R11
 R4
 n@d@l@n
 vDLNC
-R5
+R13
 !i10b 1
 !s100 j4N6<XEI=A]8A52b87bMe0
 I6i7VFQoz7Ahb^h5^akF4Y1
@@ -961,7 +962,7 @@ R11
 R4
 n@d@l@n@c
 vDLNCE
-R5
+R13
 !i10b 1
 !s100 =hXXAeW@<n]c0Q`n[[NRB2
 IOS`fREll1z58RTeW[K1Ed3
@@ -982,7 +983,7 @@ R11
 R4
 n@d@l@n@c@e
 vDLNE
-R5
+R13
 !i10b 1
 !s100 cS<3BB2BbCgJdElNR<B`F2
 Ik:@@KP1?VaOjmOLE:`o:Y0
@@ -1003,7 +1004,7 @@ R11
 R4
 n@d@l@n@e
 vDLNP
-R5
+R13
 !i10b 1
 !s100 @5M2Nk1C;m>`=iBHYHelP3
 I8`PYGEJlCF;0EBN2?=T@g1
@@ -1024,7 +1025,7 @@ R11
 R4
 n@d@l@n@p
 vDLNPE
-R5
+R13
 !i10b 1
 !s100 Y478BA^H470M><dgWKJL:3
 IJ:JajkX0dBlUC[hk:@ECS2
@@ -1045,7 +1046,7 @@ R11
 R4
 n@d@l@n@p@e
 vDLP
-R5
+R13
 !i10b 1
 !s100 M[:eQERVloQ1hj0S3fdh_0
 IKRhin^C5nJ^daPnUmA?i31
@@ -1066,7 +1067,7 @@ R11
 R4
 n@d@l@p
 vDLPE
-R5
+R13
 !i10b 1
 !s100 YnPcA>CC1081m0BR<Q4650
 IHbPJf?klkT5c0658PR8i?3
@@ -1087,7 +1088,7 @@ R11
 R4
 n@d@l@p@e
 vDP
-R5
+R13
 !i10b 1
 !s100 ;PkH7@EF7F7FAHK6ialGN2
 I[jY<D?1:ACi`a5LU9l98V1
@@ -1108,7 +1109,7 @@ R11
 R4
 n@d@p
 vDPB
-R5
+R13
 !i10b 1
 !s100 JJ]jk7biSE`:MoA4_P4Ui0
 I;cKFMa8Q:7R>bfUb?QM0T3
@@ -1129,7 +1130,7 @@ R11
 R4
 n@d@p@b
 vDPX9
-R5
+R13
 !i10b 1
 !s100 iAf^2ac]nSh1B?aK:zFGo0
 I63X=T2N3BJDPnRT8?mO@J0
@@ -1150,7 +1151,7 @@ R11
 R4
 n@d@p@x9
 vDPX9B
-R5
+R13
 !i10b 1
 !s100 @:lRWEkbEWKDdCGecOD>j1
 IAi7]?h12;WGBJ8WG:VPm82
@@ -1360,7 +1361,7 @@ R11
 R4
 n@e@l@v@d@s_@t@b@u@f
 vEX
-R12
+R1
 !i10b 1
 !s100 Yaedf_5KIW]2YLbIH5hh61
 IfDzT4Xaih8QUOL9REY8N12
@@ -1374,7 +1375,7 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.842000
+!s108 1726061994.480000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/EX.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/EX.v|
 !i113 0
@@ -1444,7 +1445,7 @@ R11
 R4
 n@i3@c_@i@o@b@u@f
 vIBUF
-R5
+R13
 !i10b 1
 !s100 fGbo3>7FG3HB:O<0Ni3Mc3
 I[ATcP9Vn<T>>fbU9ad@6Y1
@@ -1486,7 +1487,7 @@ R11
 R4
 n@i@b@u@f_@r
 vID
-R12
+R1
 !i10b 1
 !s100 8PoVCXjlK8H8j6Z3EC=ME3
 IAeM7Go3ZkO?=>Xf[_dHT;1
@@ -1500,14 +1501,14 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.901000
+!s108 1726061994.533000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/ID.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/ID.v|
 !i113 0
 R4
 n@i@d
 vID_EX
-R12
+R1
 !i10b 1
 !s100 [Ua^e1c980cQcVoTOkd9H0
 IBBV40YZVg@j_6EzoFORKI3
@@ -1521,14 +1522,14 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.960000
+!s108 1726061994.585000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/ID_EX.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/ID_EX.v|
 !i113 0
 R4
 n@i@d_@e@x
 vIDDR
-R5
+R13
 !i10b 1
 !s100 8R<5gm<=3V;NBO_FYo7e_3
 I[]PJ<Tb30Q=ie8E<69Fm81
@@ -1549,7 +1550,7 @@ R11
 R4
 n@i@d@d@r
 vIDDR_MEM
-R5
+R13
 !i10b 1
 !s100 Ra^6ScI_NK7RKeE]gc5Eb0
 I16cg4Kea9o486Hn[mAE9M1
@@ -1570,7 +1571,7 @@ R11
 R4
 n@i@d@d@r_@m@e@m
 vIDDRC
-R5
+R13
 !i10b 1
 !s100 UNVQC0m26XKO3DBF5]D^b2
 ImdbbL:0I`48f`fB]6aKMB2
@@ -1591,7 +1592,7 @@ R11
 R4
 n@i@d@d@r@c
 vIDES10
-R5
+R13
 !i10b 1
 !s100 @d:79bBGS[Q98XC2JO5OA3
 Il7QLfcjTdTSPHc_W8O9Q82
@@ -1612,7 +1613,7 @@ R11
 R4
 n@i@d@e@s10
 vIDES4
-R5
+R13
 !i10b 1
 !s100 jWFg6d[0klfo8ASJO`>EX1
 IQAm`]6MJ<YaQQfB6H@FYA0
@@ -1633,7 +1634,7 @@ R11
 R4
 n@i@d@e@s4
 vIDES4_MEM
-R5
+R13
 !i10b 1
 !s100 HA;IWma[hU<G8D><N6`o[0
 I__o]>nP9g4n`;54ggF4eC0
@@ -1654,7 +1655,7 @@ R11
 R4
 n@i@d@e@s4_@m@e@m
 vIDES8
-R5
+R13
 !i10b 1
 !s100 @Ldc26ca51z:_Lcid0AWE1
 Ii?LBJT`hgJlCegVT>XDLF3
@@ -1675,7 +1676,7 @@ R11
 R4
 n@i@d@e@s8
 vIDES8_MEM
-R5
+R13
 !i10b 1
 !s100 ln4>@RPlH54cK93TE2e`=2
 IOHC?8SURdP^;63>oH5P6A1
@@ -1696,7 +1697,7 @@ R11
 R4
 n@i@d@e@s8_@m@e@m
 vIEM
-R5
+R13
 !i10b 1
 !s100 2J@eGWRjcDOodKQKak78=0
 Ie]=>[GbO2@0g]K<S=zBGP0
@@ -1731,7 +1732,7 @@ R3
 r1
 !s85 0
 31
-!s108 1725169504.016000
+!s108 1726061994.636000
 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/IF.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/IF.v|
 !i113 0
@@ -1752,14 +1753,14 @@ R3
 r1
 !s85 0
 31
-!s108 1725169504.070000
+!s108 1726061994.688000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/IF_ID.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/IF_ID.v|
 !i113 0
 R4
 n@i@f_@i@d
 vInCtrl_LED
-R12
+R5
 !i10b 1
 !s100 L]@a;mAJJ45TAMjlG6@2U1
 ID;OBD[Yj:H=Z2]P=1`6TU3
@@ -1773,14 +1774,14 @@ R3
 r1
 !s85 0
 31
-!s108 1725169502.993000
+!s108 1726061993.691000
 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/InCtrl_LED.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/InCtrl_LED.v|
 !i113 0
 R4
 n@in@ctrl_@l@e@d
 vInCtrl_Tube
-R12
+R5
 !i10b 1
 !s100 lcc_R?3NC3zKYZ0bmI7W03
 IT]4RH`in?<0]RbnCn@ZLU0
@@ -1794,7 +1795,7 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.047000
+!s108 1726061993.743000
 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/InCtrl_Tube.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/InCtrl_Tube.v|
 !i113 0
@@ -1810,18 +1811,18 @@ R0
 w1725039705
 8F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/gowin_rom16/inst_mem.v
 FF:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/gowin_rom16/inst_mem.v
-R13
+R12
 R3
 r1
 !s85 0
 31
-!s108 1725169502.615000
+!s108 1726061993.326000
 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/gowin_rom16/inst_mem.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/gowin_rom16/inst_mem.v|
 !i113 0
 R4
 vINV
-R5
+R13
 !i10b 1
 !s100 BVXc1jBTnOdQd6M`zzb>b3
 IOMEVGOkCAd>NlQ5::Ka>;2
@@ -1842,7 +1843,7 @@ R11
 R4
 n@i@n@v
 vIOBUF
-R5
+R13
 !i10b 1
 !s100 g3:JZ^K4NRUfdc0Z6]cYB0
 IkY;CJ>Q@HQLHeeoZ[<Jk12
@@ -1884,7 +1885,7 @@ R11
 R4
 n@i@o@b@u@f_@r
 vIODELAY
-R5
+R13
 !i10b 1
 !s100 WoXg>YVd<]aSV3NNkfYOU2
 IfY`>8BVLVdce6<ChB5g2U3
@@ -1926,7 +1927,7 @@ R11
 R4
 n@i@o@d@e@l@a@y@a
 vIVIDEO
-R5
+R13
 !i10b 1
 !s100 FQ[6@EANb^8GCmnA;PoZW2
 IF1E`Q840NL;k>`A?6><ZY0
@@ -1947,7 +1948,7 @@ R11
 R4
 n@i@v@i@d@e@o
 vLED
-R12
+R5
 !i10b 1
 !s100 I9@ke>;U@XDE:[A>CjFUe3
 I[66:gh5LmYXKC0CBmiPjU1
@@ -1961,14 +1962,14 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.101000
+!s108 1726061993.797000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/LED.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/LED.v|
 !i113 0
 R4
 n@l@e@d
 vLUT1
-R5
+R13
 !i10b 1
 !s100 KLEMKbk^02HM?TF>X9S[F0
 IN?gkod>aBzF<m[0IJ2o[F3
@@ -1989,7 +1990,7 @@ R11
 R4
 n@l@u@t1
 vLUT2
-R5
+R13
 !i10b 1
 !s100 FlUX5Fe61F>ZnM4k;8J4]2
 I@Q4=M@Ffe<?c6EP19]fAE0
@@ -2010,7 +2011,7 @@ R11
 R4
 n@l@u@t2
 vLUT3
-R5
+R13
 !i10b 1
 !s100 E1DS43;CGMXVJ>G_aYTVk1
 I<EBa^e`TDLl^E8Ia73Wc33
@@ -2031,7 +2032,7 @@ R11
 R4
 n@l@u@t3
 vLUT4
-R5
+R13
 !i10b 1
 !s100 UVCn=Y3iL7VSooUeX?O3_3
 IEnLnOL=mQV@KSlFL]TJJJ0
@@ -2052,7 +2053,7 @@ R11
 R4
 n@l@u@t4
 vLUT5
-R5
+R13
 !i10b 1
 !s100 nSi:BRJ1[gHjI7AM4gQ@:0
 I^6z[hB6PfM>4k>38@6>>L2
@@ -2073,7 +2074,7 @@ R11
 R4
 n@l@u@t5
 vLUT6
-R5
+R13
 !i10b 1
 !s100 ;]l5SmL>I^oC?94`cIlM;3
 I6amgYY?I<TI1Og8A[PRHV3
@@ -2094,7 +2095,7 @@ R11
 R4
 n@l@u@t6
 vLUT7
-R5
+R13
 !i10b 1
 !s100 Ic@eDj5gFK4GX0Sd>7j@81
 IlfZA?IYKJJ<9Z52K;T8GP1
@@ -2115,7 +2116,7 @@ R11
 R4
 n@l@u@t7
 vLUT8
-R5
+R13
 !i10b 1
 !s100 Pf]_d9L;BDjEo>keA;EXh2
 IWK7l<[gbe2ODJ3f>6OaFX1
@@ -2199,7 +2200,7 @@ R11
 R4
 n@m@u@l@t36@x36
 vMULT9X9
-R5
+R13
 !i10b 1
 !s100 7jfMYE7QB@cMLJM=LkZ8M3
 I@O=UdJ8P<9TN_zObDOVf52
@@ -2283,7 +2284,7 @@ R11
 R4
 n@m@u@l@t@a@l@u36@x18
 vMUX16
-R5
+R13
 !i10b 1
 !s100 kWkDgdB=:;9[[EI?Bj@EU0
 I0OmaiX=j_f:J?nM0J]F0W0
@@ -2304,7 +2305,7 @@ R11
 R4
 n@m@u@x16
 vMUX2
-R5
+R13
 !i10b 1
 !s100 z2z2;`HNKk`1B]44K1o]U3
 IXfiN7g2KS:V>^mk[26RcU3
@@ -2325,7 +2326,7 @@ R11
 R4
 n@m@u@x2
 Umux2
-R5
+R13
 !i10b 1
 !s100 [f8k]@dXL6afITfFO?P8T3
 IBBXd=A`B9nC4859TzLi@10
@@ -2345,7 +2346,7 @@ R11
 !i113 0
 R4
 vMUX2_LUT5
-R5
+R13
 !i10b 1
 !s100 6Gjfnz@le7];h3^WX9MY40
 ICb7aED`JC9N4Aze15;>N^1
@@ -2366,7 +2367,7 @@ R11
 R4
 n@m@u@x2_@l@u@t5
 vMUX2_LUT6
-R5
+R13
 !i10b 1
 !s100 C<Hc;kbZkGzHZQMgP=VbI2
 IH`14<b3U1iPYPkJkW89DD1
@@ -2387,7 +2388,7 @@ R11
 R4
 n@m@u@x2_@l@u@t6
 vMUX2_LUT7
-R5
+R13
 !i10b 1
 !s100 1;@Q[dVS[G=lO[:i@1YFo2
 I:Nm8[9kT;cF6<f5TcYoL43
@@ -2408,7 +2409,7 @@ R11
 R4
 n@m@u@x2_@l@u@t7
 vMUX2_LUT8
-R5
+R13
 !i10b 1
 !s100 GZnc<IWZ=i4YTBGV3_A^=0
 Ia2DBCS;Y1CKU;CkL`o?a<0
@@ -2429,7 +2430,7 @@ R11
 R4
 n@m@u@x2_@l@u@t8
 vMUX2_MUX16
-R5
+R13
 !i10b 1
 !s100 b]R7d58P?W7Q5:IZNnRo[2
 IoTneO4AY9blbQ[iUafd[01
@@ -2450,7 +2451,7 @@ R11
 R4
 n@m@u@x2_@m@u@x16
 vMUX2_MUX32
-R5
+R13
 !i10b 1
 !s100 jOh<YkkElaf@2Z6zdEdeR1
 IICMXgbUM5@;lo3b<PV]nh0
@@ -2471,7 +2472,7 @@ R11
 R4
 n@m@u@x2_@m@u@x32
 vMUX2_MUX8
-R5
+R13
 !i10b 1
 !s100 3L6zjh6lZX6Ae6biDjKVl3
 Ig<:P4BoVWcH1;<_niaPcc2
@@ -2492,7 +2493,7 @@ R11
 R4
 n@m@u@x2_@m@u@x8
 vMUX32
-R5
+R13
 !i10b 1
 !s100 4LV9_HW7?F3T]2jZ?9e2A3
 IWWhCz9:iD6l<]o@TccU7`3
@@ -2513,7 +2514,7 @@ R11
 R4
 n@m@u@x32
 vMUX4
-R5
+R13
 !i10b 1
 !s100 o`^8G0R2<flnf:8JaS`M52
 IT8mL6VW^cD;FNg]a07bJ`3
@@ -2534,7 +2535,7 @@ R11
 R4
 n@m@u@x4
 vMUX8
-R5
+R13
 !i10b 1
 !s100 dE=QOE^A3FQ:`=mO_@?L;2
 ITol?Lc1cQmce5W@9[KZUR2
@@ -2555,7 +2556,7 @@ R11
 R4
 n@m@u@x8
 vOBUF
-R5
+R13
 !i10b 1
 !s100 ^KSbg3AL]O208g1z`EPH=0
 I3D66HhWY3[P1KM73IH`260
@@ -2576,7 +2577,7 @@ R11
 R4
 n@o@b@u@f
 vODDR
-R5
+R13
 !i10b 1
 !s100 N@R4l0KX@af>G5bhYN`1f1
 IUJ0B]dSHbm<OoL[S@D^3E3
@@ -2597,7 +2598,7 @@ R11
 R4
 n@o@d@d@r
 vODDR_MEM
-R5
+R13
 !i10b 1
 !s100 Xm?@I[4If>I<4U=1l5ZBD3
 IG8;>_TA;K_MjAo?Z`VkWG0
@@ -2618,7 +2619,7 @@ R11
 R4
 n@o@d@d@r_@m@e@m
 vODDRC
-R5
+R13
 !i10b 1
 !s100 ]c?1C`6:A09dQzI1bzBPG3
 I`QlDnEYTm[iV1d3dWOTTh1
@@ -2681,7 +2682,7 @@ R11
 R4
 n@o@s@c@w
 vOSER10
-R5
+R13
 !i10b 1
 !s100 =:W0CLU5HKBdNG`i@f?7c3
 Izg10;[[L;iL3a<ffKoH6l0
@@ -2702,7 +2703,7 @@ R11
 R4
 n@o@s@e@r10
 vOSER4
-R5
+R13
 !i10b 1
 !s100 W@:2:D36J;?2G`h6H4f`O0
 IQ@d^U9b4;aLRK:[eLQ@lK1
@@ -2723,7 +2724,7 @@ R11
 R4
 n@o@s@e@r4
 vOSER4_MEM
-R5
+R13
 !i10b 1
 !s100 6E?I4N=<<a=S?ZneaE>e=2
 IbX=b`1fVlh3PYmVXCHz8H2
@@ -2744,7 +2745,7 @@ R11
 R4
 n@o@s@e@r4_@m@e@m
 vOSER8
-R5
+R13
 !i10b 1
 !s100 Zd5@6zV75hWIl:IOEK`3I3
 I>XZ2TIUReF_?GUYJPSnbL2
@@ -2765,7 +2766,7 @@ R11
 R4
 n@o@s@e@r8
 vOSER8_MEM
-R5
+R13
 !i10b 1
 !s100 OOVM9I]gOd@igJoRh_Z`K0
 I>d@ncY<6k5b5<IEPM@_DV1
@@ -2807,7 +2808,7 @@ R11
 R4
 n@o@t@p
 vOutCtrl_Buttom
-R12
+R5
 !i10b 1
 !s100 hf`6XPaMJYoSo86liliNc0
 ILfHgIkdJ2f9[XT>2ZAfRH2
@@ -2821,14 +2822,14 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.159000
+!s108 1726061993.850000
 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/OutCtrl_Buttom.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/OutCtrl_Buttom.v|
 !i113 0
 R4
 n@out@ctrl_@buttom
 vOutCtrl_Switch
-R12
+R5
 !i10b 1
 !s100 2FOW_l2j^3oT<HS5XE3Qb1
 IZ_b]=kKIQHHo7?HFJoQF]0
@@ -2842,14 +2843,14 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.214000
+!s108 1726061993.901000
 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/OutCtrl_Switch.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/OutCtrl_Switch.v|
 !i113 0
 R4
 n@out@ctrl_@switch
 vOVIDEO
-R5
+R13
 !i10b 1
 !s100 VWi<G2`fDQ0koS_omXZUn0
 IRD<<Hagf^g`nX`:P^K`A?2
@@ -2870,7 +2871,7 @@ R11
 R4
 n@o@v@i@d@e@o
 vPADD18
-R5
+R13
 !i10b 1
 !s100 @ijOAHZ4MF2HQHV;gi`5Y3
 I5fDV[a]3;j3I@ok30<:2G0
@@ -2891,7 +2892,7 @@ R11
 R4
 n@p@a@d@d18
 vPADD9
-R5
+R13
 !i10b 1
 !s100 KMnCWSg07:E:0Tbdc;f[F1
 IG3SU4<XR0Eb4k3iOU^<ZO1
@@ -2954,7 +2955,7 @@ R11
 R4
 n@p@l@l@o
 vpROM
-R5
+R13
 !i10b 1
 !s100 3L]08;fd0mJ;FXZQAXf9^2
 INL7CL8J7hG5aai3^8RMVY2
@@ -2975,7 +2976,7 @@ R11
 R4
 np@r@o@m
 vpROMX9
-R5
+R13
 !i10b 1
 !s100 N2nQSCin^_2hG^RXL1fUH3
 IL5e1BoBSi5kz>0hLo>L9F1
@@ -2996,7 +2997,7 @@ R11
 R4
 np@r@o@m@x9
 vRAM
-R12
+R5
 !i10b 1
 !s100 gmZiiP6mE7UmF5;];BG1O3
 I@g<<?egW>Qa@2c?VTngCl3
@@ -3010,14 +3011,14 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.272000
+!s108 1726061993.953000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/RAM.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/RAM.v|
 !i113 0
 R4
 n@r@a@m
 vRAM16S1
-R5
+R13
 !i10b 1
 !s100 JZmae04?5A3UBO8G<o=IR3
 IVn@jm028W>n9PjH;`WWjS1
@@ -3038,7 +3039,7 @@ R11
 R4
 n@r@a@m16@s1
 vRAM16S2
-R5
+R13
 !i10b 1
 !s100 oQ`H<LDXdRd1:e]W`AN[b0
 I3^gMU6@c`fM1?3@bjYD[A3
@@ -3059,7 +3060,7 @@ R11
 R4
 n@r@a@m16@s2
 vRAM16S4
-R5
+R13
 !i10b 1
 !s100 <_am]mlmS]WeU>6^S>oeZ1
 IFTRAQ=m0jWVeXlHlfR[9W1
@@ -3080,7 +3081,7 @@ R11
 R4
 n@r@a@m16@s4
 vRAM16SDP1
-R5
+R13
 !i10b 1
 !s100 D07[2^H@i154i?`ZjU`LT0
 I?NQFo4O;?3M7ghKY0jen43
@@ -3101,7 +3102,7 @@ R11
 R4
 n@r@a@m16@s@d@p1
 vRAM16SDP2
-R5
+R13
 !i10b 1
 !s100 ;T^3gZck:C7DnGfo7@KQh2
 IJOJco2oY9b]]U]jgzI`@Z3
@@ -3122,7 +3123,7 @@ R11
 R4
 n@r@a@m16@s@d@p2
 vRAM16SDP4
-R5
+R13
 !i10b 1
 !s100 ZcM:f_j34@4M0U7Qf0hea1
 IS][IgTaJ=FCeea^NXEY[K3
@@ -3157,14 +3158,14 @@ R3
 r1
 !s85 0
 31
-!s108 1725169504.125000
+!s108 1726061994.738000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/REG.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/REG.v|
 !i113 0
 R4
 n@r@e@g
 vROM
-R5
+R13
 !i10b 1
 !s100 @?<>Fk_KVXJFN^nG_L6^z3
 IY:W]B9EOg5Jb1P5j=@NaU0
@@ -3185,7 +3186,7 @@ R11
 R4
 n@r@o@m
 vROM16
-R5
+R13
 !i10b 1
 !s100 kF7`RMAfz4K?UPdCVA4Ln1
 Im<>TUMTDVFJG5fTRhYTTK2
@@ -3206,7 +3207,7 @@ R11
 R4
 n@r@o@m16
 vROMX9
-R5
+R13
 !i10b 1
 !s100 2J0JgSfH3Dbod2b<W@?5<1
 IEKX6]LziHne2CPl]5OUf>1
@@ -3248,7 +3249,7 @@ R11
 R4
 nr@p@l@l
 vrROM
-R5
+R13
 !i10b 1
 !s100 i]0WXP2G>@R?;;3JMAMHD0
 I1@;hD[cUG0d[@U2k]Z7nY3
@@ -3269,7 +3270,7 @@ R11
 R4
 nr@r@o@m
 vrROMX9
-R5
+R13
 !i10b 1
 !s100 SF6]_nLn0:O^ad_DNSi;61
 IeGMaHoU<gd=Ei@<Wo]43h1
@@ -3290,7 +3291,7 @@ R11
 R4
 nr@r@o@m@x9
 vrSDP
-R5
+R13
 !i10b 1
 !s100 2V`T_LE=C>IHU_MTC>=R52
 ICLIYCVVk6AI`gPa9IX<f>0
@@ -3311,7 +3312,7 @@ R11
 R4
 nr@s@d@p
 vrSDPX9
-R5
+R13
 !i10b 1
 !s100 e;HgR9SzTJVX;WzE7<Ag_3
 I7HiFiF1obZJY49Z5SjUm[0
@@ -3353,7 +3354,7 @@ R11
 R4
 n@s@a@m@b
 vSDP
-R5
+R13
 !i10b 1
 !s100 =4hoIUh?J6nMFHRj][KIO2
 I2g^hNB48e]73PMgJZjQP00
@@ -3374,7 +3375,7 @@ R11
 R4
 n@s@d@p
 vSDPB
-R5
+R13
 !i10b 1
 !s100 [bLOdL[NCYeZ7I1U:LGhi3
 IRTMa^z<c1W0;W_X^L@Xe:0
@@ -3395,7 +3396,7 @@ R11
 R4
 n@s@d@p@b
 vSDPX9
-R5
+R13
 !i10b 1
 !s100 [7M^CPP`>FcAoPSf9a9fb2
 IJYfM`deD^<bRZj=N[aBNj0
@@ -3416,7 +3417,7 @@ R11
 R4
 n@s@d@p@x9
 vSDPX9B
-R5
+R13
 !i10b 1
 !s100 9FCVih5F5l;U`H7mT:=Tg2
 IIBk^>O6_ogUMJTBUOVe]X0
@@ -3437,7 +3438,7 @@ R11
 R4
 n@s@d@p@x9@b
 vSP
-R5
+R13
 !i10b 1
 !s100 YTJTEd]>A@ZA]@P93<>0L3
 IFmo4a0ZRUBSNK=m:3@?3>0
@@ -3458,7 +3459,7 @@ R11
 R4
 n@s@p
 vSPX9
-R5
+R13
 !i10b 1
 !s100 9@6[4XTJSa?3DgP@KO>913
 InzXgjPeLlg8ClVPWdcNUD3
@@ -3479,7 +3480,7 @@ R11
 R4
 n@s@p@x9
 vSwitch
-R12
+R1
 !i10b 1
 !s100 RJK;FX^IHI]F08j9ANe;e2
 I0zWA6[<z3i:gLl`NlkP873
@@ -3493,7 +3494,7 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.326000
+!s108 1726061994.016000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Switch.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Switch.v|
 !i113 0
@@ -3514,13 +3515,13 @@ R3
 r1
 !s85 0
 31
-!s108 1725169502.505000
+!s108 1726061993.187000
 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/gowin_workfile/tb_top.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/gowin_workfile/tb_top.v|
 !i113 0
 R4
 vTBUF
-R5
+R13
 !i10b 1
 !s100 ?Id]TK_MLe>DPYQnY9oEF0
 ILXhP:@^ccGcTRkPHJmdRQ3
@@ -3541,7 +3542,7 @@ R11
 R4
 n@t@b@u@f
 vTimer
-R12
+R1
 !i10b 1
 !s100 KR@zSFLMbOcbYfJMA]RYf3
 I_4WzG_e7Na7a7C[gX_WWJ1
@@ -3555,7 +3556,7 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.380000
+!s108 1726061994.068000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Timer.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Timer.v|
 !i113 0
@@ -3660,13 +3661,13 @@ R3
 r1
 !s85 0
 31
-!s108 1725169504.415000
+!s108 1726061994.939000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/top.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/top.v|
 !i113 0
 R4
 vTube
-R12
+R1
 !i10b 1
 !s100 kEXTRjk0:Pnac0<ZcKcFc3
 I]zOF2Jki4SdlM?18E_[SK1
@@ -3680,14 +3681,14 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.436000
+!s108 1726061994.121000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Tube.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/Tube.v|
 !i113 0
 R4
 n@tube
 vUART
-R12
+R1
 !i10b 1
 !s100 BPCijOiXg]2Gz8R:N;Db>2
 Ii:iGzJKjeKQ;d5lgRz[Oa1
@@ -3701,14 +3702,14 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.492000
+!s108 1726061994.173000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/UART.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/UART.v|
 !i113 0
 R4
 n@u@a@r@t
 vuart_recv
-R12
+R1
 !i10b 1
 !s100 ^Ve:QlL<FCb?8n48D<kM[0
 Ib:FI15G`igO[MobC<01Cc2
@@ -3722,13 +3723,13 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.558000
+!s108 1726061994.228000
 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/uart_recv.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/uart_recv.v|
 !i113 0
 R4
 vuart_send
-R12
+R1
 !i10b 1
 !s100 O24=`BICDFB0XlF>n0j=81
 IJeS6aaSY3MfHgf]G?lScI2
@@ -3742,7 +3743,7 @@ R3
 r1
 !s85 0
 31
-!s108 1725169503.619000
+!s108 1726061994.279000
 !s107 F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/uart_send.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/bus/uart_send.v|
 !i113 0
@@ -3783,7 +3784,7 @@ R3
 r1
 !s85 0
 31
-!s108 1725169504.257000
+!s108 1726061994.790000
 !s107 ../para.v|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/WB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL/src/cpu/WB.v|
 !i113 0

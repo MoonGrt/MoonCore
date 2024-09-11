@@ -3,6 +3,7 @@
 module REG (
     input wire clk,
     input wire rst_n,
+    input wire clear,
 
     input wire [2:0] rd,
     input wire [2:0] rs,
@@ -42,7 +43,7 @@ module REG (
     integer i;
     always @(posedge clk or negedge rst_n) begin
         if (~rst_n) for (i = 0; i < 8; i = i + 1) rf[i][`DATABUS] <= 16'h0;
-        else if (RegWe == `REGWE_WRITE) rf[WB_addr] <= WB_data;
+        else if (RegWe == `REGWE_WRITE && WB_addr) rf[WB_addr] <= WB_data;
     end
 
 endmodule

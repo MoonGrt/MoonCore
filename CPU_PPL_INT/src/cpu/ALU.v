@@ -13,13 +13,12 @@ module ALU (
     wire            suben;
 
     wire [`DATABUS] addOut;
-    wire [`DATABUS] subOut;
+    wire [`DATABUS] mulOut;
     wire [`DATABUS] andOut;
     wire [`DATABUS] orOut;
     wire [`DATABUS] xorOut;
     wire [`DATABUS] sllOut;
     wire [`DATABUS] srlOut;
-    wire [`DATABUS] sraOut;
 
     reg  [`DATABUS] out_reg;
 
@@ -32,6 +31,7 @@ module ALU (
 
     assign overflow = ((ALUop == `ADD_op) | (ALUop == `SUB_op)) && (Ain[`CPU_WIDTH-1] == Bin[`CPU_WIDTH-1]) && (Ain[`CPU_WIDTH-1] != addOut[`CPU_WIDTH-1]);
     assign addOut = Ain + Bin;
+    assign mulOut = A * B;
     assign andOut = A & B;
     assign orOut = A | B;
     assign xorOut = A ^ B;
@@ -50,6 +50,9 @@ module ALU (
             end
             `SUB_op: begin
                 out_reg = addOut;
+            end
+            `MUL_op: begin
+                out_reg = mulOut;
             end
             `AND_op: begin
                 out_reg = andOut;

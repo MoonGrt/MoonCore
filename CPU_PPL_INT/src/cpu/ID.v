@@ -1,7 +1,7 @@
 `include "../para.v"
 
 module ID (
-    input wire                 rst_n,
+    input wire rst_n,
     input wire [`DATABUS] inst,
 
     output wire [2:0] rd,
@@ -23,7 +23,7 @@ module ID (
     //*****************************************************
     assign rd = inst[7:5];
     assign rs = inst[10:8];
-    assign IMM = IMMSel ? {{8{1'b0}}, inst[`CPU_WIDTH-1: 8]}:{{11{1'b0}}, inst[`CPU_WIDTH-1: 11]};   // 立即数设定为无符号数，扩展不考虑负数情况
+    assign IMM = IMMSel ? {{8{1'b0}}, inst[`CPU_WIDTH-1: 8]} : {{11{1'b0}}, inst[`CPU_WIDTH-1: 11]};   // 立即数设定为无符号数，扩展不考虑负数情况
 
     //*****************************************************
     //**              Instruction Decode
