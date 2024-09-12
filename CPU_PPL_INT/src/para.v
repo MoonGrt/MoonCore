@@ -77,14 +77,14 @@
 `define INT_UART 8'b00000010
 `define INT_UART_ENTRY_ADDR 32'h8
 
-`define CSR_CYCLE 12'hc00
-`define CSR_CYCLEH 12'hc80
-`define CSR_MTVEC 12'h305
-`define CSR_MCAUSE 12'h342
-`define CSR_MEPC 12'h341
-`define CSR_MIE 12'h304
-`define CSR_MSTATUS 12'h300
-`define CSR_MSCRATCH 12'h340
+`define CSR_CYCLE 5'd0
+`define CSR_CYCLEH 5'd1
+`define CSR_MTVEC 5'd2
+`define CSR_MCAUSE 5'd3
+`define CSR_MEPC 5'd4
+`define CSR_MIE 5'd5
+`define CSR_MSTATUS 5'd6
+`define CSR_MSCRATCH 5'd7
 
 
 //*****************************************************
@@ -116,6 +116,15 @@
 `define CMP_EQ 2'b00
 `define CMP_L 2'b01
 `define CMP_G 2'b10
+
+
+//*****************************************************
+//**                  JUMP Parameter
+//*****************************************************
+`define JC_op 2'b00  // condition jump
+`define JAL_op 2'b01
+`define JR_op 2'b10
+
 
 //*****************************************************
 //**                   BUS control

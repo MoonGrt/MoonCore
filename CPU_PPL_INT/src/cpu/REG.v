@@ -3,7 +3,6 @@
 module REG (
     input wire clk,
     input wire rst_n,
-    input wire clear,
 
     input wire [2:0] rd,
     input wire [2:0] rs,
@@ -11,6 +10,7 @@ module REG (
     input wire [     2:0] WB_addr,
     input wire [`DATABUS] WB_data,
     input wire            RegWe,
+    input wire            clear,
 
     output wire [`DATABUS] RD,
     output wire [`DATABUS] RS
@@ -19,10 +19,10 @@ module REG (
     //*****************************************************
     //**                    Forwarding
     //*****************************************************
-    reg                                [2:0] last_rd;
+    reg [2:0] last_rd;
     // wire [2:0] last_rs;  // only write data to rd
-    wire rd_forward = (rd == last_rd);
-    wire rs_forward = (rs == last_rd);
+    wire rd_forward = (rd == last_rd) && RegWe;
+    wire rs_forward = (rs == last_rd) && RegWe;
     always @(posedge clk or negedge rst_n) begin
         if (~rst_n) begin
             last_rd <= 3'b0;
@@ -42,7 +42,7 @@ module REG (
     assign RS = rs_forward ? WB_data : rf[(rs)];
     integer i;
     always @(posedge clk or negedge rst_n) begin
-        if (~rst_n) for (i = 0; i < 8; i = i + 1) rf[i][`DATABUS] <= 16'h0;
+        if (~rst_n || clear) for (i = 0; i < 8; i = i + 1) rf[i][`DATABUS] <= 16'h0;
         else if (RegWe == `REGWE_WRITE && WB_addr) rf[WB_addr] <= WB_data;
     end
 

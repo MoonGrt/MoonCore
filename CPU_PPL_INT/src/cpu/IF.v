@@ -6,22 +6,31 @@ module IF (
 
     input wire [`HOLDBUS] hold_flag,
     input wire            jump_flag,
-    input wire [`ADDRBUS] branch_pc,
+    input wire [`ADDRBUS] jump_pc,
 
     input  wire [`DATABUS] inst_data,
-    output wire [`ADDRBUS] inst_addr
+    output wire [`ADDRBUS] inst_addr,
+    output wire            hold_pc
 );
 
     wire hold_en = (hold_flag == `Hold_PPL) | (hold_flag == `Hold_PC);
 
-    reg  [`ADDRBUS] pc;
-    wire [`ADDRBUS] pc4 = pc + 1;
-    wire [`ADDRBUS] npc = (jump_flag) ? branch_pc : (inst_data ? pc4 : pc);
-    assign inst_addr = pc;
+    //*****************************************************
+    //**                    jump
+    //*****************************************************
+    wire [4:0] opecode = inst_data[4:0];
+    assign hold_pc = (opecode == `BEQ) | (opecode == `BLE) | (opecode == `JAL) | (opecode == `JR);
+
 
     //*****************************************************
-    //**                    main
+    //**                    pc
     //*****************************************************
+    reg  [`ADDRBUS] pc;
+    wire [`ADDRBUS] npc = jump_flag ? jump_pc : 
+                          hold_en ? pc : 
+                          inst_data ? pc + 'b1 : pc;
+    assign inst_addr = pc;
+
     always @(posedge clk or negedge rst_n) begin
         if (~rst_n) pc <= 0;
         else pc <= npc;
@@ -31,5 +40,8 @@ module IF (
     //       .a(pc[9: 0]),
     //       .spo(inst)
     //   );
+
+
+
 
 endmodule

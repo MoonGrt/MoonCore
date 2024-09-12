@@ -6,24 +6,24 @@ module CSR (
     input wire rst_n,
 
     // form ex
-    input wire            EX_we,      // ex模块写寄存器标志
-    input wire [`ADDRBUS] EX_raddr,   // ex模块读寄存器地址
-    input wire [`ADDRBUS] EX_waddr,   // ex模块写寄存器地址
-    input wire [`DATABUS] EX_rdata,   // ex模块写寄存器数据
+    input wire            EX_we,      // EX模块写CSR寄存器标志
+    input wire [`ADDRBUS] EX_raddr,   // EX模块读CSR寄存器地址
+    input wire [`ADDRBUS] EX_waddr,   // EX模块写CSR寄存器地址
+    input wire [`DATABUS] EX_wdata,   // EX模块写CSR寄存器数据
     // from int
-    input wire            csr_we,     // int模块写寄存器标志
-    input wire [`ADDRBUS] csr_raddr,  // int模块读寄存器地址
-    input wire [`ADDRBUS] csr_waddr,  // int模块写寄存器地址
-    input wire [`DATABUS] csr_wdata,  // int模块写寄存器数据
+    input wire            int_we,     // CLINT模块写CSR寄存器标志
+    input wire [`ADDRBUS] int_raddr,  // CLINT模块读CSR寄存器地址
+    input wire [`ADDRBUS] int_waddr,  // CLINT模块写CSR寄存器地址
+    input wire [`DATABUS] int_wdata,  // CLINT模块写CSR寄存器数据
 
     // to int
-    output reg  [`DATABUS] csr_rdata,      // int模块读寄存器数据
+    output reg  [`DATABUS] int_rdata,      // CLINT模块读寄存器数据
     output wire [`DATABUS] csr_mtvec,      // mtvec
     output wire [`DATABUS] csr_mepc,       // mepc
     output wire [`DATABUS] csr_mstatus,    // mstatus
     output wire            global_int_en,  // 全局中断使能标志
     // to ex
-    output reg  [`DATABUS] EX_wdata        // ex模块读寄存器数据
+    output reg  [`DATABUS] EX_rdata        // EX模块读寄存器数据
 );
 
     reg [    31:0]  cycle;
@@ -64,47 +64,47 @@ module CSR (
             if (EX_we) begin
                 case (EX_waddr[11:0])
                     `CSR_MTVEC: begin
-                        mtvec <= EX_rdata;
+                        mtvec <= EX_wdata;
                     end
                     `CSR_MCAUSE: begin
-                        mcause <= EX_rdata;
+                        mcause <= EX_wdata;
                     end
                     `CSR_MEPC: begin
-                        mepc <= EX_rdata;
+                        mepc <= EX_wdata;
                     end
                     `CSR_MIE: begin
-                        mie <= EX_rdata;
+                        mie <= EX_wdata;
                     end
                     `CSR_MSTATUS: begin
-                        mstatus <= EX_rdata;
+                        mstatus <= EX_wdata;
                     end
                     `CSR_MSCRATCH: begin
-                        mscratch <= EX_rdata;
+                        mscratch <= EX_wdata;
                     end
                     default: begin
 
                     end
                 endcase
             // int模块写操作
-            end else if (csr_we) begin
-                case (csr_waddr[11:0])
+            end else if (int_we) begin
+                case (int_waddr[11:0])
                     `CSR_MTVEC: begin
-                        mtvec <= csr_wdata;
+                        mtvec <= int_wdata;
                     end
                     `CSR_MCAUSE: begin
-                        mcause <= csr_wdata;
+                        mcause <= int_wdata;
                     end
                     `CSR_MEPC: begin
-                        mepc <= csr_wdata;
+                        mepc <= int_wdata;
                     end
                     `CSR_MIE: begin
-                        mie <= csr_wdata;
+                        mie <= int_wdata;
                     end
                     `CSR_MSTATUS: begin
-                        mstatus <= csr_wdata;
+                        mstatus <= int_wdata;
                     end
                     `CSR_MSCRATCH: begin
-                        mscratch <= csr_wdata;
+                        mscratch <= int_wdata;
                     end
                     default: begin
 
@@ -118,35 +118,35 @@ module CSR (
     // ex模块读CSR寄存器
     always @(*) begin
         if ((EX_waddr[11:0] == EX_raddr[11:0]) && EX_we) begin
-            EX_wdata = EX_rdata;
+            EX_rdata = EX_wdata;
         end else begin
             case (EX_raddr[11:0])
                 `CSR_CYCLE: begin
-                    EX_wdata = cycle[15:0];
+                    EX_rdata = cycle[15:0];
                 end
                 `CSR_CYCLEH: begin
-                    EX_wdata = cycle[31:16];
+                    EX_rdata = cycle[31:16];
                 end
                 `CSR_MTVEC: begin
-                    EX_wdata = mtvec;
+                    EX_rdata = mtvec;
                 end
                 `CSR_MCAUSE: begin
-                    EX_wdata = mcause;
+                    EX_rdata = mcause;
                 end
                 `CSR_MEPC: begin
-                    EX_wdata = mepc;
+                    EX_rdata = mepc;
                 end
                 `CSR_MIE: begin
-                    EX_wdata = mie;
+                    EX_rdata = mie;
                 end
                 `CSR_MSTATUS: begin
-                    EX_wdata = mstatus;
+                    EX_rdata = mstatus;
                 end
                 `CSR_MSCRATCH: begin
-                    EX_wdata = mscratch;
+                    EX_rdata = mscratch;
                 end
                 default: begin
-                    EX_wdata = 16'b0;
+                    EX_rdata = 16'b0;
                 end
             endcase
         end
@@ -155,36 +155,36 @@ module CSR (
     // read reg
     // int模块读CSR寄存器
     always @(*) begin
-        if ((csr_waddr[11:0] == csr_raddr[11:0]) && csr_we) begin
-            csr_rdata = csr_wdata;
+        if ((int_waddr[11:0] == int_raddr[11:0]) && int_we) begin
+            int_rdata = int_wdata;
         end else begin
-            case (csr_raddr[11:0])
+            case (int_raddr[11:0])
                 `CSR_CYCLE: begin
-                    csr_rdata = cycle[15:0];
+                    int_rdata = cycle[15:0];
                 end
                 `CSR_CYCLEH: begin
-                    csr_rdata = cycle[31:16];
+                    int_rdata = cycle[31:16];
                 end
                 `CSR_MTVEC: begin
-                    csr_rdata = mtvec;
+                    int_rdata = mtvec;
                 end
                 `CSR_MCAUSE: begin
-                    csr_rdata = mcause;
+                    int_rdata = mcause;
                 end
                 `CSR_MEPC: begin
-                    csr_rdata = mepc;
+                    int_rdata = mepc;
                 end
                 `CSR_MIE: begin
-                    csr_rdata = mie;
+                    int_rdata = mie;
                 end
                 `CSR_MSTATUS: begin
-                    csr_rdata = mstatus;
+                    int_rdata = mstatus;
                 end
                 `CSR_MSCRATCH: begin
-                    csr_rdata = mscratch;
+                    int_rdata = mscratch;
                 end
                 default: begin
-                    csr_rdata = 16'b0;
+                    int_rdata = 16'b0;
                 end
             endcase
         end

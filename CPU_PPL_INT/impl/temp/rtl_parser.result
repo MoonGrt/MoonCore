@@ -17,7 +17,7 @@
     "SubInsts" : [
      {
       "InstFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v",
-      "InstLine" : 74,
+      "InstLine" : 84,
       "InstName" : "ctrl",
       "ModuleFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/Crtl.v",
       "ModuleLine" : 5,
@@ -25,15 +25,15 @@
      },
      {
       "InstFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v",
-      "InstLine" : 85,
-      "InstName" : "INT",
+      "InstLine" : 95,
+      "InstName" : "CLINT",
       "ModuleFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CLINT.v",
       "ModuleLine" : 4,
-      "ModuleName" : "INT"
+      "ModuleName" : "CLINT"
      },
      {
       "InstFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v",
-      "InstLine" : 109,
+      "InstLine" : 119,
       "InstName" : "CSR",
       "ModuleFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CSR.v",
       "ModuleLine" : 4,
@@ -41,7 +41,7 @@
      },
      {
       "InstFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v",
-      "InstLine" : 133,
+      "InstLine" : 143,
       "InstName" : "IF",
       "ModuleFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/IF.v",
       "ModuleLine" : 3,
@@ -49,7 +49,7 @@
      },
      {
       "InstFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v",
-      "InstLine" : 145,
+      "InstLine" : 155,
       "InstName" : "IF_ID",
       "ModuleFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/IF_ID.v",
       "ModuleLine" : 3,
@@ -57,7 +57,7 @@
      },
      {
       "InstFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v",
-      "InstLine" : 154,
+      "InstLine" : 166,
       "InstName" : "ID",
       "ModuleFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ID.v",
       "ModuleLine" : 3,
@@ -65,7 +65,7 @@
      },
      {
       "InstFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v",
-      "InstLine" : 171,
+      "InstLine" : 186,
       "InstName" : "Reg",
       "ModuleFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/REG.v",
       "ModuleLine" : 3,
@@ -73,7 +73,7 @@
      },
      {
       "InstFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v",
-      "InstLine" : 186,
+      "InstLine" : 202,
       "InstName" : "ID_EX",
       "ModuleFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ID_EX.v",
       "ModuleLine" : 3,
@@ -81,7 +81,7 @@
      },
      {
       "InstFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v",
-      "InstLine" : 218,
+      "InstLine" : 240,
       "InstName" : "EX",
       "ModuleFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/EX.v",
       "ModuleLine" : 3,
@@ -89,7 +89,7 @@
       "SubInsts" : [
        {
         "InstFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/EX.v",
-        "InstLine" : 36,
+        "InstLine" : 47,
         "InstName" : "ALU",
         "ModuleFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ALU.v",
         "ModuleLine" : 3,
@@ -97,7 +97,7 @@
        },
        {
         "InstFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/EX.v",
-        "InstLine" : 44,
+        "InstLine" : 55,
         "InstName" : "CMP",
         "ModuleFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CMP.v",
         "ModuleLine" : 3,
@@ -107,7 +107,7 @@
      },
      {
       "InstFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v",
-      "InstLine" : 232,
+      "InstLine" : 261,
       "InstName" : "WB",
       "ModuleFile" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/WB.v",
       "ModuleLine" : 3,

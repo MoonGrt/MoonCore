@@ -1,7 +1,7 @@
 `include "../para.v"
 
 // core local interruptor module && arbitration module
-module INT (
+module CLINT (
     input wire clk,
     input wire rst_n,
 
@@ -14,7 +14,7 @@ module INT (
     input wire            jump_flag,
     input wire [`ADDRBUS] jump_addr,
     // from csr
-    input wire [`DATABUS] csr_rdata,     // CSR寄存器输入数据
+    input wire [`DATABUS] int_rdata,     // CSR寄存器输入数据
     input wire [`DATABUS] csr_mtvec,     // mtvec寄存器
     input wire [`DATABUS] csr_mepc,      // mepc寄存器
     input wire [`DATABUS] csr_mstatus,   // mstatus寄存器
@@ -23,10 +23,10 @@ module INT (
     // to ctrl
     output wire           hold_flag_int,  // 流水线暂停标志
     // to csr
-    output reg            csr_we,         // 写CSR寄存器标志
-    output reg [`ADDRBUS] csr_waddr,      // 写CSR寄存器地址
-    output reg [`ADDRBUS] csr_raddr,      // 读CSR寄存器地址
-    output reg [`DATABUS] csr_wdata,      // 写CSR寄存器数据
+    output reg            int_we,         // CLINT写CSR寄存器标志
+    output reg [`ADDRBUS] int_waddr,      // CLINT写CSR寄存器地址
+    output reg [`ADDRBUS] int_raddr,      // CLINT读CSR寄存器地址
+    output reg [`DATABUS] int_wdata,      // CLINT写CSR寄存器数据
     // to ex
     output reg [`ADDRBUS] int_addr,       // 中断入口地址
     output reg            int_assert      // 中断标志
@@ -59,7 +59,7 @@ module INT (
         end else begin
             if (int_flag != `INT_NONE && global_int_en) begin
                 int_state = S_INT_ASYNC_ASSERT;
-            end else if (inst_data == 16'h0000) begin  // Set 16'h0000 for interrupt return instruction
+            end else if (inst_data == 16'h1000) begin  // Set 16'h0000 for interrupt return instruction
                 int_state = S_INT_MRET;
             end else begin
                 int_state = S_INT_IDLE;
@@ -136,39 +136,39 @@ module INT (
     // 发出中断信号前，先写几个CSR寄存器
     always @(posedge clk or negedge rst_n) begin
         if (~rst_n) begin
-            csr_we <= 1'b0;
-            csr_waddr <= 16'b0;
-            csr_wdata <= 16'b0;
+            int_we <= 1'b0;
+            int_waddr <= 16'b0;
+            int_wdata <= 16'b0;
         end else begin
             case (csr_state)
                 // 将mepc寄存器的值设为当前指令地址
                 S_CSR_MEPC: begin
-                    csr_we <= 1'b1;
-                    csr_waddr <= {4'b0, `CSR_MEPC};
-                    csr_wdata <= inst_addr_reg;
+                    int_we <= 1'b1;
+                    int_waddr <= {4'b0, `CSR_MEPC};
+                    int_wdata <= inst_addr_reg;
                 end
                 // 写中断产生的原因
                 S_CSR_MCAUSE: begin
-                    csr_we <= 1'b1;
-                    csr_waddr <= {4'b0, `CSR_MCAUSE};
-                    csr_wdata <= cause;
+                    int_we <= 1'b1;
+                    int_waddr <= {4'b0, `CSR_MCAUSE};
+                    int_wdata <= cause;
                 end
                 // 关闭全局中断
                 S_CSR_MSTATUS: begin
-                    csr_we <= 1'b1;
-                    csr_waddr <= {4'b0, `CSR_MSTATUS};
-                    csr_wdata <= {csr_mstatus[15:4], 1'b0, csr_mstatus[2:0]};  // 第四位
+                    int_we <= 1'b1;
+                    int_waddr <= {4'b0, `CSR_MSTATUS};
+                    int_wdata <= {csr_mstatus[15:4], 1'b0, csr_mstatus[2:0]};  // 第四位
                 end
                 // 中断返回
                 S_CSR_MSTATUS_MRET: begin
-                    csr_we <= 1'b1;
-                    csr_waddr <= {4'b0, `CSR_MSTATUS};
-                    csr_wdata <= {csr_mstatus[15:4], csr_mstatus[7], csr_mstatus[2:0]};
+                    int_we <= 1'b1;
+                    int_waddr <= {4'b0, `CSR_MSTATUS};
+                    int_wdata <= {csr_mstatus[15:4], csr_mstatus[7], csr_mstatus[2:0]};
                 end
                 default: begin
-                    csr_we <= 1'b0;
-                    csr_waddr <= 16'b0;
-                    csr_wdata <= 16'b0;
+                    int_we <= 1'b0;
+                    int_waddr <= 16'b0;
+                    int_wdata <= 16'b0;
                 end
             endcase
         end

@@ -1,7 +1,7 @@
 `include "../para.v"
 
 // Control module
-// Signal jump, pause pipeline
+// Signal pause pipeline
 module ctrl (
     input wire rst_n,
 
