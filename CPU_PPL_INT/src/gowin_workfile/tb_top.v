@@ -8,8 +8,8 @@ module tb_top;
     reg  [3:0] buttom;
     reg  [3:0] switch;
     wire [3:0] led;
-    reg        uart_rx = 1;  //UART接收端口
-    wire       uart_tx;  //UART发送端口
+    reg        uart_rx;  // UART接收端口
+    wire       uart_tx;  // UART发送端口
 
     always #5 clk <= ~clk;
 
@@ -22,8 +22,14 @@ module tb_top;
         uart_rx <= 1;
 
         #15 rst_n <= 1'b1;
-        #67 int_timer <= 1'b1;
-        #10 int_timer <= 1'b0;
+        // #67 int_timer <= 1'b1;
+        // #10 int_timer <= 1'b0;
+        #500
+        buttom <= 4'h2;
+        #500
+        buttom <= 4'h3;
+        #500
+        buttom <= 4'h4;
     end
 
     top top (

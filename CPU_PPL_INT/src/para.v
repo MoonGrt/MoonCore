@@ -19,7 +19,7 @@
 `define ADDI 5'b10000
 `define SUBI 5'b10001
 `define MULI 5'b10010
-`define ANDI 5'b10011 
+`define ANDI 5'b10011
 `define ORI  5'b10100
 `define XORI 5'b10101
 `define SLLI 5'b10110

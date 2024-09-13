@@ -10,7 +10,7 @@ module REG (
     input wire [     2:0] WB_addr,
     input wire [`DATABUS] WB_data,
     input wire            RegWe,
-    input wire            clear,
+    input wire            reg_clear,
 
     output wire [`DATABUS] RD,
     output wire [`DATABUS] RS
@@ -33,17 +33,18 @@ module REG (
         end
     end
 
-
     //*****************************************************
     //**                  Write Data
     //*****************************************************
     reg [`DATABUS] rf[7:0];  // 寄存器
-    assign RD = rd_forward ? WB_data : rf[(rd)];
-    assign RS = rs_forward ? WB_data : rf[(rs)];
+    assign RD = rd_forward ? WB_data : rf[rd];
+    assign RS = rs_forward ? WB_data : rf[rs];
     integer i;
-    always @(posedge clk or negedge rst_n) begin
-        if (~rst_n || clear) for (i = 0; i < 8; i = i + 1) rf[i][`DATABUS] <= 16'h0;
-        else if (RegWe == `REGWE_WRITE && WB_addr) rf[WB_addr] <= WB_data;
+    // always @(posedge clk or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n or posedge reg_clear) begin
+        if (~rst_n | reg_clear) for (i = 0; i < 8; i = i + 1) rf[i] <= 16'b0;
+        // if (~rst_n) for (i = 0; i < 8; i = i + 1) rf[i] <= 16'b0;
+        else if (RegWe && WB_addr) rf[WB_addr] <= WB_data;
     end
 
 endmodule

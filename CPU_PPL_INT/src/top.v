@@ -1,4 +1,4 @@
-`include "../para.v"
+`include "para.v"
 
 module top (
     input wire clk,
@@ -15,13 +15,13 @@ module top (
 `endif
 
 `ifdef UART
-    input  wire uart_rx,  //UART接收端口
-    output wire uart_tx,  //UART发送端口
+    input  wire uart_rx,  // UART接收端口
+    output wire uart_tx,  // UART发送端口
 `endif
 
 `ifdef DDR
-    output [13:0] ddr_addr,     // ROW_WIDTH=14
-    output [ 2:0] ddr_bank,     // BANK_WIDTH=3
+    output [13:0] ddr_addr,     // ROW_WIDTH = 14
+    output [ 2:0] ddr_bank,     // BANK_WIDTH = 3
     output        ddr_cs,
     output        ddr_ras,
     output        ddr_cas,
@@ -31,16 +31,16 @@ module top (
     output        ddr_cke,
     output        ddr_odt,
     output        ddr_reset_n,
-    output [ 1:0] ddr_dm,       // DM_WIDTH=2
-    inout  [15:0] ddr_dq,       // DQ_WIDTH=16
-    inout  [ 1:0] ddr_dqs,      // DQS_WIDTH=2
-    inout  [ 1:0] ddr_dqs_n,    // DQS_WIDTH=2
+    output [ 1:0] ddr_dm,       // DM_WIDTH = 2
+    inout  [15:0] ddr_dq,       // DQ_WIDTH = 16
+    inout  [ 1:0] ddr_dqs,      // DQS_WIDTH = 2
+    inout  [ 1:0] ddr_dqs_n,    // DQS_WIDTH = 2
 `endif
 
 `ifdef HDMI
     output       O_tmds_clk_p,
     output       O_tmds_clk_n,
-    output [2:0] O_tmds_data_p,  // {r,g,b}
+    output [2:0] O_tmds_data_p,  // {r, g, b}
     output [2:0] O_tmds_data_n,
 `endif
 

@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" T_Register="180(0)" T_Alu="48(0)" T_Lut="1729(0)" T_MULT18X18="1(0)" T_Bsram="1(0)" T_Ssram="8(0)" T_ROM16="1024(0)">
-    <SubModule name="CPU" T_Register="97(0)" T_Alu="48(0)" T_Lut="496(0)" T_MULT18X18="1(0)" T_Ssram="8(0)">
-        <SubModule name="CLINT" Register="2" Lut="7" T_Register="2(2)" T_Lut="7(7)"/>
-        <SubModule name="IF" Register="10" Lut="55" T_Register="10(10)" T_Lut="55(55)"/>
+<Module name="top" T_Register="184(0)" T_Alu="46(0)" T_Lut="1681(0)" T_MULT18X18="1(0)" T_Bsram="1(0)" T_Ssram="8(0)" T_ROM16="1024(0)">
+    <SubModule name="CPU" T_Register="101(0)" T_Alu="46(0)" T_Lut="554(0)" T_MULT18X18="1(0)" T_Ssram="8(0)">
+        <SubModule name="CLINT" Register="5" Lut="14" T_Register="5(5)" T_Lut="14(14)"/>
+        <SubModule name="CSR" Register="1" Lut="2" T_Register="1(1)" T_Lut="2(2)"/>
+        <SubModule name="IF" Register="10" Lut="53" T_Register="10(10)" T_Lut="53(53)"/>
         <SubModule name="IF_ID" Register="16" Lut="16" T_Register="16(16)" T_Lut="16(16)"/>
-        <SubModule name="Reg" Register="13" Alu="6" Lut="83" Ssram="8" T_Register="13(13)" T_Alu="6(6)" T_Lut="83(83)" T_Ssram="8(8)"/>
-        <SubModule name="ID_EX" Register="56" Lut="108" T_Register="56(56)" T_Lut="108(108)"/>
-        <SubModule name="EX" Alu="10" Lut="32" T_Alu="42(10)" T_Lut="227(32)" T_MULT18X18="1(0)">
-            <SubModule name="ALU" Alu="16" Lut="195" MULT18X18="1" T_Alu="16(16)" T_Lut="195(195)" T_MULT18X18="1(1)"/>
+        <SubModule name="Reg" Register="13" Alu="4" Lut="24" Ssram="8" T_Register="13(13)" T_Alu="4(4)" T_Lut="24(24)" T_Ssram="8(8)"/>
+        <SubModule name="ID_EX" Register="56" Lut="105" T_Register="56(56)" T_Lut="105(105)"/>
+        <SubModule name="EX" Alu="10" Lut="32" T_Alu="42(10)" T_Lut="216(32)" T_MULT18X18="1(0)">
+            <SubModule name="ALU" Alu="16" Lut="184" MULT18X18="1" T_Alu="16(16)" T_Lut="184(184)" T_MULT18X18="1(1)"/>
             <SubModule name="CMP" Alu="16" T_Alu="16(16)"/>
         </SubModule>
+        <SubModule name="WB" Lut="124" T_Lut="124(124)"/>
     </SubModule>
-    <SubModule name="BUS" T_Register="83(0)" T_Lut="1233(0)" T_Bsram="1(0)" T_ROM16="1024(0)">
+    <SubModule name="BUS" T_Register="83(0)" T_Lut="1127(0)" T_Bsram="1(0)" T_ROM16="1024(0)">
         <SubModule name="inst_mem" Lut="1008" ROM16="1024" T_Lut="1008(1008)" T_ROM16="1024(1024)"/>
-        <SubModule name="RAM" Lut="2" T_Lut="2(2)" T_Bsram="1(0)">
+        <SubModule name="RAM" Lut="4" T_Lut="4(4)" T_Bsram="1(0)">
             <SubModule name="data_mem" Bsram="1" T_Bsram="1(1)"/>
         </SubModule>
-        <SubModule name="LED" Lut="3" T_Register="4(0)" T_Lut="7(3)">
+        <SubModule name="LED" Lut="2" T_Register="4(0)" T_Lut="6(2)">
             <SubModule name="input_buf" Register="4" T_Register="4(4)"/>
             <SubModule name="LED_InCtrl" Lut="4" T_Lut="4(4)"/>
         </SubModule>
@@ -32,6 +34,6 @@
             <SubModule name="output_buf" Register="8" T_Register="8(8)"/>
             <SubModule name="u_uart_recv" Register="31" Lut="50" T_Register="31(31)" T_Lut="50(50)"/>
         </SubModule>
-        <SubModule name="Timer" Lut="123" T_Lut="123(123)"/>
+        <SubModule name="Timer" Lut="16" T_Lut="16(16)"/>
     </SubModule>
 </Module>

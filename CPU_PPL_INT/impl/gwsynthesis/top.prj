@@ -20,7 +20,9 @@
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Tube_InCtrl.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\UART.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\uart_recv.v" type="verilog"/>
+        <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\uart_rx.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\uart_send.v" type="verilog"/>
+        <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\uart_tx.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ALU.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CLINT.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CMP.v" type="verilog"/>
@@ -36,6 +38,7 @@
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\WB.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\gowin_rom16\inst_mem.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\gowin_sp\data_mem.v" type="verilog"/>
+        <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\para.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.v" type="verilog"/>
     </FileList>
     <OptionList>

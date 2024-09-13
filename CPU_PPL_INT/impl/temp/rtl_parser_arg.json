@@ -66,7 +66,15 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_rx.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_send.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_tx.v",
    "Type" : "verilog"
   },
   {
@@ -127,6 +135,10 @@
   },
   {
    "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_sp/data_mem.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/para.v",
    "Type" : "verilog"
   },
   {

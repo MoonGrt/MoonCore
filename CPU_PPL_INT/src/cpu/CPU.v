@@ -61,6 +61,11 @@ module CPU (
     wire [`DATABUS] EX_ALUout;
     wire [     1:0] EX_CMPout;
     wire [`DATABUS] EX_RAMdata;
+    wire [`DATABUS] EX_rdata;
+    wire            EX_we;
+    wire [`ADDRBUS] EX_raddr;
+    wire [`ADDRBUS] EX_waddr;
+    wire [`DATABUS] EX_wdata;
     assign EX_RAMdata = mem_rd;
 
     assign mem_addr = EX_ALUout;
@@ -120,10 +125,10 @@ module CPU (
         .clk  (clk),
         .rst_n(rst_n),
 
-        .EX_we    (),
-        .EX_raddr (),
-        .EX_waddr (),
-        .EX_rdata (),
+        .EX_we    (EX_we   ),
+        .EX_raddr (EX_raddr),
+        .EX_waddr (EX_waddr),
+        .EX_wdata (EX_wdata),
         .int_we   (int_we),
         .int_raddr(int_raddr),
         .int_waddr(int_waddr),
@@ -134,7 +139,7 @@ module CPU (
         .csr_mepc     (csr_mepc),
         .csr_mstatus  (csr_mstatus),
         .global_int_en(global_int_en),
-        .EX_wdata     ()
+        .EX_rdata     (EX_rdata)
     );
 
 
@@ -190,10 +195,10 @@ module CPU (
         .rd(ID_rd),
         .rs(ID_rs),
 
-        .WB_addr(EX_rd),
-        .WB_data(EX_WB_data),
-        .RegWe  (EX_RegWe),
-        .clear  (ID_reg_clear),
+        .WB_addr  (EX_rd),
+        .WB_data  (EX_WB_data),
+        .RegWe    (EX_RegWe),
+        .reg_clear(ID_reg_clear),
 
         .RD(ID_RD),
         .RS(ID_RS)
@@ -251,6 +256,12 @@ module CPU (
         .IMMop(EX_IMMop),
         .ALUop(EX_ALUop),
         .CMPop(EX_CMPop),
+
+        .EX_rdata(EX_rdata),
+        .EX_we   (EX_we   ),
+        .EX_raddr(EX_raddr),
+        .EX_waddr(EX_waddr),
+        .EX_wdata(EX_wdata),
 
         .CSRout   (EX_CSRout),
         .CMPout   (EX_CMPout),

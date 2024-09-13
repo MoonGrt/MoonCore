@@ -32,7 +32,7 @@ module ID (
     //**              Instruction Decode
     //*****************************************************
     wire [4:0] opecode = inst[4:0];
-    always @(*) begin
+    always @(opecode) begin
         if (~rst_n) begin
             CSR_wr = 1'b0;
             JUMPop = 2'b0;
@@ -44,7 +44,7 @@ module ID (
             ABSel = 1'b0;
             IMMSel = 1'b0;
             mem_ctrl = 1'b0;
-            reg_clear= 1'b0;
+            reg_clear = 1'b0;
         end else
             // default
             CSR_wr = 1'b0;
@@ -57,7 +57,7 @@ module ID (
             ABSel = 1'b0;
             IMMSel = 1'b0;
             mem_ctrl = 1'b0;
-            reg_clear= 1'b0;
+            reg_clear = 1'b0;
 
             // 
             case (opecode)

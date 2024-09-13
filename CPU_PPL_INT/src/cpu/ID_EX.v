@@ -12,7 +12,7 @@ module ID_EX (
 
     input wire [`DATABUS] ID_inst_addr,
     input wire       ID_CSR_wr,
-    input wire [2:0] ID_JUMPop,
+    input wire [1:0] ID_JUMPop,
     input wire       ID_IMMop,
     input wire [2:0] ID_ALUop,
     input wire [1:0] ID_CMPop,
@@ -29,7 +29,7 @@ module ID_EX (
 
     output reg [`DATABUS] EX_inst_addr,
     output reg       EX_CSR_wr,
-    output reg [2:0] EX_JUMPop,
+    output reg [1:0] EX_JUMPop,
     output reg       EX_IMMop,
     output reg [2:0] EX_ALUop,
     output reg [1:0] EX_CMPop,
