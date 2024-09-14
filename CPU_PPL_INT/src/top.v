@@ -4,8 +4,6 @@ module top (
     input wire clk,
     input wire rst_n,
 
-    input wire int_timer,
-
     input wire [`BUTTOMBUS] buttom,
     input wire [`SWITCHBUS] switch,
 
@@ -59,7 +57,7 @@ module top (
     wire [7:0] interrupt;
     wire       int_uart;
     wire       int_bt;
-    // wire       int_timer;
+    wire       int_timer;
 
     assign mem_rd    = mem_data;
     assign mem_data  = (mem_ctrl) ? mem_wd : 16'hzzzz;  // Access inputs only when writing
@@ -114,7 +112,7 @@ module top (
 `endif
 
 `ifdef TIMER
-        // .int_timer(int_timer),
+        .int_timer(int_timer),
 `endif
 
         .led(led)

@@ -41,9 +41,23 @@ module BUS #(
     //*****************************************************
     //**                 Instruction
     //*****************************************************
-    inst_mem inst_mem (
-        .dout(inst_data),      //output [15:0] dout
-        .ad  (inst_addr[9:0])  //input [9:0] ad
+    // inst_mem inst_mem (
+    //     .dout(inst_data),      //output [15:0] dout
+    //     .ad  (inst_addr[9:0])  //input [9:0] ad
+    // );
+    RAM_Gen #(
+        .INIT_FILE("F:/Project/Sipeed/FPGA/Tang_Primer/CPU/code/sw_lw"),
+        .DP(1024),
+        .DW(16),
+        .MW(2),  // (WIDTH/8)
+        .AW(16)
+    ) ROM (
+        .clk  (clk),
+        .addr (inst_addr),
+        .wdata(16'b0),
+        .sel  (2'b0),
+        .we   (1'b0),
+        .rdata(inst_data)
     );
 
     //*****************************************************

@@ -42,15 +42,30 @@ module RAM (
     //**                    输入输出无缓冲
     //*****************************************************
     // 连接主存
-    data_mem data_mem (
-        .dout (output_data),  //output [15:0] dout
-        .clk  (clk),          //input clk
-        .oce  ('b0),          //input oce
-        .ce   ('b1),          //input ce
-        .reset('b0),          //input reset
-        .wre  (input_call),   //input wre
-        .ad   (addr),         //input [9:0] ad
-        .din  (data_input)    //input [15:0] din
+    // data_mem data_mem (
+    //     .dout (output_data),  //output [15:0] dout
+    //     .clk  (clk),          //input clk
+    //     .oce  ('b0),          //input oce
+    //     .ce   ('b1),          //input ce
+    //     .reset('b0),          //input reset
+    //     .wre  (input_call),   //input wre
+    //     .ad   (addr),         //input [9:0] ad
+    //     .din  (data_input)    //input [15:0] din
+    // );
+    RAM_Gen #(
+        .INIT_FILE(""),
+        .DP(1024),
+        .DW(16),
+        .MW(2),  // (WIDTH/8)
+        .AW(16)
+    ) data_mem (
+        .clk  (clk),
+        .addr (addr),
+        .wdata(data_input),
+        .sel  ({4{input_call}}),
+        .we   (input_call),
+        .rdata(output_data)
     );
+
 
 endmodule

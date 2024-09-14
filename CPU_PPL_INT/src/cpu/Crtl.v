@@ -13,8 +13,24 @@ module ctrl (
     // from int
     input wire hold_flag_int,
 
-    output reg [`HOLDBUS] hold_flag
+    output reg [`CLEARBUS] clear_flag,
+    output reg [ `HOLDBUS] hold_flag
 );
+
+    always @(*) begin
+        if (~rst_n) begin
+            clear_flag = `Clear_None;
+        end else begin
+            clear_flag = `Clear_None;  // default: `Clear_None
+            // prioritize requests from different modules
+            if (jump_flag) begin
+                // suspend the entire assembly line
+                clear_flag = `Hold_PPL;
+            end else begin
+                clear_flag = `Clear_None;
+            end
+        end
+    end
 
     always @(*) begin
         if (~rst_n) begin
@@ -24,7 +40,7 @@ module ctrl (
             // prioritize requests from different modules
             if (jump_flag || hold_flag_ex || hold_flag_int) begin
                 // suspend the entire assembly line
-                hold_flag = `Hold_PPL;
+                hold_flag = `Hold_PC;
             end else if (jtag_halt_flag) begin
                 // suspend the entire assembly line
                 hold_flag = `Hold_PPL;

@@ -37,11 +37,17 @@ module REG (
     //**                  Write Data
     //*****************************************************
     reg [`DATABUS] rf[7:0];  // 寄存器
+    integer i;
+    initial begin
+        for (i = 0; i < 8; i = i + 1) begin
+            rf[i] = 0;  // Default initialization is 0
+        end
+    end
+
     assign RD = rd_forward ? WB_data : rf[rd];
     assign RS = rs_forward ? WB_data : rf[rs];
-    integer i;
-    // always @(posedge clk or negedge rst_n) begin
-    always @(posedge clk or negedge rst_n or posedge reg_clear) begin
+    always @(posedge clk) begin
+    // always @(posedge clk or negedge rst_n or posedge reg_clear) begin
         if (~rst_n | reg_clear) for (i = 0; i < 8; i = i + 1) rf[i] <= 16'b0;
         // if (~rst_n) for (i = 0; i < 8; i = i + 1) rf[i] <= 16'b0;
         else if (RegWe && WB_addr) rf[WB_addr] <= WB_data;

@@ -13,4 +13,4 @@
 -file_type vlg
 -ssram_depth 1024
 -ssram_width 16
--init_file F:\Project\Sipeed\FPGA\Tang_Primer\CPU\code\whole.mi
+-init_file F:/Project/Sipeed/FPGA/Tang_Primer/CPU/code/sw lw.mi

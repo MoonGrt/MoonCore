@@ -56,7 +56,7 @@
 
 
 //*****************************************************
-//**                 Hold Parameter
+//**              Hold & Clear Parameter
 //*****************************************************
 `define HOLDBUS 2:0
 `define Hold_None 3'b000
@@ -65,6 +65,12 @@
 `define Hold_ID 3'b010
 `define Hold_EX 3'b011
 
+`define CLEARBUS 2:0
+`define Clear_None 3'b000
+`define Clear_PPL 3'b001
+`define Clear_PC 3'b001  // Clear_IF
+`define Clear_ID 3'b010
+`define Clear_EX 3'b011
 
 //*****************************************************
 //**                 INT Parameter

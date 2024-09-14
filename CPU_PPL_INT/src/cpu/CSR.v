@@ -6,18 +6,17 @@ module CSR (
     input wire rst_n,
 
     // form ex
-    input wire            EX_we,      // EX模块写CSR寄存器标志
-    input wire [`ADDRBUS] EX_raddr,   // EX模块读CSR寄存器地址
-    input wire [`ADDRBUS] EX_waddr,   // EX模块写CSR寄存器地址
-    input wire [`DATABUS] EX_wdata,   // EX模块写CSR寄存器数据
+    input wire            EX_we,     // EX模块写CSR寄存器标志
+    input wire [`ADDRBUS] EX_raddr,  // EX模块读CSR寄存器地址
+    input wire [`ADDRBUS] EX_waddr,  // EX模块写CSR寄存器地址
+    input wire [`DATABUS] EX_wdata,  // EX模块写CSR寄存器数据
     // from int
-    input wire            int_we,     // CLINT模块写CSR寄存器标志
-    input wire [`ADDRBUS] int_raddr,  // CLINT模块读CSR寄存器地址
-    input wire [`ADDRBUS] int_waddr,  // CLINT模块写CSR寄存器地址
-    input wire [`DATABUS] int_wdata,  // CLINT模块写CSR寄存器数据
+    input wire [     2:0] int_we,       // CLINT写CSR寄存器标志
+    input wire [`DATABUS] int_mepc,     // mepc寄存器
+    input wire [`DATABUS] int_mcause,   // mcause寄存器
+    input wire [`DATABUS] int_mstatus,  // mstatus寄存器
 
     // to int
-    output reg  [`DATABUS] int_rdata,      // CLINT模块读寄存器数据
     output wire [`DATABUS] csr_mtvec,      // mtvec
     output wire [`DATABUS] csr_mepc,       // mepc
     output wire [`DATABUS] csr_mstatus,    // mstatus
@@ -87,29 +86,12 @@ module CSR (
                 endcase
             // int模块写操作
             end else if (int_we) begin
-                case (int_waddr[11:0])
-                    `CSR_MTVEC: begin
-                        mtvec <= int_wdata;
-                    end
-                    `CSR_MCAUSE: begin
-                        mcause <= int_wdata;
-                    end
-                    `CSR_MEPC: begin
-                        mepc <= int_wdata;
-                    end
-                    `CSR_MIE: begin
-                        mie <= int_wdata;
-                    end
-                    `CSR_MSTATUS: begin
-                        mstatus <= int_wdata;
-                    end
-                    `CSR_MSCRATCH: begin
-                        mscratch <= int_wdata;
-                    end
-                    default: begin
-
-                    end
-                endcase
+                if (int_we[0])
+                    mepc <= int_mepc;
+                if (int_we[1])
+                    mcause <= int_mcause;
+                if (int_we[2])
+                    mstatus <= int_mstatus;
             end
         end
     end
@@ -147,44 +129,6 @@ module CSR (
                 end
                 default: begin
                     EX_rdata = 16'b0;
-                end
-            endcase
-        end
-    end
-
-    // read reg
-    // int模块读CSR寄存器
-    always @(*) begin
-        if ((int_waddr[11:0] == int_raddr[11:0]) && int_we) begin
-            int_rdata = int_wdata;
-        end else begin
-            case (int_raddr[11:0])
-                `CSR_CYCLE: begin
-                    int_rdata = cycle[15:0];
-                end
-                `CSR_CYCLEH: begin
-                    int_rdata = cycle[31:16];
-                end
-                `CSR_MTVEC: begin
-                    int_rdata = mtvec;
-                end
-                `CSR_MCAUSE: begin
-                    int_rdata = mcause;
-                end
-                `CSR_MEPC: begin
-                    int_rdata = mepc;
-                end
-                `CSR_MIE: begin
-                    int_rdata = mie;
-                end
-                `CSR_MSTATUS: begin
-                    int_rdata = mstatus;
-                end
-                `CSR_MSCRATCH: begin
-                    int_rdata = mscratch;
-                end
-                default: begin
-                    int_rdata = 16'b0;
                 end
             endcase
         end

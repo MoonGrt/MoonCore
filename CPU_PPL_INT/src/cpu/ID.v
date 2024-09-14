@@ -156,12 +156,10 @@ module ID (
                 end
                 `CSRR: begin
                     CSR_wr = 1'b0;
-                    IMMSel = 1'b1;
                     IMMop = 1'b1;
                 end
                 `CSRW: begin
                     CSR_wr = 1'b1;
-                    IMMSel = 1'b1;
                     IMMop = 1'b1;
                 end
 
