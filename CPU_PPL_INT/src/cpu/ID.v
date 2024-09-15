@@ -32,7 +32,7 @@ module ID (
     //**              Instruction Decode
     //*****************************************************
     wire [4:0] opecode = inst[4:0];
-    always @(opecode) begin
+    always @(*) begin
         if (~rst_n) begin
             CSR_wr = 1'b0;
             JUMPop = 2'b0;

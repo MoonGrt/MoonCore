@@ -54,7 +54,7 @@ module RAM (
     // );
     RAM_Gen #(
         .INIT_FILE(""),
-        .DP(1024),
+        .DP(`RAM_DEPTH),
         .DW(16),
         .MW(2),  // (WIDTH/8)
         .AW(16)
@@ -62,7 +62,7 @@ module RAM (
         .clk  (clk),
         .addr (addr),
         .wdata(data_input),
-        .sel  ({4{input_call}}),
+        .sel  ({2{input_call}}),
         .we   (input_call),
         .rdata(output_data)
     );

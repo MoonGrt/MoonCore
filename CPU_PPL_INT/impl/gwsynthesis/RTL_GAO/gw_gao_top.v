@@ -1,48 +1,21 @@
 module gw_gao(
-    \led[3] ,
-    \led[2] ,
-    \led[1] ,
-    \led[0] ,
-    \buttom[3] ,
-    \buttom[2] ,
-    \buttom[1] ,
-    \buttom[0] ,
-    \BUS/ctrl ,
-    \CPU/Reg/RegWe ,
-    clk,
+    uart_tx,
+    \BUS/UART/tx/tx_clk ,
     tms_pad_i,
     tck_pad_i,
     tdi_pad_i,
     tdo_pad_o
 );
 
-input \led[3] ;
-input \led[2] ;
-input \led[1] ;
-input \led[0] ;
-input \buttom[3] ;
-input \buttom[2] ;
-input \buttom[1] ;
-input \buttom[0] ;
-input \BUS/ctrl ;
-input \CPU/Reg/RegWe ;
-input clk;
+input uart_tx;
+input \BUS/UART/tx/tx_clk ;
 input tms_pad_i;
 input tck_pad_i;
 input tdi_pad_i;
 output tdo_pad_o;
 
-wire \led[3] ;
-wire \led[2] ;
-wire \led[1] ;
-wire \led[0] ;
-wire \buttom[3] ;
-wire \buttom[2] ;
-wire \buttom[1] ;
-wire \buttom[0] ;
-wire \BUS/ctrl ;
-wire \CPU/Reg/RegWe ;
-wire clk;
+wire uart_tx;
+wire \BUS/UART/tx/tx_clk ;
 wire tms_pad_i;
 wire tck_pad_i;
 wire tdi_pad_i;
@@ -116,10 +89,9 @@ gw_con_top  u_icon_top(
 
 ao_top_0  u_la0_top(
     .control(control0[9:0]),
-    .trig0_i(\BUS/ctrl ),
-    .trig1_i(\CPU/Reg/RegWe ),
-    .data_i({\led[3] ,\led[2] ,\led[1] ,\led[0] ,\buttom[3] ,\buttom[2] ,\buttom[1] ,\buttom[0] }),
-    .clk_i(clk)
+    .trig0_i(uart_tx),
+    .data_i(uart_tx),
+    .clk_i(\BUS/UART/tx/tx_clk )
 );
 
 endmodule

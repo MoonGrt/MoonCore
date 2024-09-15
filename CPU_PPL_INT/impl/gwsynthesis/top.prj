@@ -12,6 +12,7 @@
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED_InCtrl.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\RAM.v" type="verilog"/>
+        <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\ROM.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch_OutCtrl.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Timer.v" type="verilog"/>
@@ -41,8 +42,8 @@
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\Buffer.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\Buffer_Shift.v" type="verilog"/>
-        <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\PPLreg.v" type="verilog"/>
+        <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>

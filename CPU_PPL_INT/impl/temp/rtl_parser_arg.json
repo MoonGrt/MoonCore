@@ -34,6 +34,10 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/ROM.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Switch.v",
    "Type" : "verilog"
   },
@@ -150,11 +154,11 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/utils/RAM_Gen.v",
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/utils/PPLreg.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/utils/PPLreg.v",
+   "Path" : "F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/utils/RAM_Gen.v",
    "Type" : "verilog"
   }
  ],

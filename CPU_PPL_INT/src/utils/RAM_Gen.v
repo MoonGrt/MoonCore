@@ -10,7 +10,6 @@ module RAM_Gen #(
     parameter AW = 32
 ) (
     input wire          clk,
-    input wire          rst,
     input wire [AW-1:0] addr,
     input wire [DW-1:0] wdata,
     input wire [MW-1:0] sel,
@@ -39,21 +38,17 @@ module RAM_Gen #(
 
     wire [MW-1:0] wen =({MW{we}} & sel);
     assign rdata = ram[addr];
-    genvar i;
     generate
+        genvar i;
         for (i = 0; i < MW; i = i + 1) begin
             if ((8 * i + 8) > DW) begin
-                always @(posedge clk) begin
-                    if (wen[i]) begin
+                always @(posedge clk) 
+                    if (wen[i]) 
                         ram[addr][DW-1:8*i] <= wdata[DW-1:8*i];
-                    end
-                end
             end else begin
-                always @(posedge clk) begin
-                    if (wen[i]) begin
+                always @(posedge clk) 
+                    if (wen[i]) 
                         ram[addr][8*i+7:8*i] <= wdata[8*i+7:8*i];
-                    end
-                end
             end
         end
     endgenerate

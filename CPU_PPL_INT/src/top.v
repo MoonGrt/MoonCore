@@ -1,6 +1,9 @@
 `include "para.v"
 
-module top (
+module top #(
+    parameter CLK_FREQ = 27_000_000,  // clock frequency(Mhz)
+    parameter UART_BPS = 115200     // serial baud rate
+) (
     input wire clk,
     input wire rst_n,
 
@@ -83,7 +86,10 @@ module top (
     //*****************************************************
     //**                 Device Connect
     //*****************************************************
-    BUS BUS (
+    BUS #(
+        .CLK_FREQ(CLK_FREQ),  // Set system clock frequency
+        .UART_BPS(UART_BPS)   // Set serial port baud rate
+    ) BUS (
         .clk  (clk),
         .rst_n(rst_n),
 

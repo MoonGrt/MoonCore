@@ -35,7 +35,7 @@ module Timer (
     //*****************************************************
     // 地址译码和控制逻辑内部耦合，无需数据交叉开关控制
     // data输出控制
-    assign data =  (output_call) ? data_output :  // 总线同意，数据输出
+    assign data = (output_call) ? data_output :  // 总线同意，数据输出
        16'dz;                   // 未定义状况
     // data输入控制
     assign data_input = data;

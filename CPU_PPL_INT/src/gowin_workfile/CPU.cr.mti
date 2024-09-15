@@ -1,16 +1,16 @@
-F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/WB.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/WB.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module WB
-
-Top level modules:
-	WB
-
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_tx.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_tx.v
+F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_tx.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_tx.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module uart_tx
 
 Top level modules:
 	uart_tx
+
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/WB.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/WB.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module WB
+
+Top level modules:
+	WB
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Buttom_OutCtrl.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Buttom_OutCtrl.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -40,6 +40,13 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	Counter
 
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Timer.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Timer.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Timer
+
+Top level modules:
+	Timer
+
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/utils/PPLreg.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/utils/PPLreg.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module PPLreg
@@ -54,12 +61,19 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	Buffer
 
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Timer.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Timer.v
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/BUS.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/BUS.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module Timer
+-- Compiling module BUS
 
 Top level modules:
-	Timer
+	BUS
+
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Deviceclk.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Deviceclk.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Deviceclk
+
+Top level modules:
+	Deviceclk
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_rom16/inst_mem.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_rom16/inst_mem.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -82,19 +96,12 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	Switch
 
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Deviceclk.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Deviceclk.v
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ID.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ID.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module Deviceclk
+-- Compiling module ID
 
 Top level modules:
-	Deviceclk
-
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/BUS.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/BUS.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module BUS
-
-Top level modules:
-	BUS
+	ID
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/EX.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/EX.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -102,13 +109,6 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 
 Top level modules:
 	EX
-
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ID.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ID.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module ID
-
-Top level modules:
-	ID
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/IF.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/IF.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -124,19 +124,12 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	uart_send
 
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/utils/Buffer_Shift.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/utils/Buffer_Shift.v
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/ROM.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/ROM.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module Buffer_Shift
+-- Compiling module ROM
 
 Top level modules:
-	Buffer_Shift
-
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CSR.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CSR.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module CSR
-
-Top level modules:
-	CSR
+	ROM
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Switch_OutCtrl.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Switch_OutCtrl.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -145,26 +138,26 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	Switch_OutCtrl
 
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CSR.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CSR.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module CSR
+
+Top level modules:
+	CSR
+
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/utils/Buffer_Shift.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/utils/Buffer_Shift.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Buffer_Shift
+
+Top level modules:
+	Buffer_Shift
+
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ID_EX.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ID_EX.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module ID_EX
 
 Top level modules:
 	ID_EX
-
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ALU.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ALU.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module ALU
-
-Top level modules:
-	ALU
-
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Tube.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Tube.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module Tube
-
-Top level modules:
-	Tube
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/RAM.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/RAM.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -180,36 +173,26 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	LED_InCtrl
 
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Tube.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Tube.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module Tube
+
+Top level modules:
+	Tube
+
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ALU.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ALU.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/IF_ID.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/IF_ID.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module IF_ID
 
 Top level modules:
 	IF_ID
-
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/para.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/para.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/Crtl.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/Crtl.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module ctrl
-
-Top level modules:
-	ctrl
-
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_recv.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_recv.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module uart_recv
-
-Top level modules:
-	uart_recv
-
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Tube_InCtrl.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Tube_InCtrl.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module Tube_InCtrl
-
-Top level modules:
-	Tube_InCtrl
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Buttom.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Buttom.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -218,19 +201,29 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	Buttom
 
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/REG.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/REG.v
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Tube_InCtrl.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Tube_InCtrl.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module REG
+-- Compiling module Tube_InCtrl
 
 Top level modules:
-	REG
+	Tube_InCtrl
 
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_sp/data_mem.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_sp/data_mem.v
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_recv.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_recv.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module data_mem
+-- Compiling module uart_recv
 
 Top level modules:
-	data_mem
+	uart_recv
+
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/Crtl.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/Crtl.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module ctrl
+
+Top level modules:
+	ctrl
+
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/para.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/para.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/UART.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/UART.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -238,13 +231,6 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 
 Top level modules:
 	UART
-
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_workfile/tb_top.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_workfile/tb_top.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module tb_top
-
-Top level modules:
-	tb_top
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_workfile/prim_sim.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_workfile/prim_sim.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -542,12 +528,26 @@ Top level modules:
 	MIPI_IBUF
 	I3C_IOBUF
 
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_rx.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_rx.v
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_workfile/tb_top.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_workfile/tb_top.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module uart_rx
+-- Compiling module tb_top
 
 Top level modules:
-	uart_rx
+	tb_top
+
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_sp/data_mem.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_sp/data_mem.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module data_mem
+
+Top level modules:
+	data_mem
+
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/REG.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/REG.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module REG
+
+Top level modules:
+	REG
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/LED.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/LED.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -556,12 +556,12 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	LED
 
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_rx.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/uart_rx.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module CPU
+-- Compiling module uart_rx
 
 Top level modules:
-	CPU
+	uart_rx
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CMP.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CMP.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -569,5 +569,12 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 
 Top level modules:
 	CMP
+
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/CPU.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module CPU
+
+Top level modules:
+	CPU
 
 } {} {}}

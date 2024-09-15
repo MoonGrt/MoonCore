@@ -64,20 +64,20 @@ module ID_EX (
     wire hold_en = (hold_flag == `Hold_PPL) | (hold_flag == `Hold_EX);
     wire clear_en = (clear_flag == `Clear_PPL) | (clear_flag == `Clear_EX);
     PPLreg #(`CPU_WIDTH) inst_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_inst_addr, EX_inst_addr);
-    PPLreg #(`CPU_WIDTH) rd_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_rd, EX_rd);
+    PPLreg #(3) rd_reg(clk, ~rst_n|clear_en, hold_en, 3'b0, ID_rd, EX_rd);
     PPLreg #(`CPU_WIDTH) RD_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_RD, EX_RD);
     PPLreg #(`CPU_WIDTH) RS_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_RS, EX_RS);
     PPLreg #(`CPU_WIDTH) IMM_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_IMM, EX_IMM);
-    PPLreg #(`CPU_WIDTH) CSRwr_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_CSR_wr, EX_CSR_wr);
-    PPLreg #(`CPU_WIDTH) JUMPop_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_JUMPop, EX_JUMPop);
-    PPLreg #(`CPU_WIDTH) IMMop_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_IMMop, EX_IMMop);
-    PPLreg #(`CPU_WIDTH) ALUop_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_ALUop, EX_ALUop);
-    PPLreg #(`CPU_WIDTH) CMPop_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_CMPop, EX_CMPop);
-    PPLreg #(`CPU_WIDTH) RegWe_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_RegWe, EX_RegWe);
-    PPLreg #(`CPU_WIDTH) RWSel_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_RWSel, EX_RWSel);
-    PPLreg #(`CPU_WIDTH) ABSel_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_ABSel, EX_ABSel);
-    PPLreg #(`CPU_WIDTH) IMMSel_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_IMMSel, EX_IMMSel);
-    PPLreg #(`CPU_WIDTH) memctrl_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, ID_mem_ctrl, EX_mem_ctrl);
+    PPLreg #(1) CSRwr_reg(clk, ~rst_n|clear_en, hold_en, 1'b0, ID_CSR_wr, EX_CSR_wr);
+    PPLreg #(2) JUMPop_reg(clk, ~rst_n|clear_en, hold_en, 2'b0, ID_JUMPop, EX_JUMPop);
+    PPLreg #(1) IMMop_reg(clk, ~rst_n|clear_en, hold_en, 1'b0, ID_IMMop, EX_IMMop);
+    PPLreg #(3) ALUop_reg(clk, ~rst_n|clear_en, hold_en, 3'b0, ID_ALUop, EX_ALUop);
+    PPLreg #(2) CMPop_reg(clk, ~rst_n|clear_en, hold_en, 2'b0, ID_CMPop, EX_CMPop);
+    PPLreg #(1) RegWe_reg(clk, ~rst_n|clear_en, hold_en, 1'b0, ID_RegWe, EX_RegWe);
+    PPLreg #(1) RWSel_reg(clk, ~rst_n|clear_en, hold_en, 1'b0, ID_RWSel, EX_RWSel);
+    PPLreg #(1) ABSel_reg(clk, ~rst_n|clear_en, hold_en, 1'b0, ID_ABSel, EX_ABSel);
+    PPLreg #(1) IMMSel_reg(clk, ~rst_n|clear_en, hold_en, 1'b0, ID_IMMSel, EX_IMMSel);
+    PPLreg #(1) memctrl_reg(clk, ~rst_n|clear_en, hold_en, 1'b0, ID_mem_ctrl, EX_mem_ctrl);
 
     // always @(posedge clk or negedge rst_n) begin
     //     if (~rst_n) begin

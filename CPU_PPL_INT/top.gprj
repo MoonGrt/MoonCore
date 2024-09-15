@@ -13,6 +13,7 @@
         <File path="src/bus/LED.v" type="file.verilog" enable="1"/>
         <File path="src/bus/LED_InCtrl.v" type="file.verilog" enable="1"/>
         <File path="src/bus/RAM.v" type="file.verilog" enable="1"/>
+        <File path="src/bus/ROM.v" type="file.verilog" enable="1"/>
         <File path="src/bus/Switch.v" type="file.verilog" enable="1"/>
         <File path="src/bus/Switch_OutCtrl.v" type="file.verilog" enable="1"/>
         <File path="src/bus/Timer.v" type="file.verilog" enable="1"/>

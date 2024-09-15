@@ -2,32 +2,17 @@
 <GAO_CONFIG>
     <Version>3.0</Version>
     <Mode>Standard</Mode>
-    <AoCore index="0" sample_clock="clk" trig_type="0" storage_depth="128" window_num="1" capture_amount="128" implementation="0" trigger_pos="0" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+    <AoCore index="0" sample_clock="BUS/UART/tx/tx_clk" trig_type="0" storage_depth="2048" window_num="1" capture_amount="2048" implementation="0" trigger_pos="0" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
         <SignalList>
-            <Bus capture_enable="true" name="led[3:0]">
-                <Signal>led[3]</Signal>
-                <Signal>led[2]</Signal>
-                <Signal>led[1]</Signal>
-                <Signal>led[0]</Signal>
-            </Bus>
-            <Bus capture_enable="true" name="buttom[3:0]">
-                <Signal>buttom[3]</Signal>
-                <Signal>buttom[2]</Signal>
-                <Signal>buttom[1]</Signal>
-                <Signal>buttom[0]</Signal>
-            </Bus>
+            <Signal capture_enable="true">uart_tx</Signal>
         </SignalList>
         <Triggers>
             <Trigger index="0">
                 <SignalList>
-                    <Signal>BUS/ctrl</Signal>
+                    <Signal>uart_tx</Signal>
                 </SignalList>
             </Trigger>
-            <Trigger index="1">
-                <SignalList>
-                    <Signal>CPU/Reg/RegWe</Signal>
-                </SignalList>
-            </Trigger>
+            <Trigger index="1"/>
             <Trigger index="2"/>
             <Trigger index="3"/>
             <Trigger index="4"/>
@@ -45,7 +30,7 @@
         </Triggers>
         <MatchUnits>
             <MatchUnit index="0" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="1" value1="0" trigger="0"/>
-            <MatchUnit index="1" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="1" value1="0" trigger="1"/>
+            <MatchUnit index="1" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="1" value1="0" trigger="1"/>
             <MatchUnit index="2" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
             <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
             <MatchUnit index="4" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
@@ -62,8 +47,8 @@
             <MatchUnit index="15" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
         </MatchUnits>
         <Expressions type="Static">
-            <Expression>M0|M1</Expression>
+            <Expression>M0</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>1100000101111011</GAO_ID>
+    <GAO_ID>0100001010000100</GAO_ID>
 </GAO_CONFIG>

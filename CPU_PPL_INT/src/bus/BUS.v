@@ -1,7 +1,7 @@
 `include "../para.v"
 
 module BUS #(
-    parameter CLK_FREQ = 2700_0000,
+    parameter CLK_FREQ = 50_000_000,
     parameter UART_BPS = 115200
 ) (
     input wire clk,
@@ -41,22 +41,14 @@ module BUS #(
     //*****************************************************
     //**                 Instruction
     //*****************************************************
-    // inst_mem inst_mem (
-    //     .dout(inst_data),      //output [15:0] dout
-    //     .ad  (inst_addr[9:0])  //input [9:0] ad
-    // );
-    RAM_Gen #(
-        .INIT_FILE("F:/Project/Sipeed/FPGA/Tang_Primer/CPU/code/sw_lw"),
-        .DP(1024),
-        .DW(16),
-        .MW(2),  // (WIDTH/8)
-        .AW(16)
-    ) ROM (
+    wire [7:0] int_data;
+    ROM ROM (
         .clk  (clk),
+        .rst_n(rst_n),
+        .EN   (1'b1),
+        .ctrl (int_uart),
         .addr (inst_addr),
-        .wdata(16'b0),
-        .sel  (2'b0),
-        .we   (1'b0),
+        .wdata(int_data),
         .rdata(inst_data)
     );
 
@@ -133,6 +125,7 @@ module BUS #(
         .switch (switch)
     );
 
+`ifdef TUBE
     Tube Tube (
         .clk    (clk),
         .dev_clk(dev_clk),
@@ -144,23 +137,29 @@ module BUS #(
         .tube_en(tube_en),
         .seg_led(seg_led)
     );
+`endif
 
+`ifdef UART
     UART #(
         .CLK_FREQ(CLK_FREQ),  // Set system clock frequency
         .UART_BPS(UART_BPS)   // Set serial port baud rate
     ) UART (
         .clk     (clk),
         .dev_clk (dev_clk),
-        .rst_n   (rst_n),
+        // .rst_n   (rst_n),
+        .rst_n   (1'b1),
         .EN      (BS[5]),
         .addr    (addr),
         .ctrl    (ctrl),
         .data    (data),
         .uart_rxd(uart_rx),  // UART rece prot
         .uart_txd(uart_tx),  // UART send port
-        .int_uart(int_uart)  // UART rece interrupt
+        .int_uart(int_uart), // UART rece interrupt
+        .int_data(int_data)
     );
+`endif
 
+`ifdef TIMER
     Timer Timer (
         .clk      (clk),
         .dev_clk  (dev_clk),
@@ -171,5 +170,6 @@ module BUS #(
         .ctrl     (ctrl),
         .int_timer(int_timer)
     );
+`endif
 
 endmodule
