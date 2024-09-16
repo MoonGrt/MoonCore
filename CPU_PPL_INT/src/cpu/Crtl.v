@@ -11,7 +11,8 @@ module ctrl (
     // from jtag
     input wire jtag_halt_flag,
     // from int
-    input wire hold_flag_int,
+    input wire clear_flag_int,
+    input wire int_assert,
 
     output reg [`CLEARBUS] clear_flag,
     output reg [ `HOLDBUS] hold_flag
@@ -23,9 +24,10 @@ module ctrl (
         end else begin
             clear_flag = `Clear_None;  // default: `Clear_None
             // prioritize requests from different modules
-            if (jump_flag) begin
-                // suspend the entire assembly line
-                clear_flag = `Hold_PPL;
+            if (int_assert) begin
+                clear_flag = `Clear_None;
+            end else if (jump_flag | clear_flag_int) begin
+                clear_flag = `Clear_PPL;  // clear the entire assembly line
             end else begin
                 clear_flag = `Clear_None;
             end
@@ -38,7 +40,7 @@ module ctrl (
         end else begin
             hold_flag = `Hold_None;  // default: `Hold_None
             // prioritize requests from different modules
-            if (jump_flag || hold_flag_ex || hold_flag_int) begin
+            if (hold_flag_ex) begin
                 // suspend the entire assembly line
                 hold_flag = `Hold_PC;
             end else if (jtag_halt_flag) begin

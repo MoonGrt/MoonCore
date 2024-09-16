@@ -6,7 +6,8 @@ module IF (
 
     input wire            jump_flag,
     input wire [`ADDRBUS] jump_pc,
-    input wire [`HOLDBUS] hold_flag,
+    input wire [`CLEARBUS] clear_flag,
+    input wire [ `HOLDBUS] hold_flag,
 
     input  wire [`DATABUS] inst_data,
     output wire [`ADDRBUS] inst_addr,
@@ -23,21 +24,23 @@ module IF (
 
 
     //*****************************************************
-    //**                    pc
+    //**                     pc
     //*****************************************************
     reg [`ADDRBUS] pc = 16'b0;
+    // assign inst_addr = jump_flag ? jump_pc : pc;
     assign inst_addr = pc;
     always @(posedge clk) begin
         if (~rst_n) 
-            pc <= 0;
+            pc <= 16'b0;
         else if (jump_flag)
             pc <= jump_pc;
         else if (hold_en)
             pc <= pc;
-        else if (pc == `ROM_DEPTH - 1'b1 || inst_data == 0)
+        else if (pc == `ROM_DEPTH - 1'b1 || inst_data == 1'b0)
+        // else if (pc == `ROM_DEPTH - 1'b1)
             pc <= pc;
         else
-            pc <= pc + 'b1;
+            pc <= pc + 1'b1;
     end
 
 endmodule

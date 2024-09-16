@@ -24,6 +24,7 @@ module tb_top;
         buttom <= 4'h1;
         switch <= 4'h2;
         #15 rst_n <= 1'b1;
+        // #20 rst_n <= 1'b1;  // rst_n 的上升沿不能位于与 clk 的上升沿
 `ifdef UART_DEBGE
         #100 rst_n <= 1'b0;
 `endif

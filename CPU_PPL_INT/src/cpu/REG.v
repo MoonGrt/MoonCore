@@ -19,13 +19,14 @@ module REG (
     //*****************************************************
     //**                    Forwarding
     //*****************************************************
-    reg [2:0] last_rd;
+    reg [2:0] last_rd, last_rd_reg;
     // wire [2:0] last_rs;  // only write data to rd
     wire rd_forward = (rd == last_rd) && RegWe;
     wire rs_forward = (rs == last_rd) && RegWe;
     always @(posedge clk or negedge rst_n) begin
         if (~rst_n) begin
             last_rd <= 3'b0;
+            last_rd_reg <= 3'b0;
             // last_rs <= 3'b0;
         end else begin
             last_rd <= rd;
@@ -38,11 +39,9 @@ module REG (
     //*****************************************************
     reg [`DATABUS] rf[7:0];  // 寄存器
     integer i;
-    initial begin
-        for (i = 0; i < 8; i = i + 1) begin
+    initial
+        for (i = 0; i < 8; i = i + 1)
             rf[i] = 0;  // Default initialization is 0
-        end
-    end
 
     assign RD = rd_forward ? WB_data : rf[rd];
     assign RS = rs_forward ? WB_data : rf[rs];

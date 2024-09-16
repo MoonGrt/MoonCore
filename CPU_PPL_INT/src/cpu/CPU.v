@@ -15,8 +15,8 @@ module CPU (
     output wire            mem_ctrl
 );
 
-    wire [`DATABUS]  IF_inst_data = inst_data;
-    wire [`ADDRBUS]  IF_inst_addr;
+    wire [`DATABUS] IF_inst_data = inst_data;
+    wire [`ADDRBUS] IF_inst_addr;
     assign inst_addr = IF_inst_addr;
 
     wire [`ADDRBUS] ID_inst_addr;
@@ -32,7 +32,7 @@ module CPU (
     wire [     1:0] ID_CMPop;
     wire            ID_RegWe;
     wire            ID_mem_ctrl;
-    wire            ID_RWSel;
+    wire [`WBSelBUS] ID_RWSel;
     wire            ID_ABSel;
     wire            ID_IMMSel;
     wire [`ADDRBUS] ID_inst_data;
@@ -52,7 +52,7 @@ module CPU (
     wire [     2:0] EX_ALUop;
     wire [     1:0] EX_CMPop;
     wire            EX_mem_ctrl;
-    wire            EX_RWSel;
+    wire [`WBSelBUS] EX_RWSel;
     wire            EX_CSR_wr;
     wire [     1:0] EX_JUMPop;
     wire            EX_ABSel;
@@ -84,7 +84,7 @@ module CPU (
     wire [`DATABUS] csr_mstatus;
 
     wire global_int_en;
-    wire hold_flag_int;
+    wire clear_flag_int;
     wire [`CLEARBUS] clear_flag;
     wire [ `HOLDBUS] hold_flag;
 
@@ -94,7 +94,8 @@ module CPU (
         .jump_flag     (EX_jump_flag),
         .hold_flag_ex  (1'b0),
         .jtag_halt_flag(1'b0),
-        .hold_flag_int (hold_flag_int),
+        .clear_flag_int(clear_flag_int),
+        .int_assert    (int_assert),
 
         .clear_flag(clear_flag),
         .hold_flag (hold_flag)
@@ -105,10 +106,10 @@ module CPU (
         .rst_n(rst_n),
 
         .int_flag     (int),
-        .inst_data    (IF_inst_data),
-        .inst_addr    (IF_inst_addr),
-        // .inst_data    (ID_inst_data),
-        // .inst_addr    (ID_inst_addr),
+        // .inst_data    (IF_inst_data),
+        // .inst_addr    (IF_inst_addr),
+        .inst_data    (ID_inst_data),
+        .inst_addr    (ID_inst_addr),
         .jump_flag    (EX_jump_flag),
         .jump_addr    (EX_jump_addr),
         .csr_mtvec    (csr_mtvec),
@@ -116,13 +117,13 @@ module CPU (
         .csr_mstatus  (csr_mstatus),
         .global_int_en(global_int_en),
 
-        .hold_flag_int(hold_flag_int),
-        .int_we       (int_we),
-        .int_mepc     (int_mepc),
-        .int_mcause   (int_mcause),
-        .int_mstatus  (int_mstatus),
-        .int_inst_addr(int_inst_addr),
-        .int_assert   (int_assert)
+        .clear_flag_int(clear_flag_int),
+        .int_we        (int_we),
+        .int_mepc      (int_mepc),
+        .int_mcause    (int_mcause),
+        .int_mstatus   (int_mstatus),
+        .int_inst_addr (int_inst_addr),
+        .int_assert    (int_assert)
     );
 
     CSR CSR(
@@ -280,7 +281,6 @@ module CPU (
         .CSRout (EX_CSRout),
         .ALUout (EX_ALUout),
         .RAMdata(EX_RAMdata),
-        .CSR_wr (EX_CSR_wr),
         .RWSel  (EX_RWSel),
         .WB_data(EX_WB_data)
     );

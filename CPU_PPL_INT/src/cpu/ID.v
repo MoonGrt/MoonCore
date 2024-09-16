@@ -15,7 +15,7 @@ module ID (
     output reg [1:0] CMPop,
     output reg       RegWe,
     output reg       mem_ctrl,
-    output reg       RWSel,
+    output reg [1:0] RWSel,
     output reg       ABSel,
     output reg       IMMSel,
     output reg       reg_clear
@@ -38,7 +38,7 @@ module ID (
             JUMPop = 2'b0;
             ALUop = 3'b0;
             CMPop = 2'b0;
-            RWSel = 1'b0;
+            RWSel = `WB_EX;
             IMMop = 1'b0;
             RegWe = 1'b0;
             ABSel = 1'b0;
@@ -51,7 +51,7 @@ module ID (
             JUMPop = 2'b0;
             ALUop = 3'b0;
             CMPop = 2'b0;
-            RWSel = 1'b0;
+            RWSel = `WB_EX;
             IMMop = 1'b0;
             RegWe = 1'b0;
             ABSel = 1'b0;
@@ -145,7 +145,7 @@ module ID (
                     ALUop = `ADD_op;
                     IMMop = 1'b1;
                     RegWe = 1'b1;
-                    RWSel = 1'b1;
+                    RWSel = `WB_RAM;
                     ABSel = 1'b1;
                 end
                 `SW: begin
@@ -157,6 +157,8 @@ module ID (
                 `CSRR: begin
                     CSR_wr = 1'b0;
                     IMMop = 1'b1;
+                    RegWe = 1'b1;
+                    RWSel = `WB_CSR;
                 end
                 `CSRW: begin
                     CSR_wr = 1'b1;

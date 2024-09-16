@@ -21,7 +21,7 @@ module CLINT (
     input wire            global_int_en, // 全局中断使能标志
 
     // to ctrl
-    output wire           hold_flag_int,  // 流水线暂停标志
+    output wire           clear_flag_int,  // 流水线暂停标志
     // to csr
     output reg [     2:0] int_we,       // CLINT写CSR寄存器标志
     output reg [`DATABUS] int_mepc,     // mepc寄存器
@@ -54,7 +54,7 @@ module CLINT (
     reg [`ADDRBUS] inst_addr_reg;
     reg [`DATABUS] cause;
 
-    assign hold_flag_int = ((int_state != S_INT_IDLE) | (csr_state != S_CSR_IDLE)) ? 1'b1 : 1'b0;
+    assign clear_flag_int = ((int_state != S_INT_IDLE) | (csr_state != S_CSR_IDLE)) ? 1'b1 : 1'b0;
 
     // 中断仲裁逻辑
     always @(*) begin
@@ -112,7 +112,8 @@ module CLINT (
                             if (jump_flag) begin
                                 inst_addr_reg <= jump_addr;
                             end else begin
-                                inst_addr_reg <= inst_addr - 1'b1;
+                                // inst_addr_reg <= inst_addr - 1'b1;
+                                inst_addr_reg <= inst_addr;
                             end
                         end
                     // 中断返回

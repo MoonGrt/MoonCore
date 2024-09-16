@@ -55,11 +55,12 @@ module RAM (
     RAM_Gen #(
         .INIT_FILE(""),
         .DP(`RAM_DEPTH),
-        .DW(16),
-        .MW(2),  // (WIDTH/8)
-        .AW(16)
+        .DW(`CPU_WIDTH),
+        .MW(`CPU_WIDTH/8),  // (WIDTH/8)
+        .AW(`CPU_WIDTH)
     ) data_mem (
         .clk  (clk),
+        .rst  (~rst_n),
         .addr (addr),
         .wdata(data_input),
         .sel  ({2{input_call}}),

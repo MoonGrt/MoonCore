@@ -1,6 +1,8 @@
 `include "../para.v"
 
-module ROM (
+module ROM #(
+    parameter INIT_FILE = ""
+) (
     input  wire            clk,
     input  wire            rst_n,
     input  wire            EN,
@@ -34,13 +36,14 @@ module ROM (
     wire [`ADDRBUS] ROM_addr = rst_n ? addr : data_addr;
     // Connect ROM
     RAM_Gen #(
-        .INIT_FILE("F:/Project/Sipeed/FPGA/Tang_Primer/CPU/code/UART"),
+        .INIT_FILE(INIT_FILE),
         .DP(`RAM_DEPTH),
-        .DW(16),
-        .MW(2),  // (WIDTH/8)
-        .AW(16)
+        .DW(`CPU_WIDTH),
+        .MW(`CPU_WIDTH/8),  // (WIDTH/8)
+        .AW(`CPU_WIDTH)
     ) inst_mem (
         .clk  (clk),
+        .rst  (~rst_n),
         .addr (ROM_addr),
         .wdata(data),
         .sel  ({2{data_valid}}),

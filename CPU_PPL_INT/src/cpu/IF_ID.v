@@ -20,19 +20,4 @@ module IF_ID (
     PPLreg #(`CPU_WIDTH) addr_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, IF_inst_addr, ID_inst_addr);
     PPLreg #(`CPU_WIDTH) data_reg(clk, ~rst_n|clear_en, hold_en, 16'b0, IF_inst_data, ID_inst_data);
 
-    // always @(posedge clk or negedge rst_n) begin
-    //     if (~rst_n) begin
-    //         ID_inst_data <= 'b0;
-    //         ID_inst_addr <= 'b0;
-    //     end else if ((hold_flag == `Hold_PPL) | (hold_flag == `Hold_ID)) begin
-    //         // ID_inst_data <= ID_inst_data;
-    //         // ID_inst_addr <= ID_inst_addr;
-    //         ID_inst_data <= 'b0;
-    //         ID_inst_addr <= 'b0;
-    //     end else begin
-    //         ID_inst_data <= IF_inst_data;
-    //         ID_inst_addr <= IF_inst_addr;
-    //     end
-    // end
-
 endmodule
