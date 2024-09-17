@@ -86,11 +86,11 @@ module CSR (
                 endcase
             // int模块写操作
             end else if (int_we) begin
-                if (int_we[0])
+                if (int_we[2])
                     mepc <= int_mepc;
                 if (int_we[1])
                     mcause <= int_mcause;
-                if (int_we[2])
+                if (int_we[0])
                     mstatus <= int_mstatus;
             end
         end

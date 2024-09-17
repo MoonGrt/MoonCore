@@ -153,9 +153,10 @@ module CPU (
         .clk  (clk),
         .rst_n(rst_n),
 
-        .hold_flag(hold_flag),
-        .jump_flag(EX_jump_flag),
-        .jump_pc  (EX_jump_pc),
+        .clear_flag(clear_flag),
+        .hold_flag (hold_flag),
+        .jump_flag (EX_jump_flag),
+        .jump_pc   (EX_jump_pc),
 
         .inst_data(IF_inst_data),
         .inst_addr(IF_inst_addr)

@@ -86,8 +86,6 @@ Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\REG.v'(
 Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\WB.v'
 Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\WB.v":1)
 Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\WB.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\WB.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\gowin_rom16\inst_mem.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\gowin_sp\data_mem.v'
 Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\para.v'
 Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.v'
 Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.v":1)
@@ -98,20 +96,19 @@ Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\u
 Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v'
 Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":1)
 Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":1)
-WARN  (EX3788) : Block identifier is required on this block("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":53)
+WARN  (EX3788) : Block identifier is required on this block("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":63)
 Compiling module 'top'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.v":3)
-WARN  (EX3073) : Port 'hold_pc' remains unconnected for this instance("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v":161)
+WARN  (EX3073) : Port 'hold_pc' remains unconnected for this instance("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v":163)
 Compiling module 'CPU'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v":3)
 Compiling module 'ctrl'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\Crtl.v":5)
 Compiling module 'CLINT'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CLINT.v":4)
 Compiling module 'CSR'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CSR.v":4)
 Compiling module 'IF'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF.v":3)
-WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF.v":40)
 Compiling module 'IF_ID'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF_ID.v":3)
 Compiling module 'PPLreg(DW=16)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\PPLreg.v":1)
 Compiling module 'ID'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID.v":3)
 Compiling module 'REG'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\REG.v":3)
-Extracting RAM for identifier 'rf'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\REG.v":39)
+Extracting RAM for identifier 'rf'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\REG.v":40)
 Compiling module 'ID_EX'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID_EX.v":3)
 Compiling module 'PPLreg(DW=3)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\PPLreg.v":1)
 Compiling module 'PPLreg(DW=1)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\PPLreg.v":1)
@@ -120,16 +117,17 @@ Compiling module 'EX'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cp
 Compiling module 'ALU'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ALU.v":3)
 Compiling module 'CMP'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CMP.v":3)
 Compiling module 'WB'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\WB.v":3)
+WARN  (EX2565) : Input 'CSR_wr' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v":287)
 Compiling module 'BUS(CLK_FREQ=27000000)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\BUS.v":3)
-Compiling module 'ROM'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\ROM.v":3)
-Compiling module 'RAM_Gen(INIT_FILE="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\code\UART",DP=1024,DW=16,MW=2,AW=16)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":5)
-Extracting RAM for identifier 'ram'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":21)
-WARN  (EX3670) : Actual bit length 8 differs from formal bit length 16 for port 'wdata'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\BUS.v":51)
+Compiling module 'ROM(INIT_FILE="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\code\int")'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\ROM.v":3)
+Compiling module 'RAM_Gen(INIT_FILE="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\code\int",DP=1024,DW=16,MW=2,AW=16)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":5)
+Extracting RAM for identifier 'ram'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":22)
+WARN  (EX3670) : Actual bit length 8 differs from formal bit length 16 for port 'wdata'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\BUS.v":53)
 Compiling module 'Deviceclk(EXTEND=100)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Deviceclk.v":2)
 WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Deviceclk.v":19)
 Compiling module 'RAM'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\RAM.v":3)
 Compiling module 'RAM_Gen(DP=1024,DW=16,MW=2,AW=16)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":5)
-Extracting RAM for identifier 'ram'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":21)
+Extracting RAM for identifier 'ram'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":22)
 Compiling module 'LED'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED.v":3)
 Compiling module 'Buffer'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\Buffer.v":1)
 Compiling module 'LED_InCtrl'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED_InCtrl.v":3)
@@ -164,12 +162,11 @@ Running technical mapping ...
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
 WARN  (NL0002) : The module "Buttom_OutCtrl" instantiated to "Buttom_OutCtrl" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Buttom.v":80)
-WARN  (NL0002) : The module "Deviceclk" instantiated to "Deviceclk" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\BUS.v":65)
+WARN  (NL0002) : The module "Deviceclk" instantiated to "Deviceclk" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\BUS.v":67)
 WARN  (NL0002) : The module "Switch_OutCtrl" instantiated to "Switch_OutCtrl" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch.v":80)
-WARN  (NL0002) : The module "PPLreg" instantiated to "IMMSel_reg" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID_EX.v":79)
-WARN  (NL0002) : The module "PPLreg" instantiated to "inst_reg" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID_EX.v":66)
-WARN  (NL0002) : The module "PPLreg" instantiated to "addr_reg" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF_ID.v":20)
-WARN  (NL0002) : The module "ctrl" instantiated to "ctrl" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v":101)
+WARN  (NL0002) : The module "PPLreg" instantiated to "IMMSel_reg" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID_EX.v":62)
+WARN  (NL0002) : The module "PPLreg" instantiated to "inst_reg" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID_EX.v":49)
+WARN  (NL0002) : The module "ctrl" instantiated to "ctrl" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v":102)
 [95%] Generate netlist file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\gwsynthesis\top.vg" completed
 [100%] Generate report file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\gwsynthesis\top_syn.rpt.html" completed
 GowinSynthesis finish

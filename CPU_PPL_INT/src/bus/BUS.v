@@ -43,7 +43,7 @@ module BUS #(
     //*****************************************************
     wire [7:0] int_data;
     ROM #(
-        .INIT_FILE("F:/Project/Sipeed/FPGA/Tang_Primer/CPU/code/whole")
+        .INIT_FILE("F:/Project/Sipeed/FPGA/Tang_Primer/CPU/code/int")
     ) ROM (
         .clk  (clk),
         .rst_n(rst_n),

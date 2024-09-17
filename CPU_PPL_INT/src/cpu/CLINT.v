@@ -14,7 +14,6 @@ module CLINT (
     input wire            jump_flag,
     input wire [`ADDRBUS] jump_addr,
     // from csr
-
     input wire [`DATABUS] csr_mtvec,     // mtvec寄存器
     input wire [`DATABUS] csr_mepc,      // mepc寄存器
     input wire [`DATABUS] csr_mstatus,   // mstatus寄存器
@@ -39,11 +38,6 @@ module CLINT (
     localparam S_INT_MRET = 4'b1000;
 
     // 写CSR寄存器状态定义
-    // localparam S_CSR_IDLE = 5'b00001;
-    // localparam S_CSR_MSTATUS = 5'b00010;
-    // localparam S_CSR_MEPC = 5'b00100;
-    // localparam S_CSR_MSTATUS_MRET = 5'b01000;
-    // localparam S_CSR_MCAUSE = 5'b10000;
     localparam S_CSR_IDLE = 3'b001;
     localparam S_CSR_WRITE = 3'b010;
     localparam S_CSR_MRET = 3'b100;
@@ -56,14 +50,19 @@ module CLINT (
 
     assign clear_flag_int = ((int_state != S_INT_IDLE) | (csr_state != S_CSR_IDLE)) ? 1'b1 : 1'b0;
 
+    // ……………………
+    reg global_int_en_reg = 1'b0;
+    always @(posedge clk) global_int_en_reg <= global_int_en;
+
     // 中断仲裁逻辑
+    wire mret_en = (inst_data == 16'h0000) && int_en && ~global_int_en_reg;
     always @(*) begin
         if (~rst_n) begin
             int_state = S_INT_IDLE;
         end else begin
             if (int_flag != `INT_NONE && global_int_en) begin
                 int_state = S_INT_ASYNC;
-            end else if (inst_data == 16'h0000 && int_en) begin  // Set 16'h0000 for interrupt return instruction
+            end else if (mret_en) begin  // Set 16'h0000 for interrupt return instruction
                 int_state = S_INT_MRET;
             end else begin
                 int_state = S_INT_IDLE;

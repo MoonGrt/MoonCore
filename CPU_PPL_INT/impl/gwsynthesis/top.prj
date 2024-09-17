@@ -36,8 +36,6 @@
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF_ID.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\REG.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\WB.v" type="verilog"/>
-        <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\gowin_rom16\inst_mem.v" type="verilog"/>
-        <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\gowin_sp\data_mem.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\para.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.v" type="verilog"/>
         <File path="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\Buffer.v" type="verilog"/>

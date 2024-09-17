@@ -37,8 +37,6 @@
         <File path="src/cpu/IF_ID.v" type="file.verilog" enable="1"/>
         <File path="src/cpu/REG.v" type="file.verilog" enable="1"/>
         <File path="src/cpu/WB.v" type="file.verilog" enable="1"/>
-        <File path="src/gowin_rom16/inst_mem.v" type="file.verilog" enable="1"/>
-        <File path="src/gowin_sp/data_mem.v" type="file.verilog" enable="1"/>
         <File path="src/para.v" type="file.verilog" enable="1"/>
         <File path="src/top.v" type="file.verilog" enable="1"/>
         <File path="src/utils/Buffer.v" type="file.verilog" enable="1"/>

@@ -14,13 +14,13 @@ module IF (
     output wire            hold_pc
 );
 
-    wire hold_en = (hold_flag == `Hold_PPL) | (hold_flag == `Hold_PC);
-
     //*****************************************************
     //**                    jump
     //*****************************************************
     wire [4:0] opecode = inst_data[4:0];
     assign hold_pc = (opecode == `BEQ) | (opecode == `BLE) | (opecode == `JAL) | (opecode == `JR);
+    wire hold_en = (hold_flag == `Hold_PPL) | (hold_flag == `Hold_PC);
+    wire clear_en = (clear_flag == `Clear_PPL) | (clear_flag == `Clear_PC);
 
 
     //*****************************************************
@@ -34,7 +34,7 @@ module IF (
             pc <= 16'b0;
         else if (jump_flag)
             pc <= jump_pc;
-        else if (hold_en)
+        else if (hold_en | clear_en)
             pc <= pc;
         else if (pc == `ROM_DEPTH - 1'b1 || inst_data == 1'b0)
         // else if (pc == `ROM_DEPTH - 1'b1)

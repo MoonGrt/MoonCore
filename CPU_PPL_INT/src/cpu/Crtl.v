@@ -24,9 +24,10 @@ module ctrl (
         end else begin
             clear_flag = `Clear_None;  // default: `Clear_None
             // prioritize requests from different modules
-            if (int_assert) begin
-                clear_flag = `Clear_None;
-            end else if (jump_flag | clear_flag_int) begin
+            // if (int_assert) begin
+            //     clear_flag = `Clear_None;
+            // end else 
+            if (jump_flag | clear_flag_int) begin
                 clear_flag = `Clear_PPL;  // clear the entire assembly line
             end else begin
                 clear_flag = `Clear_None;
