@@ -1,118 +1,150 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\BUS.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\BUS.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\BUS.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\BUS.v":1)
-Undeclared symbol 'tube_en', assumed default net type 'wire'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\BUS.v":136)
-Undeclared symbol 'seg_led', assumed default net type 'wire'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\BUS.v":137)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Buffer.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Buttom.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Buttom.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Buttom.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Buttom.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Counter.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Deviceclk.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\InCtrl_LED.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\InCtrl_Tube.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\LED.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\LED.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\LED.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\LED.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\OutCtrl_Buttom.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\OutCtrl_Switch.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\RAM.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\RAM.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\RAM.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\RAM.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Switch.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Switch.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Switch.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Switch.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Timer.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Timer.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Timer.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Timer.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Tube.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Tube.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Tube.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Tube.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\UART.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\UART.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\UART.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\UART.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\uart_recv.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\uart_send.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\ALU.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\ALU.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\ALU.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\ALU.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\CMP.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\CMP.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\CMP.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\CMP.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\CPU.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\CPU.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\CPU.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\CPU.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\Crtl.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\Crtl.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\Crtl.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\Crtl.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\EX.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\EX.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\EX.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\EX.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\ID.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\IF.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\REG.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\REG.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\REG.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\REG.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\WB.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\WB.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\WB.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\WB.v":1)
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\gowin_rom16\inst_mem.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\gowin_sp\data_mem.v'
-Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\top.v'
-Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\top.v":1)
-Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\top.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\top.v":1)
-Compiling module 'top'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\top.v":3)
-Compiling module 'CPU'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\CPU.v":3)
-Compiling module 'Crtl'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\Crtl.v":3)
-Compiling module 'IF'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\IF.v":1)
-WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\IF.v":18)
-Compiling module 'ID'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\ID.v":1)
-Compiling module 'REG'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\REG.v":3)
-Compiling module 'EX'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\EX.v":3)
-Compiling module 'ALU'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\ALU.v":3)
-WARN  (EX1998) : Net 'sraOut[15]' does not have a driver("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\ALU.v":24)
-Compiling module 'CMP'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\CMP.v":3)
-Compiling module 'WB'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\WB.v":3)
-Compiling module 'BUS'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\BUS.v":3)
-Compiling module 'inst_mem'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\gowin_rom16\inst_mem.v":10)
-Compiling module 'Deviceclk(EXTEND=100)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Deviceclk.v":2)
-WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Deviceclk.v":19)
-Compiling module 'RAM'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\RAM.v":3)
-Compiling module 'data_mem'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\gowin_sp\data_mem.v":10)
-WARN  (EX3670) : Actual bit length 16 differs from formal bit length 10 for port 'ad'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\RAM.v":54)
-Compiling module 'LED'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\LED.v":3)
-Compiling module 'Buffer'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Buffer.v":1)
-Compiling module 'InCtrl_LED'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\InCtrl_LED.v":1)
-WARN  (EX1998) : Net 'data_output[15]' does not have a driver("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\LED.v":23)
-Compiling module 'Buttom'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Buttom.v":3)
-Compiling module 'OutCtrl_Buttom'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\OutCtrl_Buttom.v":1)
-Compiling module 'Switch'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Switch.v":3)
-Compiling module 'OutCtrl_Switch'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\OutCtrl_Switch.v":1)
-Compiling module 'Tube'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Tube.v":3)
-Compiling module 'InCtrl_Tube'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\InCtrl_Tube.v":2)
-WARN  (EX3791) : Expression size 8 truncated to fit in target size 4("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\InCtrl_Tube.v":18)
-WARN  (EX3834) : Case condition never applies("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\InCtrl_Tube.v":79)
-WARN  (EX3834) : Case condition never applies("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\InCtrl_Tube.v":80)
-WARN  (EX3834) : Case condition never applies("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\InCtrl_Tube.v":81)
-WARN  (EX3834) : Case condition never applies("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\InCtrl_Tube.v":82)
-WARN  (EX3670) : Actual bit length 8 differs from formal bit length 4 for port 'tube_en'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Tube.v":49)
-WARN  (EX1998) : Net 'data_output[15]' does not have a driver("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Tube.v":34)
-WARN  (EX3670) : Actual bit length 1 differs from formal bit length 8 for port 'tube_en'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\BUS.v":136)
-WARN  (EX3670) : Actual bit length 1 differs from formal bit length 8 for port 'seg_led'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\BUS.v":137)
-Compiling module 'UART'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\UART.v":3)
-Compiling module 'uart_send'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\uart_send.v":1)
-WARN  (EX3670) : Actual bit length 8 differs from formal bit length 32 for port 'uart_din'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\UART.v":81)
-Compiling module 'uart_recv'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\uart_recv.v":1)
-Compiling module 'Timer'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Timer.v":3)
-WARN  (EX3780) : Using initial value of 'en' since it is never assigned("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Timer.v":17)
-Compiling module 'Counter'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Counter.v":1)
-WARN  (EX3791) : Expression size 27 truncated to fit in target size 26("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Counter.v":15)
-WARN  (EX1998) : Net 'data_output[15]' does not have a driver("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Timer.v":23)
-WARN  (EX1998) : Net 'irq_bt' does not have a driver("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\top.v":65)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\BUS.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\BUS.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\BUS.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\BUS.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Buttom.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Buttom.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Buttom.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Buttom.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Buttom_OutCtrl.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Buttom_OutCtrl.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Buttom_OutCtrl.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Buttom_OutCtrl.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Counter.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Counter.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Counter.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Counter.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Deviceclk.v'
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED_InCtrl.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED_InCtrl.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED_InCtrl.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED_InCtrl.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\RAM.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\RAM.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\RAM.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\RAM.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\ROM.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\ROM.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\ROM.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\ROM.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch_OutCtrl.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch_OutCtrl.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch_OutCtrl.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch_OutCtrl.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Timer.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Timer.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Timer.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Timer.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Tube.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Tube.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Tube.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Tube.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Tube_InCtrl.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Tube_InCtrl.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Tube_InCtrl.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Tube_InCtrl.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\UART.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\UART.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\UART.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\UART.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\uart_recv.v'
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\uart_rx.v'
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\uart_send.v'
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\uart_tx.v'
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ALU.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ALU.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ALU.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ALU.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CLINT.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CLINT.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CLINT.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CLINT.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CMP.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CMP.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CMP.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CMP.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CSR.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CSR.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CSR.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CSR.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\Crtl.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\Crtl.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\Crtl.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\Crtl.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\EX.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\EX.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\EX.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\EX.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID_EX.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID_EX.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID_EX.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID_EX.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF_ID.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF_ID.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF_ID.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF_ID.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\REG.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\REG.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\REG.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\REG.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\WB.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\WB.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\WB.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\WB.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\para.v'
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.v":1)
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\Buffer.v'
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\Buffer_Shift.v'
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\PPLreg.v'
+Analyzing Verilog file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v'
+Analyzing included file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\..\para.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":1)
+Back to file 'F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":1)
+WARN  (EX3788) : Block identifier is required on this block("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":63)
+Compiling module 'top'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.v":3)
+WARN  (EX3073) : Port 'hold_pc' remains unconnected for this instance("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v":163)
+Compiling module 'CPU'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v":3)
+Compiling module 'ctrl'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\Crtl.v":5)
+Compiling module 'CLINT'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CLINT.v":4)
+Compiling module 'CSR'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CSR.v":4)
+Compiling module 'IF'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF.v":3)
+Compiling module 'IF_ID'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\IF_ID.v":3)
+Compiling module 'PPLreg(DW=16)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\PPLreg.v":1)
+Compiling module 'ID'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID.v":3)
+Compiling module 'REG'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\REG.v":3)
+Extracting RAM for identifier 'rf'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\REG.v":40)
+Compiling module 'ID_EX'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID_EX.v":3)
+Compiling module 'PPLreg(DW=3)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\PPLreg.v":1)
+Compiling module 'PPLreg(DW=1)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\PPLreg.v":1)
+Compiling module 'PPLreg(DW=2)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\PPLreg.v":1)
+Compiling module 'EX'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\EX.v":3)
+Compiling module 'ALU'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ALU.v":3)
+Compiling module 'CMP'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CMP.v":3)
+Compiling module 'WB'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\WB.v":3)
+WARN  (EX2565) : Input 'CSR_wr' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v":287)
+Compiling module 'BUS(CLK_FREQ=27000000)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\BUS.v":3)
+Compiling module 'ROM(INIT_FILE="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\code\int")'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\ROM.v":3)
+Compiling module 'RAM_Gen(INIT_FILE="F:\Project\Sipeed\FPGA\Tang_Primer\CPU\code\int",DP=1024,DW=16,MW=2,AW=16)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":5)
+Extracting RAM for identifier 'ram'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":22)
+WARN  (EX3670) : Actual bit length 8 differs from formal bit length 16 for port 'wdata'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\BUS.v":53)
+Compiling module 'Deviceclk(EXTEND=100)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Deviceclk.v":2)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Deviceclk.v":19)
+Compiling module 'RAM'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\RAM.v":3)
+Compiling module 'RAM_Gen(DP=1024,DW=16,MW=2,AW=16)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":5)
+Extracting RAM for identifier 'ram'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\RAM_Gen.v":22)
+Compiling module 'LED'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED.v":3)
+Compiling module 'Buffer'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\Buffer.v":1)
+Compiling module 'LED_InCtrl'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED_InCtrl.v":3)
+WARN  (EX1998) : Net 'data_output[15]' does not have a driver("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\LED.v":20)
+Compiling module 'Buttom'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Buttom.v":3)
+Compiling module 'Buttom_OutCtrl'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Buttom_OutCtrl.v":3)
+Compiling module 'Switch'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch.v":3)
+Compiling module 'Switch_OutCtrl'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch_OutCtrl.v":3)
+Compiling module 'UART(CLK_FREQ=27000000)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\UART.v":3)
+Compiling module 'uart_tx(CLK_FRE=27000000)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\uart_tx.v":1)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\uart_tx.v":33)
+Compiling module 'uart_rx(CLK_FRE=27000000)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\uart_rx.v":1)
+Compiling module 'Timer'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Timer.v":3)
+Compiling module 'Buffer_Shift(NUM=2)'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\utils\Buffer_Shift.v":1)
+Compiling module 'Counter'("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Counter.v":3)
+WARN  (EX1998) : Net 'data_output[15]' does not have a driver("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Timer.v":19)
 NOTE  (EX0101) : Current top module is "top"
-WARN  (EX0211) : The output port "cpu_en" of module "Crtl" has no driver, assigning undriven bits to Z, simulation mismatch possible("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\cpu\Crtl.v":11)
 [5%] Running netlist conversion ...
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
@@ -129,13 +161,12 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "OutCtrl_Buttom" instantiated to "OutCtrl_Buttom" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Buttom.v":83)
-WARN  (NL0002) : The module "Deviceclk" instantiated to "Deviceclk" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\BUS.v":63)
-WARN  (NL0002) : The module "OutCtrl_Switch" instantiated to "switchCtrl" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Switch.v":83)
-WARN  (NL0002) : The module "Counter" instantiated to "Counter" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Timer.v":69)
-WARN  (NL0002) : The module "Buffer" instantiated to "input_buf" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Timer.v":62)
-WARN  (NL0002) : The module "Tube" instantiated to "Tube" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\BUS.v":138)
-WARN  (NL0002) : The module "InCtrl_Tube" instantiated to "InCtrl_Tube" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\bus\Tube.v":51)
-[95%] Generate netlist file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\impl\gwsynthesis\top.vg" completed
-[100%] Generate report file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\impl\gwsynthesis\top_syn.rpt.html" completed
+WARN  (NL0002) : The module "Buttom_OutCtrl" instantiated to "Buttom_OutCtrl" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Buttom.v":80)
+WARN  (NL0002) : The module "Deviceclk" instantiated to "Deviceclk" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\BUS.v":67)
+WARN  (NL0002) : The module "Switch_OutCtrl" instantiated to "Switch_OutCtrl" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\bus\Switch.v":80)
+WARN  (NL0002) : The module "PPLreg" instantiated to "IMMSel_reg" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID_EX.v":62)
+WARN  (NL0002) : The module "PPLreg" instantiated to "inst_reg" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\ID_EX.v":49)
+WARN  (NL0002) : The module "ctrl" instantiated to "ctrl" is swept in optimizing("F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\cpu\CPU.v":102)
+[95%] Generate netlist file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\gwsynthesis\top.vg" completed
+[100%] Generate report file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\gwsynthesis\top_syn.rpt.html" completed
 GowinSynthesis finish

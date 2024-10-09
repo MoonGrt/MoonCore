@@ -1,9 +1,9 @@
--d F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\impl\gwsynthesis\top.vg
+-d F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\gwsynthesis\top.vg
 -p GW2A-18C-PBGA256-8
 -pn GW2A-LV18PG256C8/I7
--cst F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\top.cst
--cfg F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\impl\pnr\device.cfg
--sdc F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\top.sdc
+-cst F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.cst
+-cfg F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\pnr\device.cfg
+-sdc F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.sdc
 -bit
 -tr
 -ph

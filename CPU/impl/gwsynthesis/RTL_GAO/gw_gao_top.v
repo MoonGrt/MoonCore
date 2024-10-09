@@ -1,33 +1,21 @@
 module gw_gao(
-    \led[3] ,
-    \led[2] ,
-    \led[1] ,
-    \led[0] ,
-    \irq[0] ,
-    clk,
+    uart_tx,
+    \BUS/UART/tx/tx_clk ,
     tms_pad_i,
     tck_pad_i,
     tdi_pad_i,
     tdo_pad_o
 );
 
-input \led[3] ;
-input \led[2] ;
-input \led[1] ;
-input \led[0] ;
-input \irq[0] ;
-input clk;
+input uart_tx;
+input \BUS/UART/tx/tx_clk ;
 input tms_pad_i;
 input tck_pad_i;
 input tdi_pad_i;
 output tdo_pad_o;
 
-wire \led[3] ;
-wire \led[2] ;
-wire \led[1] ;
-wire \led[0] ;
-wire \irq[0] ;
-wire clk;
+wire uart_tx;
+wire \BUS/UART/tx/tx_clk ;
 wire tms_pad_i;
 wire tck_pad_i;
 wire tdi_pad_i;
@@ -101,9 +89,9 @@ gw_con_top  u_icon_top(
 
 ao_top_0  u_la0_top(
     .control(control0[9:0]),
-    .trig0_i(\irq[0] ),
-    .data_i({\led[3] ,\led[2] ,\led[1] ,\led[0] }),
-    .clk_i(clk)
+    .trig0_i(uart_tx),
+    .data_i(uart_tx),
+    .clk_i(\BUS/UART/tx/tx_clk )
 );
 
 endmodule
