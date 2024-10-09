@@ -61,12 +61,12 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	Buffer
 
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/BUS.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/BUS.v
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_rom16/inst_mem.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_rom16/inst_mem.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module BUS
+-- Compiling module inst_mem
 
 Top level modules:
-	BUS
+	inst_mem
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/top.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/top.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -75,12 +75,12 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	top
 
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_rom16/inst_mem.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/gowin_rom16/inst_mem.v
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Switch.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Switch.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module inst_mem
+-- Compiling module Switch
 
 Top level modules:
-	inst_mem
+	Switch
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Deviceclk.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Deviceclk.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -89,12 +89,12 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	Deviceclk
 
-} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Switch.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/Switch.v
+} {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/BUS.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/bus/BUS.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module Switch
+-- Compiling module BUS
 
 Top level modules:
-	Switch
+	BUS
 
 } {} {}} F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ID.v {1 {vlog -work work -vopt -stats=none F:/Project/Sipeed/FPGA/Tang_Primer/CPU/CPU_PPL_INT/src/cpu/ID.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
