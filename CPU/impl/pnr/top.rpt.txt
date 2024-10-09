@@ -5,34 +5,34 @@
 1. PnR Messages
 
   <Report Title>: PnR Report
-  <Design File>: F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\gwsynthesis\top.vg
-  <Physical Constraints File>: F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.cst
-  <Timing Constraints File>: F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.sdc
+  <Design File>: F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\impl\gwsynthesis\top.vg
+  <Physical Constraints File>: F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\top.cst
+  <Timing Constraints File>: F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\top.sdc
   <Tool Version>: V1.9.10.02
   <Part Number>: GW2A-LV18PG256C8/I7
   <Device>: GW2A-18
   <Device Version>: C
-  <Created Time>:Tue Sep 17 13:11:54 2024
+  <Created Time>:Wed Oct  9 22:28:13 2024
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.299s, Elapsed time = 0h 0m 0.299s
-    Placement Phase 1: CPU time = 0h 0m 0.26s, Elapsed time = 0h 0m 0.26s
-    Placement Phase 2: CPU time = 0h 0m 0.545s, Elapsed time = 0h 0m 0.546s
+    Placement Phase 0: CPU time = 0h 0m 0.307s, Elapsed time = 0h 0m 0.308s
+    Placement Phase 1: CPU time = 0h 0m 0.261s, Elapsed time = 0h 0m 0.261s
+    Placement Phase 2: CPU time = 0h 0m 0.521s, Elapsed time = 0h 0m 0.522s
     Placement Phase 3: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
     Total Placement: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.002s, Elapsed time = 0h 0m 0.002s
-    Routing Phase 1: CPU time = 0h 0m 0.206s, Elapsed time = 0h 0m 0.206s
-    Routing Phase 2: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
+    Routing Phase 0: CPU time = 0h 0m 0.003s, Elapsed time = 0h 0m 0.003s
+    Routing Phase 1: CPU time = 0h 0m 0.215s, Elapsed time = 0h 0m 0.215s
+    Routing Phase 2: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
+    Total Routing: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
  Generate output files:
     CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
 
- Total Time and Memory Usage: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s, Peak memory usage = 457MB
+ Total Time and Memory Usage: CPU time = 0h 0m 13s, Elapsed time = 0h 0m 13s, Peak memory usage = 451MB
 
 
 3. Resource Usage Summary

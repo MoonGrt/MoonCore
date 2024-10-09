@@ -1,7 +1,7 @@
-Reading netlist file: "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\gwsynthesis\top.vg"
-Parsing netlist file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\gwsynthesis\top.vg" completed
+Reading netlist file: "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\impl\gwsynthesis\top.vg"
+Parsing netlist file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\impl\gwsynthesis\top.vg" completed
 Processing netlist completed
-Reading constraint file: "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\src\top.cst"
+Reading constraint file: "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\src\top.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -20,10 +20,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\pnr\top.power.html" completed
-Generate file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\pnr\top.pin.html" completed
-Generate file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\pnr\top.rpt.html" completed
-Generate file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\pnr\top.rpt.txt" completed
-Generate file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU_PPL_INT\impl\pnr\top.tr.html" completed
-Tue Sep 17 13:11:54 2024
+Generate file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\impl\pnr\top.power.html" completed
+Generate file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\impl\pnr\top.pin.html" completed
+Generate file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\impl\pnr\top.rpt.html" completed
+Generate file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\impl\pnr\top.rpt.txt" completed
+Generate file "F:\Project\Sipeed\FPGA\Tang_Primer\CPU\CPU\impl\pnr\top.tr.html" completed
+Wed Oct  9 22:28:13 2024
 
